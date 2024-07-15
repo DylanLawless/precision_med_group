@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  15 JUL 2024 13:05
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  15 JUL 2024 13:24
  restricted system commands enabled.
 **whitepaper_1.1.tex
 (./whitepaper_1.1.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.188 seconds
+luaotfload | main : initialization completed in 0.119 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1966,38 +1966,34 @@ n. This com-mit-ment
 (./whitepaper_1.1.bbl [29
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 59.
  [30]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 59.
  (./whitepaper_1.1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 59.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 59.
 Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
-(rerunfilecheck)             Checksum: 8895AFF5C16E68FD1487CB389856C6E9;1119.
-
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+(rerunfilecheck)             Checksum: 4F2207AEB658DCFD82BB5301E6AC88D1;1068.
 )
 
 Here is how much of LuaTeX's memory you used:
  25724 strings out of 494413
  156510,794899 words of node,token memory allocated
- 853 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 15 attribute, 120 glue_spec, 15 attribute_l
-ist, 1 write, 11 pdf_action nodes
-   avail lists: 1:7,2:802,3:317,4:146,5:792,6:68,7:4557,8:216,9:168,10:19,11:429
+ 843 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 14 attribute, 120 glue_spec, 14 attribute_l
+ist, 1 write, 10 pdf_action nodes
+   avail lists: 1:5,2:920,3:411,4:146,5:792,6:68,7:4555,8:223,9:176,10:20,11:429
 ,12:1
  28770 multiletter control sequences out of 65536+600000
  74 fonts using 13106431 bytes
- 51i,11n,67p,1610b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 51i,11n,67p,1610b,872s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
 sPro-LightIt.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lm
 monolt10-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
 mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
 rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf>
-Output written on whitepaper_1.1.pdf (30 pages, 2355364 bytes).
+Output written on whitepaper_1.1.pdf (30 pages, 2355316 bytes).
 
 PDF statistics: 727 PDF objects out of 1000 (max. 8388607)
  557 compressed objects within 6 object streams
