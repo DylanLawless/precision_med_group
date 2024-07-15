@@ -1,0 +1,645 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  28 JUN 2024 16:53
+ restricted system commands enabled.
+**key_products.tex
+(./key_products.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /usr/local/texlive/2018/texmf-var/luatex-cache/gene
+ric)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cache/generic /U
+sers/dantes/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.277 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+          {Key products}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{K
+            ey products}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.3 Products of the \pmu
+                       include
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.4 \acmguru
+           for variant classification and interpretation,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.5 \deepinfer
+             for defining the posterior probability of every genetic determi...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.6 \archipelago
+               for statistical interpretation of VSAT,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.7 \skatrbrain
+              for automated statistical genomics,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.8 \macat
+         for multi-omic joint analysis of VSAT,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.9 \dnasnake
+            for DNA pre-processing
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10 \rnasnake
+             for RNA pre-processing,
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.12 \pipedevdocdna
+                 .
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--13
+[]Key
+ []
+
+! Undefined control sequence.
+l.14 \section
+           {dnasnake: advanced DNA sequencing data preprocessing}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.14 \section{d
+             nasnake: advanced DNA sequencing data preprocessing}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+[]dnasnake:
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.16 D
+    NAsnake represents a vital product from our Precision Medicine Unit, met...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 16--17
+[]DNAsnake
+ []
+
+! Undefined control sequence.
+l.18 \subsection
+              {overview of dnasnake}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.18 \subsection{o
+                verview of dnasnake}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 18--19
+[]overview
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.20 D
+    NAsnake v1.0 is engineered around the GATK best practices for DNA sequen...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 20--21
+[]DNAsnake
+ []
+
+! Undefined control sequence.
+l.22 \subsection
+              {workflow description}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.22 \subsection{w
+                orkflow description}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 22--23
+[]workflow
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.24 T
+    he DNAsnake workflow is detailed and robust, encompassing several critic...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
+[]The
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.26 \begin{enumerate}
+                    
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 26--26
+[] 
+ []
+
+luaotfload | db : Font names database loaded from /usr/local/texlive/2018/texmf-
+var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /usr/local/texlive
+/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)
+Overfull \hbox (27.64pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 Qual-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ity
+ []
+
+
+Overfull \hbox (24.28pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 Con-
+ []
+
+
+Overfull \hbox (18.15001pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 trol
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (21.70001pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 Pre-
+ []
+
+
+Overfull \hbox (51.99pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 processing\nullfont :
+ []
+
+
+Overfull \hbox (31.04001pt too wide) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 Align-
+ []
+
+
+Overfull \hbox (25.39pt too wide) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 ment\nullfont :
+ []
+
+
+Overfull \hbox (26.12999pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 Post-
+ []
+
+
+Overfull \hbox (49.5pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 alignment
+ []
+
+
+Overfull \hbox (18.86pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 Op-
+ []
+
+
+Overfull \hbox (11.49pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 ti-
+ []
+
+
+Overfull \hbox (27.3pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 miza-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 29--30
+\TU/lmr/bx/n/10 tion\nullfont :
+ []
+
+
+Overfull \hbox (25.08pt too wide) in paragraph at lines 30--31
+\TU/lmr/bx/n/10 Vari-
+ []
+
+
+Overfull \hbox (16.12999pt too wide) in paragraph at lines 30--31
+\TU/lmr/bx/n/10 ant
+ []
+
+
+Overfull \hbox (24.11pt too wide) in paragraph at lines 30--31
+\TU/lmr/bx/n/10 Call-
+ []
+
+
+Overfull \hbox (15.33pt too wide) in paragraph at lines 30--31
+\TU/lmr/bx/n/10 ing\nullfont :
+ []
+
+
+Overfull \hbox (23.33pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 Out-
+ []
+
+
+Overfull \hbox (17.25pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 put
+ []
+
+
+Overfull \hbox (24.53pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 Gen-
+ []
+
+
+Overfull \hbox (13.84001pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 er-
+ []
+
+
+Overfull \hbox (9.42pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 a-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 31--32
+\TU/lmr/bx/n/10 tion\nullfont :
+ []
+
+! Undefined control sequence.
+l.34 \subsection
+              {integration with other systems}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--35
+[]integration
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 36--37
+[]Processed
+ []
+
+! Undefined control sequence.
+<recently read> \acmguru 
+         
+l.38     \item \acmguru
+                     {}, for detailed variant classification and interpretat...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+<recently read> \deepinfer 
+           
+l.39     \item \deepinfer
+                       {}, which utilizes the processed data to calculate th...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.42 \subsection
+              {key benefits}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--43
+[]key
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 44--45
+[]By
+ []
+
+
+Overfull \hbox (26.67pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 Stan-
+ []
+
+
+Overfull \hbox (26.94pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 dard-
+ []
+
+
+Overfull \hbox (17.72pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 iza-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 tion
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (17.73001pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 Re-
+ []
+
+
+Overfull \hbox (20.71pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 pro-
+ []
+
+
+Overfull \hbox (37.68001pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 ducibil-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 46--47
+\TU/lmr/bx/n/10 ity\nullfont :
+ []
+
+
+Overfull \hbox (20.97pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 Effi-
+ []
+
+
+Overfull \hbox (31.14001pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 ciency
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (24.11pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 Scal-
+ []
+
+
+Overfull \hbox (9.42pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 a-
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 bil-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 ity\nullfont :
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (13.57pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 te-
+ []
+
+
+Overfull \hbox (19.91pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 gra-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 tion
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (18.31001pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 ter-
+ []
+
+
+Overfull \hbox (15.97pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 op-
+ []
+
+
+Overfull \hbox (13.84001pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 er-
+ []
+
+
+Overfull \hbox (22.19pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 abil-
+ []
+
+
+Overfull \hbox (13.41pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 ity\nullfont :
+ []
+
+! Undefined control sequence.
+l.51 \subsection
+              {conclusion}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 51--52
+[]conclusion 
+ []
+
+)
+! Emergency stop.
+<*> key_products.tex
+                 
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 16 strings out of 494413
+ 100000,89155 words of node,token memory allocated 28466 words of node memory still in use:
+   138 hlist, 40 disc, 24 local_par, 1 dir, 698 glue, 18 kern, 105 penalty, 2963
+ glyph, 90 attribute, 35 glue_spec, 90 attribute_list, 1 temp nodes
+   avail lists: 2:1,4:58,5:12,8:1,10:57
+ 4308 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,417b,128s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

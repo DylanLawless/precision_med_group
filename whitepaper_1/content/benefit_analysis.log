@@ -1,0 +1,780 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  4 JUL 2024 10:59
+ restricted system commands enabled.
+**benefit_analysis.tex
+(./benefit_analysis.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.114 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+          {Benefit analysis}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{B
+            enefit analysis}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[]Benefit
+ []
+
+! Undefined control sequence.
+l.3 \subsection
+             *{Economic impact of sepsis - \citep{van2022hospital}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \subsection*
+              {Economic impact of sepsis - \citep{van2022hospital}}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.3 \subsection*{Economic impact of sepsis - \citep
+                                                 {van2022hospital}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]*Economic
+ []
+
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-bold.luc)
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 6--7
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 7--8
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 7--8
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 7--8
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.10 \subsection
+              *{Genomic insights in critical care for infants - \citep{meng2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.10 ...sights in critical care for infants - \citep
+                                                  {meng2017use}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 10--11
+[]*Genomic
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 12--13
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 14--15
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 14--15
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 14--15
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.17 \subsection
+              *{National scale multi-omics for rare diseases - \citep{lunke2...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.17 ...scale multi-omics for rare diseases - \citep
+                                                  {lunke2023integrated}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 17--18
+[]*National
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 19--20
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 20--21
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 20--21
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 20--21
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.24 \subsection
+              *{Genomic lifespan association in Iceland - \citep{jensson2023...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.24 ...mic lifespan association in Iceland - \citep
+                                                  {jensson2023actionable}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 24--25
+[]*Genomic
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 26--27
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 27--28
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 28--29
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.31 \subsection
+              *{Comprehensive genome analysis in neurodevelopmental disorder...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.31 ...sis in neurodevelopmental disorders - \citep
+                                                  {sanchis2023genome}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 31--32
+[]*Comprehensive
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 33--34
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 34--35
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 34--35
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 34--35
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 35--36
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 35--36
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 35--36
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.38 \subsection
+              *{Rapid whole-genome sequencing in UAE - \citep{abou2023rapid}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 ...apid whole-genome sequencing in UAE - \citep
+                                                  {abou2023rapid}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 38--39
+[]*Rapid
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 40--41
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 41--42
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 41--42
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 41--42
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 42--43
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 42--43
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 42--43
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.45 \subsection
+              *{Genome sequencing for rare diseases - \citep{wojcik2024genome}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.45 ...Genome sequencing for rare diseases - \citep
+                                                  {wojcik2024genome}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
+[]*Genome
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 47--48
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 48--49
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 49--50
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 49--50
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 49--50
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.52 \subsection
+              *{UK and Ireland genomic diagnostics in paediatrics - \citep{w...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.52 ... genomic diagnostics in paediatrics - \citep
+                                                  {wright2023genomic}}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 52--53
+[]*UK
+ []
+
+
+Overfull \hbox (16.95999pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 Pa-
+ []
+
+
+Overfull \hbox (23.47pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 tient
+ []
+
+
+Overfull \hbox (22.04pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 data
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 54--55
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (43.34001pt too wide) in paragraph at lines 55--56
+\TU/lmr/bx/n/10 Method-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 55--56
+\TU/lmr/bx/n/10 ol-
+ []
+
+
+Overfull \hbox (17.57pt too wide) in paragraph at lines 55--56
+\TU/lmr/bx/n/10 ogy\nullfont :
+ []
+
+
+Overfull \hbox (20.35pt too wide) in paragraph at lines 56--57
+\TU/lmr/bx/n/10 Key
+ []
+
+
+Overfull \hbox (30.62999pt too wide) in paragraph at lines 56--57
+\TU/lmr/bx/n/10 statis-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 56--57
+\TU/lmr/bx/n/10 tics\nullfont :
+ []
+
+! Undefined control sequence.
+l.59 \section
+           *{Summary and Future Directions}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 59--60
+[]*Summary
+ []
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 61--62
+[]These
+ []
+
+)
+! Emergency stop.
+<*> benefit_analysis.tex
+                     
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 13 strings out of 494413
+ 100000,89155 words of node,token memory allocated 37332 words of node memory still in use:
+   250 hlist, 52 disc, 36 local_par, 1 dir, 1018 glue, 48 kern, 190 penalty, 362
+2 glyph, 189 attribute, 35 glue_spec, 189 attribute_list, 1 temp nodes
+   avail lists: 2:1,4:51,5:12,8:1,10:50
+ 4305 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,604b,121s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

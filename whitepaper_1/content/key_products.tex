@@ -1,0 +1,55 @@
+\section{Key products}
+
+% Products
+Products of the \pmu include
+\acmguru for variant classification and interpretation,
+\deepinfer for defining the posterior probability of every genetic determinant of disease based on all known public data,
+\archipelago for statistical interpretation of variant set association testing (VSAT),
+\skatrbrain for automated statistical genomics,
+\macat for multi-omic joint analysis of VSAT by aggregated Cauchy association test (ACAT),
+\dnasnake for DNA pre-processing
+\rnasnake for RNA pre-processing, 
+and the documentation of pipelines in
+\pipedevdocdna. 
+
+\subsection{Product example: advanced DNA sequencing data preprocessing}
+
+\dnasnake represents a vital product from our \pmu, meticulously designed to preprocess WGS DNA data for use in clinical genetics reporting, statistical analysis, and machine learning applications. 
+Employing the Genome Analysis Toolkit (GATK), \dnasnake standardises the preparation of DNA sequencing data to ensure consistency and reliability across diverse analytical applications.
+
+%\subsubsection{overview}
+
+\dnasnake is engineered around the GATK best practices for DNA sequence data preprocessing. This workflow is integral to producing high-quality, clinical-grade DNA data outputs, which are crucial for downstream processes like variant interpretation in ACMGuru and assessing genetic determinants of disease with deepInfeR.
+
+%\subsubsection{workflow description}
+
+The \dnasnake workflow is detailed and robust, encompassing several critical stages of DNA preprocessing:
+
+\begin{enumerate}
+    \item \textbf{Quality Control and Pre-processing}: Initial receipt of raw FASTQ files followed by quality control assessments using tools like FastQC and subsequent trimming with Trimmomatic.
+    \item \textbf{Alignment}: Alignment of sequences to the GRCh38 reference genome using the Burrows-Wheeler Aligner (BWA).
+    \item \textbf{Post-alignment Optimization}: Includes marking duplicates with Picard Tools, and base quality score recalibration (BQSR) with GATK’s BaseRecalibrator and ApplyBQSR tools.
+    \item \textbf{Variant Calling}: Utilizing GATK’s HaplotypeCaller for calling germline SNPs and indels, followed by variant quality score recalibration (VQSR) to ensure high-quality variant calls.
+    \item \textbf{Output Generation}: Production of annotated, processed BAM and VCF files ready for comprehensive genetic analysis.
+\end{enumerate}
+
+%\subsubsection{integration with other systems}
+
+Processed outputs from DNAsnake feed directly into:
+\begin{itemize}
+    \item \acmguru{}, for detailed variant classification and interpretation in line with ACMG guidelines.
+    \item \deepinfer{}, which utilizes the processed data to calculate the posterior probabilities of genetic variants, influencing disease phenotypes based on extensive public data repositories.
+\end{itemize}
+
+%\subsubsection{key benefits}
+
+By automating the WGS DNA data preprocessing with \dnasnake, our unit will achieve:
+\begin{itemize}
+    \item \textbf{Standardisation and reproducibility}: Ensures that all samples are processed through a uniform pipeline, reducing variability and enhancing the reliability of results.
+    \item \textbf{Efficiency and scalability}: Capable of handling large-scale datasets with the flexibility to accommodate increasing data volumes without sacrificing performance.
+    \item \textbf{Integration and Interoperability}: Seamlessly interfaces with other analytical tools and databases, promoting a cohesive and integrated approach to precision medicine.
+\end{itemize}
+
+%\subsubsection{conclusion}
+
+\dnasnake exemplifies our commitment to delivering state-of-the-art solutions for genetic data preprocessing. As an element of our single-source management strategy, it not only supports but enhances the capabilities of our precision medicine initiatives, ensuring that data used across various platforms is of the highest quality and utility.

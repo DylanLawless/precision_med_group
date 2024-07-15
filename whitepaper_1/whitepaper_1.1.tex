@@ -1,0 +1,58 @@
+\documentclass{article}
+
+\input{../resources/head_precision_med.tex}
+\input{../resources/variables/variables.tex}
+\input{../resources/variables/ivdr_variables.tex}
+
+\newcommand{\whitepaperversion}{white paper v1.1}
+
+\lhead{\pmu}
+\rhead{}
+\lfoot{\date{\today}}
+\rfoot{\whitepaperversion}
+
+\begin{document}
+%\input{../resources/cover.tex}
+%  \restoregeometry
+
+
+% \date{} % Don't want date printed
+\title{\Large \bf \pmu\\
+{\whitepaperversion}}
+\author[1]{\rm Dylan Lawless, PHD}
+\affil[1]{Department of Intensive Care and Neonatology, \kispi, University of Zürich. {\color{kispilink}Dylan.Lawless@uzh.ch}}
+
+\maketitle
+\color{kispiblack}
+\setstretch{1.0} 
+\tableofcontents
+\setstretch{1.2} 
+\clearpage
+
+\input{content/executive_summary.tex}
+\clearpage
+\input{content/introduction.tex}
+\input{content/key_products.tex}
+\input{content/Multi_omics_integration.tex}
+\input{content/project_management.tex}
+\input{content/data_flow.tex}
+\input{content/Clinical_implementation_and_future_prospects.tex}
+\input{content/strategic_collaborations.tex}
+\input{content/funding_model_and_sustainability.tex}
+\input{content/kpi.tex}
+\input{content/single_source_management.tex}
+\input{content/ivdr.tex}
+\input{content/future_directions_and_innovation.tex}
+\input{content/future_products.tex}
+\input{content/benefit_analysis.tex}
+\clearpage
+\input{content/ip.tex}
+\clearpage
+\input{content/conclusion.tex}
+\input{content/abbreviations.tex}
+
+
+\bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,88 @@
+\usepackage{geometry}
+\geometry{
+    a4paper,
+    left=30mm,
+    right=30mm,
+    top=30mm,
+    bottom=30mm,
+}
+
+\usepackage[footnotes,definitionLists,hashEnumerators,smartEllipses,hybrid]{markdown}
+\usepackage[utf8]{inputenc}
+\usepackage[document]{ragged2e} % remove line justify
+\usepackage{dblfloatfix}
+\usepackage{microtype}
+\usepackage[none]{hyphenat}
+\usepackage{setspace}
+\setstretch{1.2} % Optionally adjust line spacing
+
+\setlength{\RaggedRightParindent}{\parindent}
+\setlength{\parskip}{1em}
+  
+\usepackage{fontspec}
+%\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
+\setmainfont{Source Sans Pro--Light}[BoldFont={Source Sans Pro-Regular}, ItalicFont={Source Sans Pro-Light Italic},]
+
+\usepackage{xurl} % for '\url' macro
+\usepackage{xcolor}
+\definecolor{kispiblack}{HTML}{333333}
+\definecolor{kispidarkblue}{HTML}{023047}
+\definecolor{kispidarkgreen}{HTML}{006666}
+\definecolor{kispired}{HTML}{C70000}
+\definecolor{kispilink}{HTML}{007DB8}%219EBC
+% \color{kispi_black} %default
+
+% command to use these colors and formatting; xspace for correct spacing including with punctuation marks.
+\usepackage{xspace}
+\newcommand{\variablesdarkgreen}[1]{\textbf{\textcolor{kispidarkgreen}{#1}}\xspace}
+
+% \color{kispiblack} 
+
+ % green #219EBC
+% darkgreen #006666
+
+\usepackage{authblk}
+\usepackage{lineno}
+\usepackage{enumitem}
+\setlist[itemize]{noitemsep}
+
+\usepackage{siunitx} % SI units
+
+
+\usepackage[colorlinks]{hyperref}
+\hypersetup{
+    linkcolor={kispilink},
+    citecolor={kispilink},
+    filecolor=blue!50!black,
+    urlcolor=kispilink,
+}
+
+\usepackage{natbib}
+\setcitestyle{square,numbers,sort&compress}
+\usepackage{hypernat}
+
+\usepackage{graphicx}
+\graphicspath{ {images/} }
+
+\usepackage{booktabs}
+\usepackage{rotating, tabularx}
+\usepackage{ltablex}
+\usepackage{caption}
+\captionsetup{font=normalsize}
+
+\usepackage{pdflscape}
+\usepackage{multirow}
+
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+%\lhead{Lecture 1}
+%\rhead{Handout 1}
+%\lfoot{Lecture 1}
+%\rfoot{Handout 1}
+\usepackage{tocloft}  % Customizing the Table of Contents
+\setcounter{tocdepth}{1}
+
+% cover
+
+%\usepackage[a4paper,margin=5pt]{geometry}
+

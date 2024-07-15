@@ -1,0 +1,117 @@
+\section{In Vitro Diagnostic Medical Devices Regulation (IVDR)  compliance documentation and version controls}
+
+\subsection{Introduction to IVDR}
+
+The In Vitro Diagnostic Medical Devices Regulation (IVDR) is an essential legislative framework that governs the safety and performance of in vitro diagnostic medical devices (IVDs) within the European Union. Implemented to enhance patient safety and ensure high standards of quality, the IVDR was adopted alongside the Medical Devices Regulation (MDR) to update and replace directives established in the 1990s, reflecting significant technological and scientific advancements in the sector.
+
+The IVDR, Regulation (EU) 2017/746, was published in May 2017 and became fully applicable on May 26, 2022. This regulation introduces a risk-based classification system, stricter pre-market scrutiny, and enhanced transparency through a comprehensive EU database on medical devices (EUDAMED). It mandates clear obligations for economic operators, including manufacturers, importers, and distributors, and strengthens post-market surveillance and vigilance requirements. 
+This regulatory framework is crucial for ensuring that in vitro diagnostic devices meet the latest standards for safety and efficacy, supporting the health and well-being of Swiss and EU citizens.
+For detailed guidance and documents endorsed by the Medical Device Coordination Group (MDCG), we refer to the European Commission's dedicated page on IVDR: \url{https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en}.
+
+The relevant resources for detailed guidelines can be found here:
+\begin{itemize}
+    \item International Council for Harmonisation of Technical Requirements for Pharmaceuticals for Human Use (ICH) Quality Guidelines: \url{https://www.ich.org/page/quality-guidelines}
+    \item European Medicines Agency (EMA) Scientific Guidelines: \url{https://www.ema.europa.eu/en/human-regulatory/research-development/scientific-guidelines}
+    \item Eudralex - The rules governing medicinal products in the European Union: \url{https://health.ec.europa.eu/medicinal-products/eudralex_en}
+\end{itemize}
+
+We are developing a unique method of single-source management combined with an everything-as-code approach to systematically address IVDR compliance from the outset. In many commercial companies, regulatory compliance is typically managed by a dedicated team. However, by adopting our planned system of linked documentation from the start, we can automate much of this process. 
+This proactive approach makes the entire audit process more straightforward and less stressful, provided our members are on board with using this system.
+
+\subsection{Example: Compliance and audit}
+
+During audits, it is common for auditors to select a specific piece of information, such as a patient ID, a reference file, or a code repository, and then verify compliance by reviewing all related documentation and data. Our system simplifies this process by automatically linking and tagging every relevant document and dataset to the selected item.
+
+To perform an audit, we execute a command that initiates a thorough search through our integrated system, pulling together all connected data and documentation. This network of information, pre-prepared and linked, serves as the foundation for our audit documentation. The audit reports are dynamically populated with the relevant variables pulled from our single-source variable files, which meticulously list every piece of reference data and code repositories, including metadata. This ensures that each piece of information is traceable and verifiable at any moment.
+
+This approach not only secures ongoing compliance but also enables us to demonstrate our adherence to IVDR standards effectively and transparently at any time. The efficiency of this process significantly simplifies the audit procedure, reducing the workload typically managed by a dedicated regulatory team and thereby enhancing our operational efficiency and compliance reliability.
+
+The following example demonstrates some of the variables used to automatically retrieve the linked data.
+
+\subsubsection{Document Control}
+\begin{itemize}
+    \item \textbf{Document ID:} \documentID
+    \item \textbf{Version:} \documentVersion
+    \item \textbf{Approval date:} [Insert Date]
+    \item \textbf{Review cycle:} Annually or upon significant changes to the pipeline, software, or regulatory guidelines.
+\end{itemize}
+
+\subsubsection{Introduction}
+\begin{itemize}
+    \item \textbf{Purpose:} To detail the version control practices and database management strategies employed in \dnasnake for IVDR compliance.\\
+    \item \textbf{Scope:} Includes software version control, database management, and change tracking for compliance with regulatory requirements.
+\end{itemize}
+
+\subsubsection{System overview}
+\begin{itemize}
+    \item \textbf{Pipeline Name:} \dnasnake\\
+    \item \textbf{Version Control System:} Git\\
+    \item\textbf{Components:}
+\begin{itemize}
+    \item GATK for variant detection.
+    \item Ensembl VEP for annotation.
+    \item \referenceGenome as the reference genome.
+\end{itemize}
+\end{itemize}
+
+\subsubsection{Version control management}
+\textbf{Git repository details:}
+\begin{itemize}
+    \item \textbf{\dnasnake Repository:} \gitRepoDNAsnake
+     \item \textbf{\dnasnake commit:} \gitRepoDNAsnakeCommit
+    \item \textbf{GATK repository:} \gitRepoGATK
+	\item \textbf{GATK commit:} \gitRepoGATKCommit
+    \item \textbf{Ensembl VEP repository:} \gitRepoVEP
+	\item \textbf{Ensembl VEP commit:} \gitRepoVEPCommit
+    \item \textbf{Example commit check:} Use \texttt{git log --oneline} to review recent commits and ensure updates are tracked.
+\end{itemize}
+\textbf{Release management:}
+\begin{itemize}
+    \item \textbf{Release tag used:} \texttt{git tag -a \gitRepoDNAsnakeTag -m "Release version 1.0 for clinical deployment"}
+    \item \textbf{Check out release:} \texttt{git checkout tags/\gitRepoDNAsnakeTag}
+\end{itemize}
+
+\subsubsection{Reference genome details}
+\begin{itemize}
+    \item \textbf{Internal usage documentation:} \referenceGenomeDoc\\
+    \item \textbf{Genome name:}  \referenceGenome\\
+    \item \textbf{Genome version:} \referenceGenomeVersion\\
+    \item \textbf{Source and location:} \referenceGenomeSource\\
+    \item \textbf{Checksum/Hash Value:} To verify integrity before use.
+    \item \textbf{Updating reference data:} Process for updating reference genome versions documented in \texttt{REF\_UPDATE.md} at the repository root.
+\end{itemize}
+
+Note: see how PacBio does this:\url{https://github.com/PacificBiosciences/reference_genomes/blob/main/reference_genomes/human_GRCh38_no_alt_analysis_set/human_GRCh38_no_alt_analysis_set.sh}
+
+\subsubsection{Metadata and compliance tracking}
+\textbf{Metadata repository integration:}
+\begin{itemize}
+    \item \textbf{System name:} Clinical metadata repository (CMR)
+    \item \textbf{Metadata includes:} Version tracking, processing steps, QC metrics, and usage logs.
+    \item \textbf{Automated metadata logging:} Scripts to pull version info and log it in CMR.
+    \item \textbf{Example metadata retrieval command:} \texttt{git describe --tags --always}
+\end{itemize}
+
+\subsubsection{Compliance tagging and audit trails}
+\textbf{Audit trail setup:}
+\begin{itemize}
+    \item \textbf{Log commands:} \texttt{git log --since="YYYY-MM-DD" --grep="\ivdrCompliantTag"}
+    \item \textbf{Audit reports:} Automatically generated from CMR data, including Git tag and commit references for audit periods.
+\end{itemize}
+
+\subsubsection{Case study and example documentation}
+\begin{itemize}
+    \item \textbf{Example usage:} Document a hypothetical use case where \dnasnake processes a sample, including Git commit IDs for software and reference data used.\\
+    \item \textbf{Compliance Example:} Show a compliance check with links to Git commits proving usage of the validated versions.
+\end{itemize}
+
+\subsubsection{Conclusion}
+\textbf{Summary:} Emphasises the robustness of the version-controlled environment in maintaining IVDR compliance and ensuring the reproducibility and reliability of clinical diagnostics.
+
+\subsubsection{Appendices}
+\begin{itemize}
+    \item \textbf{A. Git command reference:} Common commands used for version control in the project.
+    \item \textbf{B. Change management logs:} Example format for documenting significant changes.
+    \item \textbf{C. Compliance tag definitions:} Detailed explanation of tags used for IVDR compliance.
+\end{itemize}
+

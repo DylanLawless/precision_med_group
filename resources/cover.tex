@@ -1,0 +1,70 @@
+% cover.tex
+% Custom geometry for the cover page
+\newgeometry{margin=5pt} % Adjust as per your custom requirements
+
+% Coffin setup and content goes here
+
+% Restore the original geometry after the cover page
+
+  \NewCoffin \result
+  \NewCoffin \aaa
+  \NewCoffin \bbb
+  \NewCoffin \ccc
+  \NewCoffin \ddd
+  \NewCoffin \eee
+  \NewCoffin \fff
+  \NewCoffin \rulei
+  \NewCoffin \ruleii
+  \NewCoffin \ruleiii
+
+\SetHorizontalCoffin \result {}
+\SetHorizontalCoffin \aaa {\fontsize{52}{50}\sffamily\bfseries White paper\hspace{0cm}}
+
+
+\SetHorizontalCoffin \bbb {\fontsize{52}{50}\sffamily\bfseries project overview}
+
+
+\SetHorizontalCoffin \ccc {\fontsize{12}{10}\sffamily 
+                      \quad test test test  test 
+                       test  test  test 
+                     \textbullet{} \date{\today}}
+                     
+                     
+
+\SetVerticalCoffin \ddd {180pt}
+                 {\raggedleft\fontsize{28}{20}\sffamily\bfseries 
+                 Precision \\
+                 medicine \\
+                 unit \\
+                 \vspace{-6em}
+                  }
+                                      
+
+                      
+      \SetHorizontalCoffin \eee {\fontsize{31}{36}\sffamily Dylan Lawless
+				\vspace{-14em}}
+				                
+\SetVerticalCoffin \fff {140pt}
+                 {\raggedright \fontsize{13}{14}\sffamily\bfseries 
+                        The Precision Medicine Unit at Kinderspital Zurich represents the forefront of medical science, utilising an integrated multi-omics approach to augment paediatric healthcare. This strategy extends beyond genomic data to incorporate a wide array of omics technologies. }
+
+\RotateCoffin \bbb {90}
+\RotateCoffin \ccc {270}
+
+\SetHorizontalCoffin \rulei  {\color{kispidarkgreen}\rule{6.5in}{1pc}}
+
+\SetHorizontalCoffin \ruleii {\color{kispidarkgreen}\rule{1pc}{23.5cm}}
+
+\SetHorizontalCoffin \ruleiii{\color{kispidarkgreen}\rule{10pt}{152pt}}
+
+
+\JoinCoffins \result                \aaa 
+\JoinCoffins \result[\aaa-t,\aaa-r] \rulei   [b,r](0pt,2mm)
+\JoinCoffins \result[\aaa-b,\aaa-l] \bbb     [B,r](2pt,0pt)
+\JoinCoffins \result[\bbb-t,\bbb-r] \ruleii  [t,r](-2mm,0pt)
+\JoinCoffins \result[\aaa-B,\aaa-r] \ccc     [B,l](66pt,14pc)
+\JoinCoffins \result[\bbb-l,\ccc-B] \fff     [t,r](-2mm,0pt)
+\JoinCoffins \result[\fff-b,\fff-r] \ruleiii [b,l](2mm,0pt)
+\JoinCoffins \result[\ccc-r,\fff-l] \eee     [B,r]
+\JoinCoffins \result[\eee-T,\eee-r] \ddd     [B,r](0pt,4pc)
+\TypesetCoffin \result

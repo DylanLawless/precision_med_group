@@ -1,0 +1,2006 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  15 JUL 2024 13:05
+ restricted system commands enabled.
+**whitepaper_1.1.tex
+(./whitepaper_1.1.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.188 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
+Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/size10.clo
+File: size10.clo 2014/09/29 v1.4h Standard LaTeX file (size option)
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-regular.luc))
+\c@part=\count80
+\c@section=\count81
+\c@subsection=\count82
+\c@subsubsection=\count83
+\c@paragraph=\count84
+\c@subparagraph=\count85
+\c@figure=\count86
+\c@table=\count87
+\abovecaptionskip=\skip41
+\belowcaptionskip=\skip42
+\bibindent=\dimen102
+) (../resources/head_precision_med.tex
+(/usr/local/texlive/2018/texmf-dist/tex/latex/geometry/geometry.sty
+Package: geometry 2018/03/24 v5.7 Page Geometry
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks14
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifpdf.sty
+Package: ifpdf 2017/03/15 v3.2 Provides the ifpdf switch
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/ifvtex.sty
+Package: ifvtex 2016/05/16 v1.6 Detect VTeX and its facilities (HO)
+Package ifvtex Info: VTeX not detected.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/ifxetex/ifxetex.sty
+Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
+)
+\Gm@cnth=\count88
+\Gm@cntv=\count89
+\c@Gm@tempcnt=\count90
+\Gm@bindingoffset=\dimen103
+\Gm@wd@mp=\dimen104
+\Gm@odd@mp=\dimen105
+\Gm@even@mp=\dimen106
+\Gm@layoutwidth=\dimen107
+\Gm@layoutheight=\dimen108
+\Gm@layouthoffset=\dimen109
+\Gm@layoutvoffset=\dimen110
+\Gm@dimlist=\toks15
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/markdown/markdown.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/url/url.sty
+\Urlmuskip=\muskip10
+Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphicx.sty
+Package: graphicx 2017/06/01 v1.1a Enhanced LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/graphics.sty
+Package: graphics 2017/06/25 v1.2c Standard LaTeX Graphics (DPC,SPQR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: luatex.def on input line 99.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-def/luatex.def
+File: luatex.def 2018/01/08 v1.0l Graphics/color driver for luatex
+))
+\Gin@req@height=\dimen111
+\Gin@req@width=\dimen112
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancyvrb/fancyvrb.sty
+Package: fancyvrb 2008/02/07
+
+Style option: `fancyvrb' v2.7a, with DG/SPQR fixes, and firstline=lastline fix 
+<2008/02/07> (tvz)
+\FV@CodeLineNo=\count91
+\FV@InFile=\read1
+\FV@TabBox=\box26
+\c@FancyVerbLine=\count92
+\FV@StepNumber=\count93
+\FV@OutFile=\write3
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/csvsimple/csvsimple.sty
+Package: csvsimple 2016/07/01 version 1.20 LaTeX CSV file processing
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/pgf/utilities/pgfkeys.sty
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeys.code.tex
+\pgfkeys@pathtoks=\toks16
+\pgfkeys@temptoks=\toks17
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/pgf/utilities/pgfkeysfiltered.c
+ode.tex
+\pgfkeys@tmptoks=\toks18
+))) (/usr/local/texlive/2018/texmf-dist/tex/latex/etoolbox/etoolbox.sty
+Package: etoolbox 2018/02/11 v2.5e e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count94
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/tools/shellesc.sty
+Package: shellesc 2016/06/07 v0.02a unified shell escape interface for LaTeX
+Package shellesc Info: Restricted shell escape enabled on input line 69.
+)
+\csv@file=\read2
+\c@csvinputline=\count95
+\c@csvrow=\count96
+\c@csvcol=\count97
+\csv@out=\write4
+)
+(/usr/local/texlive/2018/texmf-dist/tex/generic/markdown/markdown.tex
+\markdownInputFileStream=\read3
+\markdownOutputFileStream=\write5
+(l.561) markdown.tex info: Using mode 2: Direct Lua access.
+)
+Package: markdown 2018/04/08 v2.5.6 markdown renderer
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/paralist/paralist.sty
+Package: paralist 2017/01/22 v2.7 Extended list environments
+\pltopsep=\skip43
+\plpartopsep=\skip44
+\plitemsep=\skip45
+\plparsep=\skip46
+\pl@lab=\toks19
+)
+\markdownLaTeXCitationsCounter=\count98
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/inputenc.sty
+Package: inputenc 2018/04/06 v1.3b Input encoding file
+\inpenc@prehook=\toks20
+\inpenc@posthook=\toks21
+
+
+Package inputenc Warning: inputenc package ignored with utf8 based engines.
+
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/ms/ragged2e.sty
+Package: ragged2e 2009/05/21 v2.1 ragged2e Package (MS)
+
+
+LaTeX Warning: Command \@arrayparboxrestore  has changed.
+               Check if current package is valid.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ms/everysel.sty
+Package: everysel 2011/10/28 v1.2 EverySelectfont Package (MS)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/footmisc/footmisc.sty
+Package: footmisc 2011/06/06 v5.5b a miscellany of footnote facilities
+\FN@temptoken=\toks22
+\footnotemargin=\dimen113
+\c@pp@next@reset=\count99
+Package footmisc Info: Declaring symbol style bringhurst on input line 855.
+Package footmisc Info: Declaring symbol style chicago on input line 863.
+Package footmisc Info: Declaring symbol style wiley on input line 872.
+Package footmisc Info: Declaring symbol style lamport-robust on input line 883.
+Package footmisc Info: Declaring symbol style lamport* on input line 903.
+Package footmisc Info: Declaring symbol style lamport*-robust on input line 924.
+
+)
+\CenteringLeftskip=\skip47
+\RaggedLeftLeftskip=\skip48
+\RaggedRightLeftskip=\skip49
+\CenteringRightskip=\skip50
+\RaggedLeftRightskip=\skip51
+\RaggedRightRightskip=\skip52
+\CenteringParfillskip=\skip53
+\RaggedLeftParfillskip=\skip54
+\RaggedRightParfillskip=\skip55
+\JustifyingParfillskip=\skip56
+\CenteringParindent=\skip57
+\RaggedLeftParindent=\skip58
+\RaggedRightParindent=\skip59
+\JustifyingParindent=\skip60
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/dblfloatfix/dblfloatfix.sty
+Package: dblfloatfix 2012/12/31 v1.0a (JAW)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fixltx2e.sty
+Package: fixltx2e 2016/12/29 v2.1a fixes to LaTeX (obsolete)
+Applying: [2015/01/01] Old fixltx2e package on input line 46.
+
+
+Package fixltx2e Warning: fixltx2e is not required with releases after 2015
+(fixltx2e)                All fixes are now in the LaTeX kernel.
+(fixltx2e)                See the latexrelease package for details.
+
+Already applied: [0000/00/00] Old fixltx2e package on input line 53.
+)
+\@dblbotnum=\count100
+\c@dblbotnumber=\count101
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.sty
+Package: microtype 2018/01/14 v2.7a Micro-typographical refinements (RS)
+\MT@toks=\toks23
+\MT@count=\count102
+LaTeX Info: Redefining \textls on input line 793.
+\MT@outer@kern=\dimen114
+LaTeX Info: Redefining \textmicrotypecontext on input line 1339.
+\MT@listname@count=\count103
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype-luatex.def
+File: microtype-luatex.def 2018/01/14 v2.7a Definitions specific to luatex (RS)
+Lua module: microtype 2018/01/14 2.7a microtype module.
+LaTeX Info: Redefining \lsstyle on input line 679.
+LaTeX Info: Redefining \lslig on input line 679.
+\MT@outer@space=\skip61
+)
+Package microtype Info: Loading configuration file microtype.cfg.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/microtype.cfg
+File: microtype.cfg 2018/01/14 v2.7a microtype main configuration file (RS)
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyphenat/hyphenat.sty
+Package: hyphenat 2009/09/02 v2.3c hyphenation utilities
+\langwohyphens=\language2
+LaTeX Info: Redefining \_ on input line 43.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/setspace/setspace.sty
+Package: setspace 2011/12/19 v6.7a set line spacing
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/xparse/xparse.sty
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3.sty
+Package: expl3 2018/03/05 L3 programming layer (loader) 
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/expl3-code.tex
+Package: expl3 2018/03/05 L3 programming layer (code)
+\ucharcat@table=\catcodetable5
+\c_max_int=\count104
+\l_tmpa_int=\count105
+\l_tmpb_int=\count106
+\g_tmpa_int=\count107
+\g_tmpb_int=\count108
+\g__intarray_font_int=\count109
+\g__prg_map_int=\count110
+\c_log_iow=\count111
+\l_iow_line_count_int=\count112
+\l__iow_line_target_int=\count113
+\l__iow_one_indent_int=\count114
+\l__iow_indent_int=\count115
+\c_zero_dim=\dimen115
+\c_max_dim=\dimen116
+\l_tmpa_dim=\dimen117
+\l_tmpb_dim=\dimen118
+\g_tmpa_dim=\dimen119
+\g_tmpb_dim=\dimen120
+\c_zero_skip=\skip62
+\c_max_skip=\skip63
+\l_tmpa_skip=\skip64
+\l_tmpb_skip=\skip65
+\g_tmpa_skip=\skip66
+\g_tmpb_skip=\skip67
+\c_zero_muskip=\muskip11
+\c_max_muskip=\muskip12
+\l_tmpa_muskip=\muskip13
+\l_tmpb_muskip=\muskip14
+\g_tmpa_muskip=\muskip15
+\g_tmpb_muskip=\muskip16
+\l_keys_choice_int=\count116
+\c__fp_leading_shift_int=\count117
+\c__fp_middle_shift_int=\count118
+\c__fp_trailing_shift_int=\count119
+\c__fp_big_leading_shift_int=\count120
+\c__fp_big_middle_shift_int=\count121
+\c__fp_big_trailing_shift_int=\count122
+\c__fp_Bigg_leading_shift_int=\count123
+\c__fp_Bigg_middle_shift_int=\count124
+\c__fp_Bigg_trailing_shift_int=\count125
+\c__fp_rand_size_int=\count126
+\c__fp_rand_four_int=\count127
+\c__fp_rand_eight_int=\count128
+\l__sort_length_int=\count129
+\l__sort_min_int=\count130
+\l__sort_top_int=\count131
+\l__sort_max_int=\count132
+\l__sort_true_max_int=\count133
+\l__sort_block_int=\count134
+\l__sort_begin_int=\count135
+\l__sort_end_int=\count136
+\l__sort_A_int=\count137
+\l__sort_B_int=\count138
+\l__sort_C_int=\count139
+\l__tl_build_start_index_int=\count140
+\l__tl_build_index_int=\count141
+\l__tl_analysis_normal_int=\count142
+\l__tl_analysis_index_int=\count143
+\l__tl_analysis_nesting_int=\count144
+\l__tl_analysis_type_int=\count145
+\l__regex_internal_a_int=\count146
+\l__regex_internal_b_int=\count147
+\l__regex_internal_c_int=\count148
+\l__regex_balance_int=\count149
+\l__regex_group_level_int=\count150
+\l__regex_mode_int=\count151
+\c__regex_cs_in_class_mode_int=\count152
+\c__regex_cs_mode_int=\count153
+\l__regex_catcodes_int=\count154
+\l__regex_default_catcodes_int=\count155
+\c__regex_catcode_L_int=\count156
+\c__regex_catcode_O_int=\count157
+\c__regex_catcode_A_int=\count158
+\c__regex_all_catcodes_int=\count159
+\l__regex_show_lines_int=\count160
+\l__regex_min_state_int=\count161
+\l__regex_max_state_int=\count162
+\l__regex_left_state_int=\count163
+\l__regex_right_state_int=\count164
+\l__regex_capturing_group_int=\count165
+\l__regex_min_pos_int=\count166
+\l__regex_max_pos_int=\count167
+\l__regex_curr_pos_int=\count168
+\l__regex_start_pos_int=\count169
+\l__regex_success_pos_int=\count170
+\l__regex_curr_char_int=\count171
+\l__regex_curr_catcode_int=\count172
+\l__regex_last_char_int=\count173
+\l__regex_case_changed_char_int=\count174
+\l__regex_curr_state_int=\count175
+\l__regex_step_int=\count176
+\l__regex_min_active_int=\count177
+\l__regex_max_active_int=\count178
+\l__regex_replacement_csnames_int=\count179
+\l__regex_match_count_int=\count180
+\l__regex_min_submatch_int=\count181
+\l__regex_submatch_int=\count182
+\l__regex_zeroth_submatch_int=\count183
+\g__regex_trace_regex_int=\count184
+\c_empty_box=\box27
+\l_tmpa_box=\box28
+\l_tmpb_box=\box29
+\g_tmpa_box=\box30
+\g_tmpb_box=\box31
+\l__box_top_dim=\dimen121
+\l__box_bottom_dim=\dimen122
+\l__box_left_dim=\dimen123
+\l__box_right_dim=\dimen124
+\l__box_top_new_dim=\dimen125
+\l__box_bottom_new_dim=\dimen126
+\l__box_left_new_dim=\dimen127
+\l__box_right_new_dim=\dimen128
+\l__box_internal_box=\box32
+\l__coffin_internal_box=\box33
+\l__coffin_internal_dim=\dimen129
+\l__coffin_offset_x_dim=\dimen130
+\l__coffin_offset_y_dim=\dimen131
+\l__coffin_x_dim=\dimen132
+\l__coffin_y_dim=\dimen133
+\l__coffin_x_prime_dim=\dimen134
+\l__coffin_y_prime_dim=\dimen135
+\c_empty_coffin=\box34
+\l__coffin_aligned_coffin=\box35
+\l__coffin_aligned_internal_coffin=\box36
+\l_tmpa_coffin=\box37
+\l_tmpb_coffin=\box38
+\l__coffin_display_coffin=\box39
+\l__coffin_display_coord_coffin=\box40
+\l__coffin_display_pole_coffin=\box41
+\l__coffin_display_offset_dim=\dimen136
+\l__coffin_display_x_dim=\dimen137
+\l__coffin_display_y_dim=\dimen138
+\l__coffin_bounding_shift_dim=\dimen139
+\l__coffin_left_corner_dim=\dimen140
+\l__coffin_right_corner_dim=\dimen141
+\l__coffin_bottom_corner_dim=\dimen142
+\l__coffin_top_corner_dim=\dimen143
+\l__coffin_scaled_total_height_dim=\dimen144
+\l__coffin_scaled_width_dim=\dimen145
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3kernel/l3pdfmode.def
+File: l3pdfmode.def 2017/03/18 v L3 Experimental driver: PDF mode
+\l__driver_color_stack_int=\count185
+))
+Package: xparse 2018/02/21 L3 Experimental document command parser
+\l__xparse_current_arg_int=\count186
+\g__xparse_grabber_int=\count187
+\l__xparse_m_args_int=\count188
+\l__xparse_mandatory_args_int=\count189
+\l__xparse_v_nesting_int=\count190
+)
+Package: fontspec 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTeX
+Lua module: fontspec 2017/11/09 2.6g Font selection for XeLaTeX and LuaLaTeX
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec-luatex.sty
+Package: fontspec-luatex 2017/11/09 v2.6g Font selection for XeLaTeX and LuaLaTe
+X
+\l__fontspec_script_int=\count191
+\l__fontspec_language_int=\count192
+\l__fontspec_strnum_int=\count193
+\l__fontspec_tmp_int=\count194
+\l__fontspec_em_int=\count195
+\l__fontspec_emdef_int=\count196
+\l__fontspec_strong_int=\count197
+\l__fontspec_strongdef_int=\count198
+\l__fontspec_tmpa_dim=\dimen146
+\l__fontspec_tmpb_dim=\dimen147
+\l__fontspec_tmpc_dim=\dimen148
+\g__file_internal_ior=\read4
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/fontenc.sty
+Package: fontenc 2017/04/05 v2.0i Standard LaTeX package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/base/tuenc.def
+File: tuenc.def 2017/04/05 v2.0i Standard LaTeX file
+LaTeX Font Info:    Redeclaring font encoding TU on input line 82.
+))
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \fontspec with sig. 'O{}mO{}' on line 545.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmainfont with sig. 'O{}mO{}' on line 549.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setsansfont with sig. 'O{}mO{}' on line 553.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmonofont with sig. 'O{}mO{}' on line 557.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathrm with sig. 'O{}mO{}' on line 561.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setboldmathrm with sig. 'O{}mO{}' on line 565.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathsf with sig. 'O{}mO{}' on line 569.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setmathtt with sig. 'O{}mO{}' on line 573.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \setromanfont with sig. 'O{}mO{}' on line 577.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfamily with sig. 'mO{}mO{}' on line 581.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontface with sig. 'mO{}mO{}' on line 585.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \defaultfontfeatures with sig. 't+om' on line 589.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeatures with sig. 'm' on line 593.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \addfontfeature with sig. 'm' on line 597.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontfeature with sig. 'mm' on line 601.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newAATfeature with sig. 'mmmm' on line 605.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newopentypefeature with sig. 'mmm' on line 609.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newICUfeature with sig. 'mmm' on line 613.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeature with sig. 'mm' on line 617.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \aliasfontfeatureoption with sig. 'mmm' on line 621.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontscript with sig. 'mm' on line 625.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \newfontlanguage with sig. 'mm' on line 629.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareFontsExtensions with sig. 'm' on line 633.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \IfFontFeatureActiveTF with sig. 'mmm' on line 637.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCommand with sig. 'mO{}m' on line 3366.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingAccent with sig. 'mm' on line 3372.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingSymbol with sig. 'mm' on line 3378.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingComposite with sig. 'mmm' on line 3384.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \EncodingCompositeCommand with sig. 'mmm' on line 3390.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareUnicodeEncoding with sig. 'mm' on line 3415.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareSymbol with sig. 'm' on line 3421.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareAccent with sig. 'm' on line 3427.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareCommand with sig. 'm' on line 3433.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \UndeclareComposite with sig. 'mm' on line 3440.
+.................................................
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fontspec/fontspec.cfg)
+LaTeX Info: Redefining \itshape on input line 3625.
+LaTeX Info: Redefining \slshape on input line 3630.
+LaTeX Info: Redefining \scshape on input line 3635.
+LaTeX Info: Redefining \upshape on input line 3640.
+LaTeX Info: Redefining \em on input line 3670.
+LaTeX Info: Redefining \emph on input line 3695.
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/lmroman10-bold.luc)(load luc: /Users/lawless/Library/texlive/2018/texmf-
+var/luatex-cache/generic/fonts/otl/lmroman10-italic.luc)
+LaTeX Info: Redefining \- on input line 3749.
+.................................................
+. LaTeX info: "xparse/redefine-command"
+. 
+. Redefining command \oldstylenums with sig. 'm' on line 3844.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \liningnums with sig. 'm' on line 3848.
+.................................................
+))
+luaotfload | cache : Lookup cache loaded from /Users/lawless/Library/texlive/201
+8/texmf-var/luatex-cache/generic/names/luaotfload-lookup-cache.luc.(load luc: /U
+sers/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/sourc
+esanspro-light.luc)
+\g__fontspec_family_SourceSansPro--Light_int=\count199
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/sourcesanspro-lightit.luc)
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "SourceSansPro-LightItalic/B" (it probably doesn't
+. exist).
+.................................................
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/sourcesanspro-regular.luc)
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "SourceSansPro-Regular/I" (it probably doesn't
+. exist).
+.................................................
+.................................................
+. fontspec info: "no-font-shape"
+. 
+. Could not resolve font "SourceSansPro--Light/BI" (it probably doesn't
+. exist).
+.................................................
+luaotfload | aux : font no 27 (nil) does not define feature smcp for script latn
+ with language dflt
+luaotfload | aux : no font with id 27
+.................................................
+. fontspec info: "defining-font"
+. 
+. Font family 'SourceSansPro--Light(0)' created for font 'Source Sans
+. Pro--Light' with options [Ligatures=TeX,BoldFont={Source Sans
+. Pro-Regular},ItalicFont={Source Sans Pro-Light Italic}].
+.  
+.  This font family consists of the following NFSS series/shapes:
+.  
+. - 'normal' (m/n) with NFSS spec.:
+. <->"SourceSansPro--Light:mode=node;script=latn;language=DFLT;+tlig;"
+. - 'small caps'  (m/sc) with NFSS spec.:
+. <->"SourceSansPro--Light:mode=node;script=latn;language=DFLT;+tlig;+smcp;"
+. - 'bold' (bx/n) with NFSS spec.:
+. <->"SourceSansPro-Regular:mode=node;script=latn;language=DFLT;+tlig;"
+. - 'bold small caps'  (bx/sc) with NFSS spec.:
+. <->"SourceSansPro-Regular:mode=node;script=latn;language=DFLT;+tlig;+smcp;"
+. - 'italic' (m/it) with NFSS spec.:
+. <->"SourceSansPro-LightItalic:mode=node;script=latn;language=DFLT;+tlig;"
+. - 'italic small caps'  (m/itsc) with NFSS spec.: 
+.................................................
+LaTeX Info: Redefining \rmfamily on input line 24.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xurl/xurl.sty
+Package: xurl 2018/01/09 v 0.03 modify URL breaks
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/xcolor/xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics-cfg/color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: luatex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/xspace.sty
+Package: xspace 2014/10/28 v1.13 Space after command names (DPC,MH)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/preprint/authblk.sty
+Package: authblk 2001/02/27 1.3 (PWD)
+\affilsep=\skip68
+\@affilsep=\skip69
+\c@Maxaffil=\count266
+\c@authors=\count267
+\c@affil=\count268
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/lineno/lineno.sty
+Package: lineno 2005/11/02 line numbers on paragraphs v4.41
+\linenopenalty=\count269
+\output=\toks24
+\linenoprevgraf=\count270
+\linenumbersep=\dimen149
+\linenumberwidth=\dimen150
+\c@linenumber=\count271
+\c@pagewiselinenumber=\count272
+\c@LN@truepage=\count273
+\c@internallinenumber=\count274
+\c@internallinenumbers=\count275
+\quotelinenumbersep=\dimen151
+\bframerule=\dimen152
+\bframesep=\dimen153
+\bframebox=\box42
+LaTeX Info: Redefining \\ on input line 3056.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/enumitem/enumitem.sty
+Package: enumitem 2011/09/28 v3.5.2 Customized lists
+\labelindent=\skip70
+\enit@outerparindent=\dimen154
+\enit@toks=\toks25
+\enit@inbox=\box43
+\enitdp@description=\count276
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx.sty
+Package: siunitx 2018-03-20 v2.7m A comprehensive (SI) units package
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amstext.sty
+Package: amstext 2000/06/29 v2.01 AMS text
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/amsmath/amsgen.sty
+File: amsgen.sty 1999/11/30 v2.0 generic functions
+\@emptytoks=\toks26
+\ex@=\dimen155
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/array.sty
+Package: array 2018/04/07 v2.4g Tabular extension package (FMi)
+\col@sep=\dimen156
+\ar@mcellbox=\box44
+\extrarowheight=\dimen157
+\NC@list=\toks27
+\extratabsurround=\skip71
+\backup@length=\skip72
+\ar@cellbox=\box45
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/l3packages/l3keys2e/l3keys2e.sty
+Package: l3keys2e 2018/02/21 LaTeX2e option processing using LaTeX3 keys
+)
+\l__siunitx_tmp_box=\box46
+\l__siunitx_tmp_dim=\dimen158
+\l__siunitx_tmp_int=\count277
+\l__siunitx_number_mantissa_length_int=\count278
+\l__siunitx_number_uncert_length_int=\count279
+\l__siunitx_round_int=\count280
+\l__siunitx_process_decimal_int=\count281
+\l__siunitx_process_uncertainty_int=\count282
+\l__siunitx_process_fixed_int=\count283
+\l__siunitx_process_integer_min_int=\count284
+\l__siunitx_process_precision_int=\count285
+\l__siunitx_group_min_int=\count286
+\l__siunitx_angle_marker_box=\box47
+\l__siunitx_angle_unit_box=\box48
+\l__siunitx_angle_marker_dim=\dimen159
+\l__siunitx_angle_unit_dim=\dimen160
+\l__siunitx_unit_int=\count287
+\l__siunitx_unit_denominator_int=\count288
+\l__siunitx_unit_numerator_int=\count289
+\l__siunitx_unit_prefix_int=\count290
+\l__siunitx_unit_prefix_base_int=\count291
+\l__siunitx_unit_prefix_gram_int=\count292
+\l__siunitx_number_product_int=\count293
+\c__siunitx_one_fill_skip=\skip73
+\l__siunitx_table_unit_align_skip=\skip74
+\l__siunitx_table_exponent_dim=\dimen161
+\l__siunitx_table_integer_dim=\dimen162
+\l__siunitx_table_mantissa_dim=\dimen163
+\l__siunitx_table_marker_dim=\dimen164
+\l__siunitx_table_result_dim=\dimen165
+\l__siunitx_table_uncert_dim=\dimen166
+\l__siunitx_table_fill_pre_dim=\dimen167
+\l__siunitx_table_fill_post_dim=\dimen168
+\l__siunitx_table_fill_mid_dim=\dimen169
+\l__siunitx_table_pre_box=\box49
+\l__siunitx_table_post_box=\box50
+\l__siunitx_table_mantissa_box=\box51
+\l__siunitx_table_result_box=\box52
+\l__siunitx_table_number_align_skip=\skip75
+\l__siunitx_table_text_align_skip=\skip76
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareBinaryPrefix with sig. 'mmm' on line 7244.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPostPower with sig. 'mm' on line 7247.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrefix with sig. 'mmm' on line 7250.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIPrePower with sig. 'mm' on line 7253.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIQualifier with sig. 'mm' on line 7256.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnit with sig. 'O{}mm' on line 7259.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \DeclareSIUnitWithOptions with sig. 'mmm' on line 7262.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \ang with sig. 'o>{\SplitArgument {2}{;}}m' on line 7277.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \num with sig. 'om' on line 7286.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numlist with sig. 'o>{\SplitList {;}}m' on line 7295.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrange with sig. 'omm' on line 7304.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlist with sig. 'o>{\SplitList {;}}mm' on line 7316.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrange with sig. 'ommm' on line 7328.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SI with sig. 'omom' on line 7340.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \sisetup with sig. 'm' on line 7343.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \tablenum with sig. 'om' on line 7358.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \si with sig. 'om' on line 7370.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numInBookmark with sig. 'om' on line 7417.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \numrangeInBookmark with sig. 'omm' on line 7419.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIInBookmark with sig. 'omom' on line 7421.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIlistInBookmark with sig. 'omm' on line 7423.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \SIrangeInBookmark with sig. 'ommm' on line 7425.
+.................................................
+.................................................
+. LaTeX info: "xparse/define-command"
+. 
+. Defining command \siInBookmark with sig. 'om' on line 7426.
+.................................................
+(/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator.sty
+Package: translator 2018/01/04 v1.12 Easy translation of strings in LaTeX
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hyperref.sty
+Package: hyperref 2018/02/06 v6.86b Hypertext links for LaTeX
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-hyperref.sty
+Package: hobsub-hyperref 2016/05/16 v1.14 Bundle oberdiek, subset hyperref (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/hobsub-generic.sty
+Package: hobsub-generic 2016/05/16 v1.14 Bundle oberdiek, subset generic (HO)
+Package: hobsub 2016/05/16 v1.14 Construct package bundles (HO)
+Package: infwarerr 2016/05/16 v1.4 Providing info/warning/error messages (HO)
+Package: ltxcmds 2016/05/16 v1.23 LaTeX kernel commands for general use (HO)
+Package: ifluatex 2016/05/16 v1.4 Provides the ifluatex switch (HO)
+Package ifluatex Info: LuaTeX detected.
+Package hobsub Info: Skipping package `ifvtex' (already loaded).
+Package: intcalc 2016/05/16 v1.2 Expandable calculations with integers (HO)
+Package hobsub Info: Skipping package `ifpdf' (already loaded).
+Package: etexcmds 2016/05/16 v1.6 Avoid name clashes with e-TeX commands (HO)
+Package: kvsetkeys 2016/05/16 v1.17 Key value parser (HO)
+Package: kvdefinekeys 2016/05/16 v1.4 Define keys (HO)
+Package: luatex-loader 2016/05/16 v0.6 Lua module loader (HO)
+
+(/usr/local/texlive/2018/texmf-dist/scripts/oberdiek/oberdiek.luatex.lua)
+Package: pdftexcmds 2018/01/30 v0.27 Utility functions of pdfTeX for LuaTeX (HO)
+
+Package pdftexcmds Info: \pdf@primitive is available.
+Package pdftexcmds Info: \pdf@ifprimitive is available.
+Package pdftexcmds Info: \pdfdraftmode found.
+\pdftexcmds@toks=\toks28
+Package: pdfescape 2016/05/16 v1.14 Implements pdfTeX's escape features (HO)
+Package: bigintcalc 2016/05/16 v1.4 Expandable calculations on big integers (HO)
+
+Package: bitset 2016/05/16 v1.2 Handle bit-vector datatype (HO)
+Package: uniquecounter 2016/05/16 v1.3 Provide unlimited unique counter (HO)
+)
+Package hobsub Info: Skipping package `hobsub' (already loaded).
+Package: letltxmacro 2016/05/16 v1.5 Let assignment for LaTeX macros (HO)
+Package: hopatch 2016/05/16 v1.3 Wrapper for package hooks (HO)
+Package: xcolor-patch 2016/05/16 xcolor patch
+Package: atveryend 2016/05/16 v1.9 Hooks at the very end of document (HO)
+Package: atbegshi 2016/06/09 v1.18 At begin shipout hook (HO)
+Package: refcount 2016/05/16 v3.5 Data extraction from label references (HO)
+Package: hycolor 2016/05/16 v1.8 Color options for hyperref/bookmark (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/auxhook.sty
+Package: auxhook 2016/05/16 v1.4 Hooks for auxiliary files (HO)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/kvoptions.sty
+Package: kvoptions 2016/05/16 v3.12 Key value format for package options (HO)
+)
+\@linkdim=\dimen170
+\Hy@linkcounter=\count294
+\Hy@pagecounter=\count295
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/pd1enc.def
+File: pd1enc.def 2018/02/06 v6.86b Hyperref: PDFDocEncoding definition (HO)
+)
+\Hy@SavedSpaceFactor=\count296
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/hyperref.cfg
+File: hyperref.cfg 2002/06/06 v1.2 hyperref configuration of TeXLive
+)
+Package hyperref Info: Option `colorlinks' set `true' on input line 4383.
+Package hyperref Info: Hyper figures OFF on input line 4509.
+Package hyperref Info: Link nesting OFF on input line 4514.
+Package hyperref Info: Hyper index ON on input line 4517.
+Package hyperref Info: Plain pages OFF on input line 4524.
+Package hyperref Info: Backreferencing OFF on input line 4529.
+Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
+Package hyperref Info: Bookmarks ON on input line 4762.
+\c@Hy@tempcnt=\count297
+LaTeX Info: Redefining \url on input line 5115.
+\XeTeXLinkMargin=\dimen171
+\Fld@menulength=\count298
+\Field@Width=\dimen172
+\Fld@charsize=\dimen173
+Package hyperref Info: Hyper figures OFF on input line 6369.
+Package hyperref Info: Link nesting OFF on input line 6374.
+Package hyperref Info: Hyper index ON on input line 6377.
+Package hyperref Info: backreferencing OFF on input line 6384.
+Package hyperref Info: Link coloring ON on input line 6387.
+Package hyperref Info: Link coloring with OCG OFF on input line 6394.
+Package hyperref Info: PDF/A mode OFF on input line 6399.
+LaTeX Info: Redefining \ref on input line 6439.
+LaTeX Info: Redefining \pageref on input line 6443.
+\Hy@abspage=\count299
+\c@Item=\count300
+\c@Hfootnote=\count301
+)
+Package hyperref Info: Driver (autodetected): hluatex.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/hluatex.def
+File: hluatex.def 2018/02/06 v6.86b Hyperref driver for luaTeX
+\Fld@listcount=\count302
+\c@bookmark@seq@number=\count303
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/rerunfilecheck.sty
+Package: rerunfilecheck 2016/05/16 v1.8 Rerun checks for auxiliary files (HO)
+Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 28
+2.
+)
+\Hy@SectionHShift=\skip77
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/natbib/natbib.sty
+Package: natbib 2010/09/13 8.31b (PWD, AO)
+\bibhang=\skip78
+\bibsep=\skip79
+LaTeX Info: Redefining \cite on input line 694.
+\c@NAT@ctr=\count304
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/hypernat/hypernat.sty
+Package: hypernat 2001/07/09 v1.0b hyperref and natbib compatibility (jb)
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/booktabs/booktabs.sty
+Package: booktabs 2016/04/27 v1.618033 publication quality tables
+\heavyrulewidth=\dimen174
+\lightrulewidth=\dimen175
+\cmidrulewidth=\dimen176
+\belowrulesep=\dimen177
+\belowbottomsep=\dimen178
+\aboverulesep=\dimen179
+\abovetopsep=\dimen180
+\cmidrulesep=\dimen181
+\cmidrulekern=\dimen182
+\defaultaddspace=\dimen183
+\@cmidla=\count305
+\@cmidlb=\count306
+\@aboverulesep=\dimen184
+\@belowrulesep=\dimen185
+\@thisruleclass=\count307
+\@lastruleclass=\count308
+\@thisrulewidth=\dimen186
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/rotating.sty
+Package: rotating 2016/08/11 v2.16d rotated objects in LaTeX
+\c@r@tfl@t=\count309
+\rotFPtop=\skip80
+\rotFPbot=\skip81
+\rot@float@box=\box53
+\rot@mess@toks=\toks29
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/tabularx.sty
+Package: tabularx 2016/02/03 v2.11b `tabularx' package (DPC)
+\TX@col@width=\dimen187
+\TX@old@table=\dimen188
+\TX@old@col=\dimen189
+\TX@target=\dimen190
+\TX@delta=\dimen191
+\TX@cols=\count310
+\TX@ftn=\toks30
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/ltablex/ltablex.sty
+Package: ltablex 2014/08/13 v1.1 Modified tabularx
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tools/longtable.sty
+Package: longtable 2014/10/28 v4.11 Multi-page Table package (DPC)
+\LTleft=\skip82
+\LTright=\skip83
+\LTpre=\skip84
+\LTpost=\skip85
+\LTchunksize=\count311
+\LTcapwidth=\dimen192
+\LT@head=\box54
+\LT@firsthead=\box55
+\LT@foot=\box56
+\LT@lastfoot=\box57
+\LT@cols=\count312
+\LT@rows=\count313
+\c@LT@tables=\count314
+\c@LT@chunks=\count315
+\LT@p@ftn=\toks31
+))
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption.sty
+Package: caption 2016/02/21 v3.3-144 Customizing captions (AR)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/caption3.sty
+Package: caption3 2016/05/22 v1.7-166 caption3 kernel (AR)
+Package caption3 Info: TeX engine: e-TeX on input line 67.
+\captionmargin=\dimen193
+\captionmargin@=\dimen194
+\captionwidth=\dimen195
+\caption@tempdima=\dimen196
+\caption@indent=\dimen197
+\caption@parindent=\dimen198
+\caption@hangindent=\dimen199
+)
+\c@ContinuedFloat=\count316
+Package caption Info: hyperref package is loaded.
+Package caption Info: longtable package is loaded.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/caption/ltcaption.sty
+Package: ltcaption 2013/06/09 v1.4-94 longtable captions (AR)
+)
+Package caption Info: rotating package is loaded.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/pdflscape.sty
+Package: pdflscape 2016/05/14 v0.11 Display of landscape pages in PDF (HO)
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/graphics/lscape.sty
+Package: lscape 2000/10/22 v3.01 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/multirow/multirow.sty
+Package: multirow 2016/11/25 v2.2 Span multiple rows of a table
+\multirow@colwidth=\skip86
+\multirow@cntb=\count317
+\multirow@dima=\skip87
+\bigstrutjot=\dimen256
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/fancyhdr/fancyhdr.sty
+Package: fancyhdr 2017/06/30 v3.9a Extensive control of page headers and footers
+
+\f@nch@headwidth=\skip88
+\f@nch@O@elh=\skip89
+\f@nch@O@erh=\skip90
+\f@nch@O@olh=\skip91
+\f@nch@O@orh=\skip92
+\f@nch@O@elf=\skip93
+\f@nch@O@erf=\skip94
+\f@nch@O@olf=\skip95
+\f@nch@O@orf=\skip96
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/tocloft/tocloft.sty
+Package: tocloft 2017/08/31 v2.3i parameterised ToC, etc., typesetting
+Package tocloft Info: The document has section divisions on input line 51.
+\cftparskip=\skip97
+\cftbeforetoctitleskip=\skip98
+\cftaftertoctitleskip=\skip99
+\cftbeforepartskip=\skip100
+\cftpartnumwidth=\skip101
+\cftpartindent=\skip102
+\cftbeforesecskip=\skip103
+\cftsecindent=\skip104
+\cftsecnumwidth=\skip105
+\cftbeforesubsecskip=\skip106
+\cftsubsecindent=\skip107
+\cftsubsecnumwidth=\skip108
+\cftbeforesubsubsecskip=\skip109
+\cftsubsubsecindent=\skip110
+\cftsubsubsecnumwidth=\skip111
+\cftbeforeparaskip=\skip112
+\cftparaindent=\skip113
+\cftparanumwidth=\skip114
+\cftbeforesubparaskip=\skip115
+\cftsubparaindent=\skip116
+\cftsubparanumwidth=\skip117
+\cftbeforeloftitleskip=\skip118
+\cftafterloftitleskip=\skip119
+\cftbeforefigskip=\skip120
+\cftfigindent=\skip121
+\cftfignumwidth=\skip122
+\c@lofdepth=\count318
+\c@lotdepth=\count319
+\cftbeforelottitleskip=\skip123
+\cftafterlottitleskip=\skip124
+\cftbeforetabskip=\skip125
+\cfttabindent=\skip126
+\cfttabnumwidth=\skip127
+))
+(../resources/variables/variables.tex)
+(../resources/variables/ivdr_variables.tex) (./whitepaper_1.1.aux)
+\openout1 = whitepaper_1.1.aux
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+LaTeX Font Info:    Checking defaults for PD1/pdf/m/n on input line 14.
+LaTeX Font Info:    ... okay on input line 14.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: luatex
+*geometry* verbose mode - [ preamble ] result:
+* driver: luatex
+* paper: a4paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(85.35826pt, 426.79135pt, 85.35826pt)
+* v-part:(T,H,B)=(85.35826pt, 674.33032pt, 85.35826pt)
+* \paperwidth=597.50787pt
+* \paperheight=845.04684pt
+* \textwidth=426.79135pt
+* \textheight=674.33032pt
+* \oddsidemargin=13.08827pt
+* \evensidemargin=13.08827pt
+* \topmargin=-23.91173pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(/usr/local/texlive/2018/texmf-dist/tex/context/base/mkii/supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count320
+\scratchdimen=\dimen257
+\scratchbox=\box58
+\nofMPsegments=\count321
+\nofMParguments=\count322
+\everyMPshowfont=\toks32
+\MPscratchCnt=\count323
+\MPscratchDim=\dimen258
+\MPnumerator=\count324
+\makeMPintoPDFobject=\count325
+\everyMPtoPDFconversion=\toks33
+) (/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/epstopdf-base.sty
+Package: epstopdf-base 2016/05/15 v2.6 Base part for package epstopdf
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/oberdiek/grfext.sty
+Package: grfext 2016/05/16 v1.2 Manage graphics extensions (HO)
+)
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 43
+8.
+Package grfext Info: Graphics extension search list:
+(grfext)             [.pdf,.png,.jpg,.mps,.jpeg,.jbig2,.jb2,.PDF,.PNG,.JPG,.JPEG
+,.JBIG2,.JB2,.eps]
+(grfext)             \AppendGraphicsExtensions on input line 456.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/latexconfig/epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2010/07/13 v1.3 Configuration of (r)epstopdf for TeX Live
+
+))
+Package ragged2e Info: ABD: executing \RaggedRight on input line 14.
+
+ABD: EverySelectfont initializing macros
+LaTeX Info: Redefining \selectfont on input line 14.
+LaTeX Info: Redefining \microtypecontext on input line 14.
+Package microtype Info: Generating PDF output.
+Package microtype Info: Character protrusion enabled (level 2).
+Package microtype Info: Using default protrusion set `alltext'.
+Package microtype Info: Automatic font expansion enabled (level 2),
+(microtype)             stretch: 20, shrink: 20, step: 1, non-selected.
+Package microtype Info: Using default expansion set `basictext'.
+Package microtype Info: No adjustment of tracking.
+Package microtype Info: No adjustment of spacing.
+Package microtype Info: No adjustment of kerning.
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `SourceSansPro--Light' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+.................................................
+. fontspec info: "setup-math"
+. 
+. Adjusting the maths setup (use [no-math] to avoid this).
+.................................................
+\symlegacymaths=\mathgroup4
+LaTeX Font Info:    Overwriting symbol font `legacymaths' in version `bold'
+(Font)                  OT1/cmr/m/n --> OT1/cmr/bx/n on input line 14.
+LaTeX Font Info:    Redeclaring math accent \acute on input line 14.
+LaTeX Font Info:    Redeclaring math accent \grave on input line 14.
+LaTeX Font Info:    Redeclaring math accent \ddot on input line 14.
+LaTeX Font Info:    Redeclaring math accent \tilde on input line 14.
+LaTeX Font Info:    Redeclaring math accent \bar on input line 14.
+LaTeX Font Info:    Redeclaring math accent \breve on input line 14.
+LaTeX Font Info:    Redeclaring math accent \check on input line 14.
+LaTeX Font Info:    Redeclaring math accent \hat on input line 14.
+LaTeX Font Info:    Redeclaring math accent \dot on input line 14.
+LaTeX Font Info:    Redeclaring math accent \mathring on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \colon on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Gamma on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Delta on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Theta on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Lambda on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Xi on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Pi on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Sigma on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Upsilon on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Phi on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Psi on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \Omega on input line 14.
+LaTeX Font Info:    Redeclaring math symbol \mathdollar on input line 14.
+LaTeX Font Info:    Redeclaring symbol font `operators' on input line 14.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `normal' on input line 14.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  OT1/cmr/m/n --> TU/SourceSansPro--Light(0)/m/n on input 
+line 14.
+LaTeX Font Info:    Encoding `OT1' has changed to `TU' for symbol font
+(Font)              `operators' in the math version `bold' on input line 14.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  OT1/cmr/bx/n --> TU/SourceSansPro--Light(0)/m/n on input
+ line 14.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `normal'
+(Font)                  TU/SourceSansPro--Light(0)/m/n --> TU/SourceSansPro--Lig
+ht(0)/m/n on input line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `normal'
+(Font)                  OT1/cmr/m/it --> TU/SourceSansPro--Light(0)/m/it on inpu
+t line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathbf' in version `normal'
+(Font)                  OT1/cmr/bx/n --> TU/SourceSansPro--Light(0)/bx/n on inpu
+t line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `normal'
+(Font)                  OT1/cmss/m/n --> TU/lmss/m/n on input line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `normal'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/m/n on input line 14.
+LaTeX Font Info:    Overwriting symbol font `operators' in version `bold'
+(Font)                  TU/SourceSansPro--Light(0)/m/n --> TU/SourceSansPro--Lig
+ht(0)/bx/n on input line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathit' in version `bold'
+(Font)                  OT1/cmr/bx/it --> TU/SourceSansPro--Light(0)/bx/it on in
+put line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathsf' in version `bold'
+(Font)                  OT1/cmss/bx/n --> TU/lmss/bx/n on input line 14.
+LaTeX Font Info:    Overwriting math alphabet `\mathtt' in version `bold'
+(Font)                  OT1/cmtt/m/n --> TU/lmtt/bx/n on input line 14.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/translator/translator-basic-dicti
+onary-English.dict
+Dictionary: translator-basic-dictionary, Language: English 
+)
+(/usr/local/texlive/2018/texmf-dist/tex/latex/siunitx/siunitx-abbreviations.cfg
+File: siunitx-abbreviations.cfg 2017/11/26 v2.7k siunitx: Abbreviated units
+)
+\AtBeginShipoutBox=\box59
+Package hyperref Info: Link coloring ON on input line 14.
+ (/usr/local/texlive/2018/texmf-dist/tex/latex/hyperref/nameref.sty
+Package: nameref 2016/05/21 v2.44 Cross-referencing by name of section
+
+(/usr/local/texlive/2018/texmf-dist/tex/generic/oberdiek/gettitlestring.sty
+Package: gettitlestring 2016/05/16 v1.5 Cleanup title references (HO)
+)
+\c@section@level=\count326
+)
+LaTeX Info: Redefining \ref on input line 14.
+LaTeX Info: Redefining \pageref on input line 14.
+LaTeX Info: Redefining \nameref on input line 14.
+
+(./whitepaper_1.1.out) (./whitepaper_1.1.out)
+\@outlinefile=\write6
+
+\openout6 = whitepaper_1.1.out
+Package caption Info: Begin \AtBeginDocument code.
+Package caption Info: End \AtBeginDocument code.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <7> on input line 14.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <5> on input line 14.
+
+(/usr/local/texlive/2018/texmf-dist/tex/latex/microtype/mt-cmr.cfg
+File: mt-cmr.cfg 2013/05/19 v2.2 microtype config. file: Computer Modern Roman (
+RS)
+)(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/f
+onts/otl/lmsans10-regular.luc)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmss' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/lmsans8-regular.luc)(load luc: /Users/lawless/Library/texlive/2018/texmf
+-var/luatex-cache/generic/fonts/otl/lmmono10-regular.luc)
+Package microtype Info: Loading generic protrusion settings for font family
+(microtype)             `lmtt' (encoding: TU).
+(microtype)             For optimal results, create family-specific settings.
+(microtype)             See the microtype manual for details.
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/lmmono8-regular.luc)
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <12> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <8> on input line 26.
+LaTeX Font Info:    External font `cmex10' loaded for size
+(Font)              <6> on input line 26.
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/lmsans12-regular.luc)(load luc: /Users/lawless/Library/texlive/2018/texm
+f-var/luatex-cache/generic/fonts/otl/lmmono12-regular.luc) (./whitepaper_1.1.to
+c)
+\tf@toc=\write7
+
+\openout7 = whitepaper_1.1.toc
+ [1
+
+{/usr/local/texlive/2018/texmf-var/fonts/map/pdftex/updmap/pdftex.map}] (./cont
+ent/executive_summary.tex
+Overfull \hbox (2.86644pt too wide) in paragraph at lines 3--6
+\TU/SourceSansPro--Light(0)/m/n/10 pro-teomics, metabolomics, and in-no-va-tive
+ meth-ods like single-cell se-quenc-ing. To-gether, these tech-nolo-gies 
+ []
+
+
+Overfull \hbox (0.18335pt too wide) in paragraph at lines 7--17
+\TU/SourceSansPro--Light(0)/m/n/10 and tar-geted ther-apy. For rare dis-eases, 
+ap-prox-i-mately 40% of probands re-ceived a ge-netic di-ag-no-sis [[]; []] 
+ []
+
+
+Overfull \hbox (0.13843pt too wide) in paragraph at lines 7--17
+\TU/SourceSansPro--Light(0)/m/n/10 and al-tered crit-i-cal care man-age-ment in
+ 77% of di-ag-nosed cases [[]]. A well-managed work-flow can re-sult in 
+ []
+
+<../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf, id=108
+, 867.24pt x 361.35pt>
+File: ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf Gr
+aphic file (type pdf)
+<use ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf>
+Package luatex.def Info: ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yea
+rly_forecast.pdf  used on input line 23.
+(luatex.def)             Requested size: 426.79135pt x 177.82945pt.
+) [2
+
+<../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf>]
+(./content/introduction.tex
+<images/precision_med_unit_management.pdf, id=133, 1907.125pt x 1835.85875pt>
+File: images/precision_med_unit_management.pdf Graphic file (type pdf)
+<use images/precision_med_unit_management.pdf>
+Package luatex.def Info: images/precision_med_unit_management.pdf  used on input
+ line 6.
+(luatex.def)             Requested size: 204.85802pt x 197.18289pt.
+<images/precision_med_overview.pdf, id=134, 1686.3pt x 1626.075pt>
+File: images/precision_med_overview.pdf Graphic file (type pdf)
+<use images/precision_med_overview.pdf>
+Package luatex.def Info: images/precision_med_overview.pdf  used on input line 7
+.
+(luatex.def)             Requested size: 204.85802pt x 197.52733pt.
+
+Overfull \hbox (3.7217pt too wide) in paragraph at lines 13--17
+[]\TU/SourceSansPro--Light(0)/m/n/10 The []\TU/SourceSansPro--Light(0)/bx/n/10 
+Pre-ci-sion medicine unit[] \TU/SourceSansPro--Light(0)/m/n/10 is ready to up-d
+ate our pae-di-atric health-care by serv-ing an ar-ray of ad-vanced 
+ []
+
+
+Overfull \hbox (0.10577pt too wide) in paragraph at lines 13--17
+\TU/SourceSansPro--Light(0)/m/n/10 ca-pa-bil-i-ties in multi-omics, pi-o-neer-i
+ng re-search method-olo-gies, purpose-built in-fras-truc-ture, and rig-or-ous 
+ []
+
+
+Overfull \hbox (0.11316pt too wide) in paragraph at lines 18--32
+[]\TU/SourceSansPro--Light(0)/m/n/10 Tra-di-tion-ally, med-i-cal prac-tices hav
+e pre-dom-i-nantly ad-hered to a stan-dard ap-proach, tai-lor-ing dis-ease 
+ []
+
+
+Overfull \hbox (0.16347pt too wide) in paragraph at lines 18--32
+\TU/SourceSansPro--Light(0)/m/n/10 pre-ven-tion and treat-ment strate-gies base
+d on the av-er-age re-sponse an-tic-i-pated from a gen-eral pop-u-la-tion. 
+ []
+
+
+Overfull \hbox (0.14429pt too wide) in paragraph at lines 18--32
+\TU/SourceSansPro--Light(0)/m/n/10 mil-lions world-wide. It aims not only to re
+-fine dis-ease treat-ment and pre-ven-tion but also promises en-hanced 
+ []
+
+
+Overfull \hbox (0.12169pt too wide) in paragraph at lines 18--32
+\TU/SourceSansPro--Light(0)/m/n/10 are im-ple-ment-ing pre-ci-sion medicine ap-
+proaches at the [][]Swiss In-sti-tute of Bioin-for-mat-ics (SIB)[][], [][]The L
+OOP 
+ []
+
+
+Overfull \hbox (0.1022pt too wide) in paragraph at lines 33--37
+[]\TU/SourceSansPro--Light(0)/m/n/10 There have also been many failed promises 
+where pre-ci-sion medicine did not de-liver. How-ever, these 
+ []
+
+
+Overfull \hbox (0.198pt too wide) in paragraph at lines 38--42
+\TU/SourceSansPro--Light(0)/m/n/10 multi-omic data anal-y-sis. As a col-lab-o-r
+a-tive ef-fort among ma-jor Swiss uni-ver-si-ties and uni-ver-sity hos-pi-tals,
+ 
+ []
+
+
+Overfull \hbox (0.13562pt too wide) in paragraph at lines 38--42
+\TU/SourceSansPro--Light(0)/m/n/10 in-clud-ing UNIBE, In-sel-spi-tal, UNIL, CHU
+V, UNIGE, HUG, and EPFL, the cen-ter ex-em-pli-fies a com-pre-hen-sive 
+ []
+
+[3
+
+<./images/precision_med_unit_management.pdf><./images/precision_med_overview.pdf
+>]
+Overfull \hbox (0.16347pt too wide) in paragraph at lines 55--58
+[]\TU/SourceSansPro--Light(0)/m/n/10 Our sub-se-quent anal-y-sis oc-curs at the
+ cut-ting edge of tech-nol-ogy, em-ploy-ing the most re-li-able ref-er-ence 
+ []
+
+
+Overfull \hbox (2.63707pt too wide) in paragraph at lines 59--61
+[]\TU/SourceSansPro--Light(0)/m/n/10 By cap-i-tal-is-ing on these in-te-grated 
+ex-pert ser-vices we can pro-vide anal-y-sis within the []\TU/SourceSansPro--Li
+ght(0)/bx/n/10 Pre-ci-sion medicine 
+ []
+
+) (./content/key_products.tex
+Overfull \hbox (40.41656pt too wide) in paragraph at lines 69--1
+\TU/SourceSansPro--Light(0)/m/n/10 time - from DNA to vari-ant in-ter-pre-ta-ti
+on and func-tional ef-fect. Ma-te-rial will be shipped from []\TU/SourceSansPro
+--Light(0)/bx/n/10 Universitäts-Kinderspital 
+ []
+
+
+Overfull \hbox (1.14775pt too wide) in paragraph at lines 4--14
+\TU/SourceSansPro--Light(0)/m/n/10 Prod-ucts of the []\TU/SourceSansPro--Light(
+0)/bx/n/10 Pre-ci-sion medicine unit[] \TU/SourceSansPro--Light(0)/m/n/10 in-cl
+ude []\TU/SourceSansPro--Light(0)/bx/n/10 ACMGuru (v1.0)[] \TU/SourceSansPro--L
+ight(0)/m/n/10 for vari-ant clas-si-fi-ca-tion and in-ter-pre-ta-tion, 
+ []
+
+[4]
+Overfull \hbox (0.16655pt too wide) in paragraph at lines 22--23
+\TU/SourceSansPro--Light(0)/m/n/10 down-stream pro-cesses like vari-ant in-ter-
+pre-ta-tion in ACMGuru and as-sess-ing ge-netic de-ter-mi-nants of dis-ease 
+ []
+
+[5]
+Overfull \hbox (6.223pt too wide) in paragraph at lines 49--50
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Ef-fi-ciency and scal-a-bil-ity\TU/Source
+SansPro--Light(0)/m/n/10 : Ca-pa-ble of han-dling large-scale datasets with the
+ flex-i-bil-ity to ac-com-mo-date 
+ []
+
+) (./content/Multi_omics_integration.tex) (./content/project_management.tex)
+(./content/data_flow.tex [6]
+Overfull \hbox (0.20049pt too wide) in paragraph at lines 10--16
+\TU/SourceSansPro--Light(0)/m/n/10 also de-vel-oped the con-cepts which cover t
+he fi-nal out-puts of down-stream anal-y-sis re-sults for omic re-sults. 
+ []
+
+
+Overfull \hbox (0.15623pt too wide) in paragraph at lines 17--20
+\TU/SourceSansPro--Light(0)/m/n/10 omics pro-cess flow, de-tail-ing steps from 
+sam-ple pro-cess-ing to data anal-y-sis, in-clud-ing specifics like li-brary 
+ []
+
+<images/precision_med_dataflow.pdf, id=185, 913.4125pt x 1410.26875pt>
+File: images/precision_med_dataflow.pdf Graphic file (type pdf)
+<use images/precision_med_dataflow.pdf>
+Package luatex.def Info: images/precision_med_dataflow.pdf  used on input line 2
+3.
+(luatex.def)             Requested size: 256.07741pt x 395.3675pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+<images/concept_f1.png, id=186, 1071.00125pt x 640.3925pt>
+File: images/concept_f1.png Graphic file (type png)
+<use images/concept_f1.png>
+Package luatex.def Info: images/concept_f1.png  used on input line 34.
+(luatex.def)             Requested size: 341.43437pt x 204.15782pt.
+<images/concept_f2.png, id=187, 1062.97125pt x 499.8675pt>
+File: images/concept_f2.png Graphic file (type png)
+<use images/concept_f2.png>
+Package luatex.def Info: images/concept_f2.png  used on input line 35.
+(luatex.def)             Requested size: 341.43437pt x 160.56342pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[7] [8<./images/precision_med_dataflow.pdf>] [9<./images/concept_f1.png><./image
+s/concept_f2.png>]
+Overfull \hbox (0.1369pt too wide) in paragraph at lines 56--57
+[]\TU/SourceSansPro--Light(0)/m/n/10 Re-sult data for-mat-ted in RDF, SQL, TSV,
+ which are then adapted to meet the SPHN con-nec-tor’s 
+ []
+
+) (./content/Clinical_implementation_and_future_prospects.tex [10
+
+])
+(./content/strategic_collaborations.tex)
+(./content/funding_model_and_sustainability.tex
+Overfull \hbox (0.14922pt too wide) in paragraph at lines 3--4
+\TU/SourceSansPro--Light(0)/m/n/10 pro-vides a ro-bust fi-nan-cial foun-da-tion
+ that helps on-go-ing re-search and de-vel-op-ment in pae-di-atric pre-ci-sion 
+
+ []
+
+[11]
+<images/Research_Funding_Pathways.pdf, id=230, 752.65205pt x 486.30386pt>
+File: images/Research_Funding_Pathways.pdf Graphic file (type pdf)
+<use images/Research_Funding_Pathways.pdf>
+Package luatex.def Info: images/Research_Funding_Pathways.pdf  used on input lin
+e 18.
+(luatex.def)             Requested size: 418.2537pt x 270.2506pt.
+
+Overfull \hbox (39.00876pt too wide) in paragraph at lines 24--61
+ []|  [] 
+ []
+
+[12<./images/Research_Funding_Pathways.pdf>] [13]) (./content/kpi.tex
+Overfull \hbox (9.55629pt too wide) in paragraph at lines 24--25
+[]\TU/SourceSansPro--Light(0)/bx/n/10 User Sat-is-fac-tion: \TU/SourceSansPro--
+Light(0)/m/n/10 De-ter-mined by av-er-ag-ing scores from user sur-veys, this me
+t-ric gauges the sat-is-fac-tion 
+ []
+
+
+Overfull \hbox (0.1044pt too wide) in paragraph at lines 25--26
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Com-pli-ance: \TU/SourceSansPro--Light(0)
+/m/n/10 Mea-sured by the per-cent-age of suc-cess-ful com-pli-ance checks, this
+ KPI en-sures that our 
+ []
+
+) (./content/single_source_management.tex
+Overfull \hbox (0.13234pt too wide) in paragraph at lines 3--5
+\TU/SourceSansPro--Light(0)/m/n/10 In the fast-evolving field of pre-ci-sion me
+dicine, man-ag-ing doc-u-men-ta-tion, data, and soft-ware de-vel-op-ment 
+ []
+
+
+Overfull \hbox (0.14287pt too wide) in paragraph at lines 3--5
+\TU/SourceSansPro--Light(0)/m/n/10 com-po-nents to re-duce re-dun-dancy and pre
+-vent dis-crep-an-cies. This idea fit’s with the ”Ev-ery-thing as code” 
+ []
+
+
+Overfull \hbox (0.10936pt too wide) in paragraph at lines 9--11
+\TU/SourceSansPro--Light(0)/m/n/10 from a com-mon repos-i-tory of in-for-ma-tio
+n, en-sur-ing that changes in one area are au-to-mat-i-cally prop-a-gated 
+ []
+
+[14
+
+]
+Overfull \hbox (0.1046pt too wide) in paragraph at lines 24--26
+[]\TU/SourceSansPro--Light(0)/m/n/10 If, for ex-am-ple, the con-tents of ``raw 
+data'' is up-dated as a project up-dates, all of the sub-se-quent uses of 
+ []
+
+<images/precision_med_single_source_management.pdf, id=371, 3056.41875pt x 1155.
+31625pt>
+File: images/precision_med_single_source_management.pdf Graphic file (type pdf)
+<use images/precision_med_single_source_management.pdf>
+Package luatex.def Info: images/precision_med_single_source_management.pdf  used
+ on input line 29.
+(luatex.def)             Requested size: 426.79135pt x 161.32008pt.
+[15<./images/precision_med_single_source_management.pdf>]
+Overfull \hbox (0.11969pt too wide) in paragraph at lines 55--64
+\TU/SourceSansPro--Light(0)/m/n/10 high-lighted us-ing a spe-cific color to in-
+di-cate their im-por-tance and fre-quent us-age. These vari-ables serve not 
+ []
+
+
+Overfull \hbox (0.10284pt too wide) in paragraph at lines 72--73
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Im-proved col-lab-o-ra-tion\TU/SourceSans
+Pro--Light(0)/m/n/10 : Team mem-bers can work si-mul-ta-ne-ously on dif-fer-ent
+ doc-u-ments, con-fi-dent 
+ []
+
+) (./content/ivdr.tex
+Overfull \hbox (0.16801pt too wide) in paragraph at lines 5--6
+\TU/SourceSansPro--Light(0)/m/n/10 The In Vitro Di-ag-nos-tic Med-i-cal De-vice
+s Reg-u-la-tion (IVDR) is an es-sen-tial leg-isla-tive frame-work that gov-erns
+ 
+ []
+
+
+Overfull \hbox (0.12569pt too wide) in paragraph at lines 5--6
+\TU/SourceSansPro--Light(0)/m/n/10 along-side the Med-i-cal De-vices Reg-u-la-t
+ion (MDR) to up-date and re-place di-rec-tives es-tab-lished in the 1990s, 
+ []
+
+
+Overfull \hbox (0.10107pt too wide) in paragraph at lines 7--10
+\TU/SourceSansPro--Light(0)/m/n/10 Med-i-cal De-vice Co-or-di-na-tion Group (MD
+CG), we re-fer to the Eu-ro-pean Com-mis-sion’s ded-i-cated page on IVDR: 
+ []
+
+[16]
+Overfull \hbox (0.13425pt too wide) in paragraph at lines 13--14
+[]\TU/SourceSansPro--Light(0)/m/n/10 In-ter-na-tional Coun-cil for Har-mon-i-sa
+-tion of Tech-ni-cal Re-quire-ments for Phar-ma-ceu-ti-cals for Hu-man 
+ []
+
+
+Overfull \hbox (2.86368pt too wide) in paragraph at lines 18--20
+[]\TU/SourceSansPro--Light(0)/m/n/10 We are de-vel-op-ing a unique method of si
+ngle-source man-age-ment com-bined with an everything-as-code 
+ []
+
+
+Overfull \hbox (0.14435pt too wide) in paragraph at lines 23--24
+\TU/SourceSansPro--Light(0)/m/n/10 data. Our sys-tem sim-pli-fies this pro-cess
+ by au-to-mat-i-cally link-ing and tag-ging ev-ery rel-e-vant doc-u-ment and 
+ []
+
+[17]
+Overfull \hbox (0.65504pt too wide) in paragraph at lines 42--43
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Scope: \TU/SourceSansPro--Light(0)/m/n/10
+ In-cludes soft-ware ver-sion con-trol, database man-age-ment, and change track
+-ing for com-pli-ance 
+ []
+
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <10> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 60.
+(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fo
+nts/otl/lmmonolt10-bold.luc)
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <7> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 64.
+LaTeX Font Info:    Font shape `TU/lmtt/bx/n' in size <5> not available
+(Font)              Font shape `TU/lmtt/b/n' tried instead on input line 64.
+
+Overfull \hbox (3.61534pt too wide) in paragraph at lines 70--71
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Re-lease tag used: \TU/lmtt/m/n/10 git ta
+g -a []\TU/lmtt/b/n/10 v0.1[]\TU/lmtt/m/n/10 -m "Release version 1.0 for clinic
+al deployment"  
+ []
+
+
+Overfull \hbox (4.69548pt too wide) in paragraph at lines 76--76
+[]\TU/SourceSansPro--Light(0)/bx/n/10 In-ter-nal us-age doc-u-men-ta-tion: []ht
+tps://swisspedhealth-pipelinedev.github.io/docs/pages/ref.html[]  
+ []
+
+[18]
+Overfull \hbox (26.16699pt too wide) in paragraph at lines 81--82
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Up-dat-ing ref-er-ence data: \TU/SourceSa
+nsPro--Light(0)/m/n/10 Pro-cess for up-dat-ing ref-er-ence genome ver-sions doc
+-u-mented in \TU/lmtt/m/n/10 REF_-UPDATE.md 
+ []
+
+
+Overfull \hbox (0.15956pt too wide) in paragraph at lines 99--100
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Au-dit re-ports: \TU/SourceSansPro--Light
+(0)/m/n/10 Au-to-mat-i-cally gen-er-ated from CMR data, in-clud-ing Git tag and
+ com-mit ref-er-ences for 
+ []
+
+
+Overfull \hbox (6.59157pt too wide) in paragraph at lines 109--110
+\TU/SourceSansPro--Light(0)/bx/n/10 Sum-mary: \TU/SourceSansPro--Light(0)/m/n/1
+0 Em-pha-sises the ro-bust-ness of the version-controlled en-vi-ron-ment in mai
+n-tain-ing IVDR com-pli-ance 
+ []
+
+[19]) (./content/future_directions_and_innovation.tex)
+(./content/future_products.tex
+Overfull \hbox (0.13655pt too wide) in paragraph at lines 7--1
+[]\TU/SourceSansPro--Light(0)/m/n/10 Our on-go-ing com-mit-ment to in-no-va-tio
+n and ex-cel-lence en-sures that we will con-tinue to en-hance health 
+ []
+
+
+Overfull \hbox (0.55458pt too wide) in paragraph at lines 15--21
+\TU/SourceSansPro--Light(0)/m/n/10 ef-fec-tive-ness of drugs used in the clinic
+. \TU/SourceSansPro--Light(0)/bx/n/10 Fig-ure [][]7[][] \TU/SourceSansPro--Ligh
+t(0)/m/n/10 il-lus-trates an ex-am-ple of vari-ant ef-fect from gene-to-protein
+ 
+ []
+
+
+Overfull \hbox (0.12529pt too wide) in paragraph at lines 22--26
+\TU/SourceSansPro--Light(0)/m/n/10 pro-files to op-ti-mise ther-a-peu-tic ef-fe
+cts and min-imise ad-verse re-ac-tions [[]]. By analysing a pa-tient’s ge-net
+ic 
+ []
+
+
+Overfull \hbox (0.11331pt too wide) in paragraph at lines 22--26
+\TU/SourceSansPro--Light(0)/m/n/10 mark-ers, the []\TU/SourceSansPro--Light(0)/
+bx/n/10 Pre-ci-sion medicine unit[] \TU/SourceSansPro--Light(0)/m/n/10 can pre-
+dict metabolic rates and drug ab-sorp-tion, en-sur-ing that each 
+ []
+
+[20]
+Overfull \hbox (0.10422pt too wide) in paragraph at lines 45--48
+\TU/SourceSansPro--Light(0)/m/n/10 course-work and hands-on projects in [][]BIO
+491[][] - MSc New tools & re-search strate-gies in per-son-al-ized health 
+ []
+
+<images/DNA_to_effect.pdf, id=456, 1564.84625pt x 1280.785pt>
+File: images/DNA_to_effect.pdf Graphic file (type pdf)
+<use images/DNA_to_effect.pdf>
+Package luatex.def Info: images/DNA_to_effect.pdf  used on input line 51.
+(luatex.def)             Requested size: 234.73654pt x 192.10945pt.
+<images/effect_to_drug.pdf, id=457, 1564.84625pt x 1849.91125pt>
+File: images/effect_to_drug.pdf Graphic file (type pdf)
+<use images/effect_to_drug.pdf>
+Package luatex.def Info: images/effect_to_drug.pdf  used on input line 52.
+(luatex.def)             Requested size: 170.71393pt x 201.79723pt.
+[21<./images/DNA_to_effect.pdf><./images/effect_to_drug.pdf>]
+Overfull \hbox (0.12022pt too wide) in paragraph at lines 66--67
+\TU/SourceSansPro--Light(0)/m/n/10 databases like gno-mAD. Ad-di-tion-ally, we 
+cal-cu-late prob-a-bil-i-ties for ran-dom, novel vari-ants that may 
+ []
+
+
+Overfull \hbox (0.11319pt too wide) in paragraph at lines 68--69
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Bayesian In-fer-ence: \TU/SourceSansPro--
+Light(0)/m/n/10 Our ap-proach up-dates the prob-a-bil-ity of each vari-ant caus
+-ing spe-cific dis-eases 
+ []
+
+
+Overfull \hbox (0.16309pt too wide) in paragraph at lines 71--72
+\TU/SourceSansPro--Light(0)/m/n/10 strate-gies in pe-di-atric care tai-lored to
+ the ge-netic pro-files of in-di-vid-ual pa-tients, sig-nif-i-cantly trans-form
+-ing 
+ []
+
+) (./content/benefit_analysis.tex
+Overfull \hbox (0.18379pt too wide) in paragraph at lines 5--8
+\TU/SourceSansPro--Light(0)/m/n/10 con-di-tions. By im-ple-ment-ing known meth-
+ods, we can im-prove pa-tient out-comes, en-able tar-geted ther-a-pies, 
+ []
+
+[22]
+Overfull \hbox (7.93486pt too wide) in paragraph at lines 13--14
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Key statis-tics\TU/SourceSansPro--Light(0
+)/m/n/10 : Re-ports wide cost range from €1,101 to €91,951 per sep-sis pa-t
+ient, re-flect-ing in-ter-na-tional 
+ []
+
+[23]
+Overfull \hbox (8.83395pt too wide) in paragraph at lines 55--56
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Key statis-tics\TU/SourceSansPro--Light(0
+)/m/n/10 : Iden-ti-fies causative vari-ants in 8.2% of cases pre-vi-ously un-de
+-tected by ex-ome se-quenc-ing.  
+ []
+
+
+Overfull \hbox (0.11288pt too wide) in paragraph at lines 72--73
+\TU/SourceSansPro--Light(0)/m/n/10 from the United States and is also uti-lized
+ by the Qual-ity Medicine Ini-tia-tive (IQM) in Ger-many and na-tion-ally 
+ []
+
+
+Overfull \hbox (8.45076pt too wide) in paragraph at lines 74--75
+\TU/SourceSansPro--Light(0)/m/n/10 jointly re-vised and ex-panded in Ger-many a
+nd Switzer-land. For the cur-rent eval-u-a-tion, the CH-IQI spec-i-fi-ca-tions 
+
+ []
+
+
+Overfull \hbox (0.16585pt too wide) in paragraph at lines 77--82
+\TU/SourceSansPro--Light(0)/m/n/10 Time se-ries was per-formed us-ing lin-ear r
+e-gres-sion (for cost anal-y-sis) and Pois-son re-gres-sions (for mor-tal-ity 
+ []
+
+
+Overfull \hbox (0.148pt too wide) in paragraph at lines 77--82
+\TU/SourceSansPro--Light(0)/m/n/10 past 12 years is ac-cu-rately re-ported by B
+AG, how-ever or es-ti-mate for fu-ture sav-ings and ben-e-fit de-pend on 
+ []
+
+
+Overfull \hbox (0.12222pt too wide) in paragraph at lines 77--82
+\TU/SourceSansPro--Light(0)/m/n/10 re-li-able model of what to ex-pect over the
+ next 10 years. The []\TU/SourceSansPro--Light(0)/bx/n/10 Pre-ci-sion medicine 
+unit[] \TU/SourceSansPro--Light(0)/m/n/10 cost anal-y-sis overview 
+ []
+
+[24]
+<../stats/foph_key_stats/output/p_cost.pdf, id=609, 775.89874pt x 447.6725pt>
+File: ../stats/foph_key_stats/output/p_cost.pdf Graphic file (type pdf)
+<use ../stats/foph_key_stats/output/p_cost.pdf>
+Package luatex.def Info: ../stats/foph_key_stats/output/p_cost.pdf  used on inpu
+t line 85.
+(luatex.def)             Requested size: 384.1096pt x 221.62247pt.
+
+Overfull \hbox (7.53639pt too wide) in paragraph at lines 95--101
+\TU/SourceSansPro--Light(0)/m/n/10 ex-am-ple us-ing sep-sis. Sep-sis was specif
+-i-cally mod-elled us-ing fed-eral statis-tics from Bun-de-samt für Gesund-hei
+t 
+ []
+
+
+Overfull \hbox (0.14618pt too wide) in paragraph at lines 102--119
+\TU/SourceSansPro--Light(0)/m/n/10 whole-genome se-quenc-ing with a turnaround 
+of 37 hours on av-er-age [[]]. Based on such val-ues, the fore-cast 
+ []
+
+<../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf, id=622, 867.24pt 
+x 361.35pt>
+File: ../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf Graphic file 
+(type pdf)
+<use ../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf>
+Package luatex.def Info: ../stats/foph_key_stats/output/p_cases_sepsis_uni_yearl
+y.pdf  used on input line 122.
+(luatex.def)             Requested size: 426.79135pt x 177.82945pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+File: ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf Gr
+aphic file (type pdf)
+<use ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf>
+Package luatex.def Info: ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yea
+rly_forecast.pdf  used on input line 135.
+(luatex.def)             Requested size: 426.79135pt x 177.82945pt.
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+[25<../stats/foph_key_stats/output/p_cost.pdf>]
+<../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf, id=649, 11
+56.32pt x 433.62pt>
+File: ../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf Graphi
+c file (type pdf)
+<use ../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf>
+Package luatex.def Info: ../stats/foph_key_stats/output/p_cases_per_indicator_ki
+spi_2022.pdf  used on input line 165.
+(luatex.def)             Requested size: 426.79135pt x 160.04651pt.
+
+
+LaTeX Warning: `h' float specifier changed to `ht'.
+
+) [26<../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf>] [27<../stat
+s/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf>]
+(./content/ip.tex
+Overfull \hbox (0.13376pt too wide) in paragraph at lines 3--5
+\TU/SourceSansPro--Light(0)/m/n/10 Our ap-proach to in-tel-lec-tual prop-erty (
+IP) di-verges from con-ven-tional strate-gies that rely heav-ily on patents 
+ []
+
+
+Overfull \hbox (14.84091pt too wide) in paragraph at lines 6--7
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Open-source com-mit-ment: \TU/SourceSansP
+ro--Light(0)/m/n/10 We are com-mit-ted to open-source code and doc-u-men-ta-tio
+n. This com-mit-ment 
+ []
+
+) [28
+
+] (./content/conclusion.tex) (./content/abbreviations.tex)
+(./whitepaper_1.1.bbl [29
+
+])
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 58.
+ [30]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 58.
+ (./whitepaper_1.1.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 58.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 58.
+Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
+(rerunfilecheck)             Checksum: 8895AFF5C16E68FD1487CB389856C6E9;1119.
+
+
+LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
+
+)
+
+Here is how much of LuaTeX's memory you used:
+ 25724 strings out of 494413
+ 156510,794899 words of node,token memory allocated
+ 853 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 15 attribute, 120 glue_spec, 15 attribute_l
+ist, 1 write, 11 pdf_action nodes
+   avail lists: 1:7,2:802,3:317,4:146,5:792,6:68,7:4557,8:216,9:168,10:19,11:429
+,12:1
+ 28770 multiletter control sequences out of 65536+600000
+ 74 fonts using 13106431 bytes
+ 51i,11n,67p,1610b,870s stack positions out of 5000i,500n,10000p,200000b,100000s
+</usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
+sPro-LightIt.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lm
+monolt10-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
+mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
+rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
+ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf>
+Output written on whitepaper_1.1.pdf (30 pages, 2355364 bytes).
+
+PDF statistics: 727 PDF objects out of 1000 (max. 8388607)
+ 557 compressed objects within 6 object streams
+ 118 named destinations out of 1000 (max. 131072)
+ 145 words of extra memory for PDF output out of 10000 (max. 100000000)
+

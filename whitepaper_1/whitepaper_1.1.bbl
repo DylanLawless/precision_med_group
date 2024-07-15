@@ -1,0 +1,124 @@
+\begin{thebibliography}{14}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Wright et~al.(2023)Wright, Campbell, Eberhardt, Aitken, Perrett,
+  Brent, Danecek, Gardner, Chundru, Lindsay, et~al.]{wright2023genomic}
+Caroline~F Wright, Patrick Campbell, Ruth~Y Eberhardt, Stuart Aitken, Daniel
+  Perrett, Simon Brent, Petr Danecek, Eugene~J Gardner, V~Kartik Chundru,
+  Sarah~J Lindsay, et~al.
+\newblock Genomic diagnosis of rare pediatric disease in the united kingdom and
+  ireland.
+\newblock \emph{New England Journal of Medicine}, 388\penalty0 (17):\penalty0
+  1559--1571, 2023.
+
+\bibitem[Wojcik et~al.(2024)Wojcik, Lemire, Berger, Zaki, Wissmann, Win, White,
+  Weisburd, Wieczorek, Waddell, et~al.]{wojcik2024genome}
+Monica~H Wojcik, Gabrielle Lemire, Eva Berger, Maha~S Zaki, Mariel Wissmann,
+  Wathone Win, Susan~M White, Ben Weisburd, Dagmar Wieczorek, Leigh~B Waddell,
+  et~al.
+\newblock Genome sequencing for diagnosing rare diseases.
+\newblock \emph{New England Journal of Medicine}, 390\penalty0 (21):\penalty0
+  1985--1997, 2024.
+
+\bibitem[Lunke et~al.(2023)Lunke, Bouffler, Patel, Sandaradura, Wilson, Pinner,
+  Hunter, Barnett, Wallis, Kamien, et~al.]{lunke2023integrated}
+Sebastian Lunke, Sophie~E Bouffler, Chirag~V Patel, Sarah~A Sandaradura,
+  Meredith Wilson, Jason Pinner, Matthew~F Hunter, Christopher~P Barnett,
+  Mathew Wallis, Benjamin Kamien, et~al.
+\newblock Integrated multi-omics for rapid rare disease diagnosis on a national
+  scale.
+\newblock \emph{Nature medicine}, 29\penalty0 (7):\penalty0 1681--1691, 2023.
+
+\bibitem[Abou~Tayoun and Alsheikh-Ali(2023)]{abou2023rapid}
+Ahmad~N Abou~Tayoun and Alawi Alsheikh-Ali.
+\newblock A rapid whole-genome sequencing service for infants with rare
+  diseases in the united arab emirates.
+\newblock \emph{Nature Medicine}, 29\penalty0 (12):\penalty0 2979--2980, 2023.
+
+\bibitem[van~der Horst et~al.(2023)van~der Horst, Unni, Kopmels, Armida,
+  Tour{\'e}, Franke, Crameri, Cirillo, and {\"O}sterle]{van2023bridging}
+Eelke van~der Horst, Deepak Unni, Femke Kopmels, Jan Armida, Vasundra
+  Tour{\'e}, Wouter Franke, Katrin Crameri, Elisa Cirillo, and Sabine
+  {\"O}sterle.
+\newblock Bridging clinical and genomic knowledge: An extension of the sphn rdf
+  schema for seamless integration and fairification of omics data.
+\newblock \emph{preprints.org, medicine and pharmacology}, 2023.
+
+\bibitem[Moufarrej et~al.(2023)Moufarrej, Bianchi, Shaw, Stevenson, and
+  Quake]{moufarrej2023noninvasive}
+Mira~N Moufarrej, Diana~W Bianchi, Gary~M Shaw, David~K Stevenson, and
+  Stephen~R Quake.
+\newblock Noninvasive prenatal testing using circulating dna and rna: advances,
+  challenges, and possibilities.
+\newblock \emph{Annual Review of Biomedical Data Science}, 6\penalty0
+  (1):\penalty0 397--418, 2023.
+
+\bibitem[Pirmohamed(2023)]{pirmohamed2023pharmacogenomics}
+Munir Pirmohamed.
+\newblock Pharmacogenomics: current status and future perspectives.
+\newblock \emph{Nature Reviews Genetics}, 24\penalty0 (6):\penalty0 350--362,
+  2023.
+
+\bibitem[Yip et~al.(2015)Yip, Hawcutt, and Pirmohamed]{yip2015pharmacogenetic}
+VLM Yip, DB~Hawcutt, and Munir Pirmohamed.
+\newblock Pharmacogenetic markers of drug efficacy and toxicity.
+\newblock \emph{Clinical Pharmacology \& Therapeutics}, 98\penalty0
+  (1):\penalty0 61--70, 2015.
+
+\bibitem[Relling and Evans(2015)]{relling2015pharmacogenomics}
+Mary~V Relling and William~E Evans.
+\newblock Pharmacogenomics in the clinic.
+\newblock \emph{Nature}, 526\penalty0 (7573):\penalty0 343--350, 2015.
+
+\bibitem[Gaedigk et~al.(2021)Gaedigk, Casey, Whirl-Carrillo, Miller, and
+  Klein]{gaedigk2021pharmvar}
+Andrea Gaedigk, Scott~T Casey, Michelle Whirl-Carrillo, Neil~A Miller, and
+  Teri~E Klein.
+\newblock Pharmvar: a global resource and repository for pharmacogene
+  variation.
+\newblock \emph{Clinical pharmacology and therapeutics}, 110\penalty0
+  (3):\penalty0 542, 2021.
+
+\bibitem[Van~den Berg et~al.(2022)Van~den Berg, Van~Beuningen, Ter~Maaten, and
+  Bouma]{van2022hospital}
+M~Van~den Berg, FE~Van~Beuningen, JC~Ter~Maaten, and HR~Bouma.
+\newblock Hospital-related costs of sepsis around the world: A systematic
+  review exploring the economic burden of sepsis.
+\newblock \emph{Journal of Critical Care}, 71:\penalty0 154096, 2022.
+
+\bibitem[Meng et~al.(2017)Meng, Pammi, Saronwala, Magoulas, Ghazi, Vetrini,
+  Zhang, He, Dharmadhikari, Qu, et~al.]{meng2017use}
+Linyan Meng, Mohan Pammi, Anirudh Saronwala, Pilar Magoulas, Andrew~Ray Ghazi,
+  Francesco Vetrini, Jing Zhang, Weimin He, Avinash~V Dharmadhikari, Chunjing
+  Qu, et~al.
+\newblock Use of exome sequencing for infants in intensive care units:
+  ascertainment of severe single-gene disorders and effect on medical
+  management.
+\newblock \emph{JAMA pediatrics}, 171\penalty0 (12):\penalty0 e173438--e173438,
+  2017.
+
+\bibitem[Jensson et~al.(2023)Jensson, Arnadottir, Katrinardottir,
+  Fridriksdottir, Helgason, Oddsson, Sveinbjornsson, Eggertsson, Halldorsson,
+  Atlason, et~al.]{jensson2023actionable}
+Brynjar~O Jensson, Gudny~A Arnadottir, Hildigunnur Katrinardottir, Run
+  Fridriksdottir, Hannes Helgason, Asmundur Oddsson, Gardar Sveinbjornsson,
+  Hannes~P Eggertsson, Gisli~H Halldorsson, Bjarni~A Atlason, et~al.
+\newblock Actionable genotypes and their association with life span in iceland.
+\newblock \emph{New England Journal of Medicine}, 389\penalty0 (19):\penalty0
+  1741--1752, 2023.
+
+\bibitem[Sanchis-Juan et~al.(2023)Sanchis-Juan, Megy, Stephens, Ricaurte,
+  Dewhurst, Low, French, Grozeva, Stirrups, Erwood, et~al.]{sanchis2023genome}
+Alba Sanchis-Juan, Karyn Megy, Jonathan Stephens, Camila~Armirola Ricaurte,
+  Eleanor Dewhurst, Kayyi Low, Courtney~E French, Detelina Grozeva, Kathleen
+  Stirrups, Marie Erwood, et~al.
+\newblock Genome sequencing and comprehensive rare-variant analysis of 465
+  families with neurodevelopmental disorders.
+\newblock \emph{The American Journal of Human Genetics}, 110\penalty0
+  (8):\penalty0 1343--1355, 2023.
+
+\end{thebibliography}
