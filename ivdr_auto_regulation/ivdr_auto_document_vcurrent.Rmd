@@ -1,0 +1,388 @@
+---
+author: "Dylan Lawless"
+date: "`r Sys.Date()`"
+title: \textcolor{kispidarkgreen}{IVDR compliance audit report}
+output:
+  pdf_document:
+    toc: true
+    number_sections: true
+header-includes:
+  - \usepackage{float}  # Ensure this is included if using the position 'H'
+  - \usepackage{xcolor}
+  - \definecolor{kispiblack}{HTML}{333333}
+  - \definecolor{kispidarkblue}{HTML}{023047}
+  - \definecolor{kispidarkgreen}{HTML}{006666}
+  - \newcommand{\highlight}[2]{\textcolor{#1}{#2}}
+params:
+  run_id: "RUN123"  # Default run ID; can be overridden when knitting
+---
+
+# What this document shows
+This document queries all parameters for an example: \textcolor{kispidarkgreen}{`r params$run_id`} and uses the results to automatically populate a template.
+This template matches needs for regulatory compliance. 
+The run ID indicates a processing step which can contain the data of one or more subjects which results in an analysis output. 
+The following database extract shows an example of this data for an analysis run for one subject 
+
+```{r setup, echo=FALSE, message=FALSE}
+library(kableExtra)
+library(DBI)
+library(knitr)
+library(dplyr)
+library(igraph)
+
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+
+kable <- function(data) {
+  knitr::kable(data, format="latex", longtable = FALSE, booktabs=FALSE, row.names = FALSE) %>% 
+    kable_styling(latex_options =c("striped", "scale_down", "HOLD_position"))
+}
+
+# Install kableExtra package if you haven't
+# if (!requireNamespace("kableExtra", quietly = TRUE))
+#   install.packages("kableExtra")
+
+# Define global variables for the database connection to ensure it stays open
+run_id <- params$run_id
+dbname <- "DNAsnake_IVDR.db"
+
+# Connect to the database
+db <- dbConnect(RSQLite::SQLite(), dbname = dbname)
+
+# Ensure the database connection is valid
+if (dbIsValid(db)) {
+  print("SQL database connection is active and ready.")
+} else {
+  stop("Failed to establish a connection to the database.")
+}
+
+# Define the function to retrieve run details, including reference genome information
+getRunDetails <- function(run_id) {
+  query <- sprintf("
+    SELECT 
+      r.run_id, 
+      r.run_date, 
+      r.status, 
+      r.sample_id,
+      s.collection_date,
+      s.source,
+      a.analysis_type, 
+      a.result, 
+      m.key, 
+      m.value AS metadata_value,
+      rg.name AS genome_name,
+      rg.version AS genome_version,
+      sc.component_name, 
+      sc.component_version, 
+      gl.commit_id
+    FROM 
+      Runs r
+      JOIN Samples s ON r.sample_id = s.sample_id
+      JOIN Analyses a ON r.run_id = a.run_id 
+      JOIN Metadata m ON r.run_id = m.run_id 
+      JOIN SystemComponents sc ON r.run_id = sc.run_id 
+      JOIN GitLog gl ON sc.component_id = gl.component_id
+      LEFT JOIN ReferenceGenomes rg ON m.value = rg.reference_id AND m.key = 'Reference Genome'
+    WHERE 
+      r.run_id = '%s'", run_id)
+  dbGetQuery(db, query)
+}
+
+# Retrieve run details
+run_details <- getRunDetails(run_id)
+print(run_details)
+
+# kable(run_details, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+```
+
+# Introduction to IVDR
+The In Vitro Diagnostic Medical Devices Regulation (IVDR) is an essential legislative framework that governs the safety and performance of in vitro diagnostic medical devices (IVDs) within the European Union. Implemented to enhance patient safety and ensure high standards of quality, the IVDR was adopted alongside the Medical Devices Regulation (MDR) to update and replace directives established in the 1990s, reflecting significant technological and scientific advancements in the sector.
+
+Reference examples of U.S. F.D.A cleared or approved companion diagnostic devices (In Vitro and Imaging Tools)
+can be found at 
+<https://www.fda.gov/medical-devices/in-vitro-diagnostics/list-cleared-or-approved-companion-diagnostic-devices-in-vitro-and-imaging-tools>.
+
+# Guidance 
+The European commission guidance for MDCG endorsed documents and other guidance can be found here:
+([link on health.ec.europa.eu](https://health.ec.europa.eu/medical-devices-sector/new-regulations/guidance-mdcg-endorsed-documents-and-other-guidance_en)). From here we assess the **Regulation (EU) 2017/746 (IVDR) on in vitro diagnostic medical devices** in English from here:
+([link on eur-lex.europa.eu](https://eur-lex.europa.eu/legal-content/EN/TXT/?uri=CELEX:02017R0746-20230320)).
+To ensure that we remain updated and complaint, we designed `eur_lex_scraper.R` which retrieves this guideline and converts all 133 articles (20240716) into a table. 
+We then assign criteria to determine the relevance of each article to our product. 
+The following table shows the head of the article titles and subtitles, with the main content hidden. 
+
+We use these guidelines to tag and map our variables to ensure that each element in a pipeline/network are accurately covered for regulatory compliance. 
+
+```{r read_article, echo=FALSE, message=FALSE}
+df <- readRDS(file = "../eurlex_scraper/data/EU_Regulation_Articles.Rds")
+df$linked_to_network <- "No"
+# df <- df |> dplyr::filter(grepl("^art", article)) |> dplyr::select(title, subtitle, content) |> head()
+df <- df |> dplyr::filter(grepl("^art", article)) |> dplyr::select(title, content) 
+
+# Custom function to remove excess whitespaces
+remove_excess_whitespace <- function(text) {
+  sapply(text, function(x) {
+    gsub("\\s+", " ", x)
+  })
+}
+
+# Remove excess whitespaces from the content column
+df$content <- remove_excess_whitespace(df$content)
+
+# Custom function to truncate text at a specified length
+truncate_text <- function(text, length = 100) {
+  sapply(text, function(x) {
+    if (nchar(x) > length) {
+      return(paste0(substr(x, 1, length), "..."))
+    } else {
+      return(x)
+    }
+  })
+}
+
+# Truncate the content column to a maximum of 60 characters
+df$content <- truncate_text(df$content, length = 100)
+
+# display
+kable(df[1:10, ])
+cat("   skipping to end...\n")
+kable(df[104:113, ])
+
+```
+
+# Variable definitions
+Here are the definitions for the variables included in the audit report, categorised by their respective data sources:
+
+- From the `Runs` Table (Prefix `r.`)
+	- \textcolor{kispidarkgreen}{r.run\_id}: Unique identifier for the analysis run.
+	- \textcolor{kispidarkgreen}{r.run\_date}: Date on which the analysis run was performed.
+	- \textcolor{kispidarkgreen}{r.status}: Current status of the run (e.g., completed, pending, failed).
+	- \textcolor{kispidarkgreen}{r.sample\_id}: Identifier linking to the specific sample used in the run.
+
+- From the `Samples` Table (Prefix `s.`)
+	- \textcolor{kispidarkgreen}{s.collection\_date}: Date on which the sample was collected.
+	- \textcolor{kispidarkgreen}{s.source}: Source from where the sample was obtained (e.g., Laboratory A, Patient).
+
+- From the `Analyses` Table (Prefix `a.`)
+	- \textcolor{kispidarkgreen}{a.analysis\_type}: Type of analysis conducted (e.g., Variant Detection, RNA-Seq).
+	- \textcolor{kispidarkgreen}{a.result}: Outcome or result of the analysis.
+
+- From the `Metadata` Table (Prefix `m.`)
+	- \textcolor{kispidarkgreen}{m.key}: Key or name of the metadata entry (e.g., Reference Genome, Pipeline Config).
+	- \textcolor{kispidarkgreen}{m.value as `metadata\_value`}: Value associated with the metadata key, providing specific details like reference genome IDs or configuration settings.
+
+- From the `ReferenceGenomes` Table (Prefix `rg.`)
+	- \textcolor{kispidarkgreen}{rg.name as `genome\_name`}: Name of the reference genome used in the analysis.
+	- \textcolor{kispidarkgreen}{rg.version as `genome\_version`}: Version of the reference genome.
+
+- From the `SystemComponents` Table (Prefix `sc.`)
+	- \textcolor{kispidarkgreen}{sc.component\_name}: Name of the software or system component used in the run.
+	- \textcolor{kispidarkgreen}{sc.component\_version}: Version of the component.
+
+- From the `GitLog` Table (Prefix `gl.`)
+	- \textcolor{kispidarkgreen}{gl.commit\_id}: Git commit ID that references the specific version of code or configuration used in the analysis.
+
+# Compliance and audit content
+This report provides a complete audit trail for run ID:  \textcolor{kispidarkgreen}{`r params$run_id`}. Below are the details of the components used in the analysis, including software versions, reference data, and version control details.
+
+```{r run-details, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+# Displaying the run details data frame
+kable(run_details)
+
+# kable(run_details, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+
+```
+
+## Sample details
+
+Details of the sample associated with the run.
+
+```{r sample-details, echo=FALSE, message=FALSE}
+# Fetching details from the Runs and Samples tables
+sample_details <- dbGetQuery(db, sprintf("SELECT r.sample_id, s.collection_date, s.source
+                                         FROM Runs r JOIN Samples s ON r.sample_id = s.sample_id
+                                         WHERE r.run_id = '%s'", params$run_id))
+
+# Display the sample details
+kable(sample_details)
+```
+
+## System overview
+Here we detail the specific components of the system used for the
+ \textcolor{kispidarkgreen}{audit run: `r params$run_id`}.
+ 
+```{r system-overview, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+# You might need to adjust this query to match your database schema
+system_details <- dbGetQuery(db, paste("SELECT * FROM SystemComponents WHERE run_id = '", params$run_id, "'", sep = ""))
+kable(system_details)
+
+# kable(system_details, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+```
+
+## Version control management
+Details of the version control for components used in this analysis.
+
+```{r version-control, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+# Assuming a table exists that logs all git commits relevant to each run
+git_log <- dbGetQuery(db, paste("SELECT * FROM GitLog WHERE run_id = '", params$run_id, "'", sep = ""))
+
+kable(git_log)
+# kable(git_log, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+```
+
+## Reference genome details
+Information about the reference genome information, as linked from the run metadata used for the specified run.
+
+```{r reference-genome-details, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+# Assuming that the reference genome ID is stored in the Metadata table and is fetched into the run_details
+# Let's extract the reference genome ID from the run_details data frame
+
+# Check if the reference genome ID is present in the metadata
+genome_id <- run_details %>% 
+  filter(key == "Reference Genome") %>% 
+  pull(metadata_value) %>% 
+  unique()  # This should give us the unique genome ID used
+
+# If a genome ID is present, fetch the details from the ReferenceGenomes table
+if (length(genome_id) > 0) {
+  ref_genome_query <- paste("SELECT * FROM ReferenceGenomes WHERE reference_id = '", genome_id, "'", sep = "")
+  ref_genome_details <- dbGetQuery(db, ref_genome_query)
+  
+  if (nrow(ref_genome_details) > 0) {
+    cat("Reference Genome Details for run ID:", params$run_id, ":\n")
+    kable(ref_genome_details)
+    # kable(ref_genome_details, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+    
+  } else {
+    print("No reference genome details found for the provided genome ID.")
+  }
+} else {
+  print("No reference genome ID found in the metadata for this run.")
+}
+
+```
+
+## Compliance Tagging and Audit Trails
+Audit trails for compliance checks.
+
+```{r compliance-audit, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+audit_trail <- dbGetQuery(db, paste("SELECT * FROM AuditTrail WHERE run_id = '", params$run_id, "'", sep = ""))
+kable(audit_trail)
+# kable(audit_trail, format="latex", longtable = FALSE, booktabs=FALSE,  position = "H") %>% 
+  # kable_styling(latex_options="scale_down")
+```
+
+# Database relationship network
+
+The database relationship network plot visually represents the interconnectedness of various elements within the  database, in this case \textcolor{kispidarkgreen}{DNAsnake\_v1.0}.
+The ability to make this plot demonstrates how different pieces of data are related and how they flow through the analysis pipeline. Here’s a detailed explanation of what this plot means in terms of SQL and how it is used to audit any element at any stage of our analysis:
+
+1. **Nodes**: 
+   - Each node in the graph represents a specific piece of data within the database, labeled with both the variable name and its value. For example, 
+   \textcolor{kispidarkgreen}{`r.sample\_id: XYZ\_001`} represents the sample ID used in the run.
+   - Nodes are derived from different tables in the database such as 
+   \textcolor{kispidarkgreen}{`Runs`}, 
+   \textcolor{kispidarkgreen}{`Samples`}, 
+   \textcolor{kispidarkgreen}{`Analyses`}, 
+   \textcolor{kispidarkgreen}{`Metadata`}, 
+   \textcolor{kispidarkgreen}{`ReferenceGenomes`}, 
+   \textcolor{kispidarkgreen}{`SystemComponents`}, and 
+   \textcolor{kispidarkgreen}{`GitLog`}.
+
+2. **Edges**: 
+   - Edges represent the relationships between these pieces of data. For example, an edge from 
+   \textcolor{kispidarkgreen}{`r.run\_id: RUN123`} to 
+   \textcolor{kispidarkgreen}{`r.sample\_id: XYZ\_001`} shows that the run identified by 
+   \textcolor{kispidarkgreen}{`RUN123`}
+   is associated with the sample 
+   \textcolor{kispidarkgreen}{`XYZ\_001`}.
+   - These relationships are based on the foreign key constraints defined in the database schema. 
+
+## SQL and the data flow
+In SQL terms, the relationships depicted in the plot are the result of JOIN operations between tables. Here’s how different tables are joined to form a comprehensive view of the data:
+
+- **Runs Table (`r.`)**: Contains information about each analysis run, such as 
+\textcolor{kispidarkgreen}{`run\_id`}, 
+\textcolor{kispidarkgreen}{`run\_date`}, 
+\textcolor{kispidarkgreen}{`status`}, and 
+\textcolor{kispidarkgreen}{`sample\_id`}.
+- **Samples Table (`s.`)**: Provides details about the sample, including \textcolor{kispidarkgreen}{`collection\_date`} and \textcolor{kispidarkgreen}{`source`}.
+- **Analyses Table (`a.`)**: Stores the type of analysis conducted and the result.
+- **Metadata Table (`m.`)**: Holds additional metadata related to the run, such as the reference genome used.
+- **ReferenceGenomes Table (`rg.`)**: Contains details about the reference genomes.
+- **SystemComponents Table (`sc.`)**: Lists the software components used in the analysis and their versions.
+- **GitLog Table (`gl.`)**: Tracks the specific Git commits associated with the software components used.
+- **AuditTrail Table (`at.`)**: Records events and details related to compliance checks.
+
+By maintaining such a detailed and interconnected database, we ensure that all data used in analyses is transparent, verifiable, and compliant with the IVDR guidelines. This approach significantly enhances the reliability and credibility of the analysis results, supporting the overall goal of ensuring high standards of quality and patient safety.
+
+
+```{r network_prep, echo=FALSE, message=FALSE}
+# Define nodes with variable names
+nodes <- data.frame(name = unique(c(
+	paste0("r.run_id: ", run_details$run_id), 
+	paste0("r.sample_id: ", run_details$sample_id), 
+	paste0("s.source: ", run_details$source), 
+	paste0("a.analysis_type: ", run_details$analysis_type), 
+	paste0("m.key: ", run_details$key), 
+	paste0("rg.genome_name: ", run_details$genome_name), 
+	paste0("sc.component_name: ", run_details$component_name), 
+	paste0("gl.commit_id: ", run_details$commit_id)
+)))
+
+# Define edges with variable names
+edges <- data.frame(
+	from = c(
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.run_id: ", run_details$run_id), 
+		paste0("r.sample_id: ", run_details$sample_id)
+	),
+	to = c(
+		paste0("r.sample_id: ", run_details$sample_id), 
+		paste0("s.source: ", run_details$source), 
+		paste0("a.analysis_type: ", run_details$analysis_type), 
+		paste0("m.key: ", run_details$key), 
+		paste0("rg.genome_name: ", run_details$genome_name), 
+		paste0("sc.component_name: ", run_details$component_name), 
+		paste0("gl.commit_id: ", run_details$commit_id), 
+		paste0("s.source: ", run_details$source)
+	)
+)
+```
+
+```{r network_graph, echo=FALSE, message=FALSE}
+# Create a graph from the edge list
+network_graph <- graph_from_data_frame(d = edges, vertices = nodes, directed = TRUE)
+
+# Plot the graph
+plot(network_graph, 
+		 layout = layout_with_fr(network_graph), 
+		 vertex.size = 20, 
+		 vertex.color = "lightblue", 
+		 vertex.frame.color = "#ffffff", 
+		 vertex.label.color = "black", 
+		 edge.arrow.size = 0.5,
+		 main = "Database relationship network")
+```
+
+
+```{r clean-up, echo=FALSE, message=FALSE}
+knitr::opts_chunk$set(tidy.opts=list(width.cutoff=60), width=60)
+dbDisconnect(db)
+```
+
+
+This report shows the graph-based approach to our data tracking system which allows use to initiate an audit process from any arbitrary data point (e.g. sample ID, software ID, run) and demonstrates compliance with IVDR standards for all of the related information.

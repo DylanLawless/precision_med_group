@@ -81,8 +81,18 @@
 %\rfoot{Handout 1}
 \usepackage{tocloft}  % Customizing the Table of Contents
 \setcounter{tocdepth}{1}
-
+\usepackage{pdfpages} % include supplemental pdf
 % cover
+
+%%%% Supplemental labels%%%%
+%Define command to start a supplemental section
+%set the supplemental letter used for figures (e.g. Figure E1)
+\newcommand{\beginsupplement}{%
+        \setcounter{table}{0}
+        \renewcommand{\thetable}{E\arabic{table}}%
+        \setcounter{figure}{0}
+        \renewcommand{\thefigure}{E\arabic{figure}}%
+         }
 
 %\usepackage[a4paper,margin=5pt]{geometry}
 

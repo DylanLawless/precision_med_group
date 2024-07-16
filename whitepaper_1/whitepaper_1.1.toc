@@ -1,43 +1,44 @@
-\contentsline {section}{\numberline {1}Executive summary}{2}{section.1}
-\contentsline {section}{\numberline {2}Introduction}{3}{section.2}
-\contentsline {section}{\numberline {3}Key products}{5}{section.3}
-\contentsline {subsection}{\numberline {3.1}Product example: advanced DNA sequencing data preprocessing}{5}{subsection.3.1}
-\contentsline {section}{\numberline {4}Multi-omics integration}{6}{section.4}
-\contentsline {section}{\numberline {5}Project management}{6}{section.5}
-\contentsline {section}{\numberline {6}Data flow}{7}{section.6}
-\contentsline {subsection}{\numberline {6.1}Sample collection and initial processing}{10}{subsection.6.1}
-\contentsline {subsection}{\numberline {6.2}Data transfer and bioinformatics analysis}{10}{subsection.6.2}
-\contentsline {subsection}{\numberline {6.3}Data conversion and integration}{10}{subsection.6.3}
-\contentsline {subsection}{\numberline {6.4}Presentation of final results}{10}{subsection.6.4}
-\contentsline {section}{\numberline {7}Clinical implementation and future prospects}{11}{section.7}
-\contentsline {section}{\numberline {8}Strategic collaborations}{11}{section.8}
-\contentsline {section}{\numberline {9}Funding model and sustainability}{11}{section.9}
-\contentsline {section}{\numberline {10}Key performance indicators}{14}{section.10}
-\contentsline {section}{\numberline {11}Single-source management in precision medicine}{14}{section.11}
-\contentsline {subsection}{\numberline {11.1}Principles of single-source management}{14}{subsection.11.1}
-\contentsline {subsection}{\numberline {11.2}Implementation example in our documentation}{15}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Benefits}{16}{subsection.11.3}
-\contentsline {section}{\numberline {12}IVDR compliance documentation and version controls}{16}{section.12}
-\contentsline {subsection}{\numberline {12.1}Introduction to IVDR}{16}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Example: Compliance and audit}{17}{subsection.12.2}
-\contentsline {subsubsection}{\numberline {12.2.1}Document Control}{17}{subsubsection.12.2.1}
-\contentsline {subsubsection}{\numberline {12.2.2}Introduction}{18}{subsubsection.12.2.2}
-\contentsline {subsubsection}{\numberline {12.2.3}System overview}{18}{subsubsection.12.2.3}
-\contentsline {subsubsection}{\numberline {12.2.4}Version control management}{18}{subsubsection.12.2.4}
-\contentsline {subsubsection}{\numberline {12.2.5}Reference genome details}{18}{subsubsection.12.2.5}
-\contentsline {subsubsection}{\numberline {12.2.6}Metadata and compliance tracking}{19}{subsubsection.12.2.6}
-\contentsline {subsubsection}{\numberline {12.2.7}Compliance tagging and audit trails}{19}{subsubsection.12.2.7}
-\contentsline {subsubsection}{\numberline {12.2.8}Case study and example documentation}{19}{subsubsection.12.2.8}
-\contentsline {subsubsection}{\numberline {12.2.9}Conclusion}{19}{subsubsection.12.2.9}
-\contentsline {subsubsection}{\numberline {12.2.10}Appendices}{19}{subsubsection.12.2.10}
-\contentsline {section}{\numberline {13}Future directions and innovation}{20}{section.13}
-\contentsline {section}{\numberline {14}Future products}{20}{section.14}
-\contentsline {subsection}{\numberline {14.1}Pharmacogenomics at Kispi}{20}{subsection.14.1}
-\contentsline {subsection}{\numberline {14.2}DeepInfeR}{22}{subsection.14.2}
-\contentsline {section}{\numberline {15}Benefit analysis}{22}{section.15}
-\contentsline {subsection}{\numberline {15.1}Comparable benchmarks}{22}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}Introduction to source data by Federal Statistical Office}{24}{subsection.15.2}
-\contentsline {subsection}{\numberline {15.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{25}{subsection.15.3}
-\contentsline {section}{\numberline {16}Intellectual property}{28}{section.16}
-\contentsline {section}{\numberline {17}Conclusion}{29}{section.17}
-\contentsline {section}{\numberline {18}Abbreviations}{29}{section.18}
+\contentsline {section}{\numberline {1}Executive summary}{3}{section.1}
+\contentsline {section}{\numberline {2}Introduction}{4}{section.2}
+\contentsline {section}{\numberline {3}Key products}{6}{section.3}
+\contentsline {subsection}{\numberline {3.1}Product example: advanced DNA sequencing data preprocessing}{6}{subsection.3.1}
+\contentsline {section}{\numberline {4}Multi-omics integration}{7}{section.4}
+\contentsline {section}{\numberline {5}Project management}{7}{section.5}
+\contentsline {section}{\numberline {6}Data flow}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}Sample collection and initial processing}{11}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}Data transfer and bioinformatics analysis}{11}{subsection.6.2}
+\contentsline {subsection}{\numberline {6.3}Data conversion and integration}{11}{subsection.6.3}
+\contentsline {subsection}{\numberline {6.4}Presentation of final results}{11}{subsection.6.4}
+\contentsline {section}{\numberline {7}Clinical implementation and future prospects}{12}{section.7}
+\contentsline {section}{\numberline {8}Strategic collaborations}{12}{section.8}
+\contentsline {section}{\numberline {9}Funding model and sustainability}{12}{section.9}
+\contentsline {section}{\numberline {10}Key performance indicators}{15}{section.10}
+\contentsline {section}{\numberline {11}Single-source management in precision medicine}{15}{section.11}
+\contentsline {subsection}{\numberline {11.1}Principles of single-source management}{15}{subsection.11.1}
+\contentsline {subsection}{\numberline {11.2}Implementation example in our documentation}{16}{subsection.11.2}
+\contentsline {subsection}{\numberline {11.3}Benefits}{17}{subsection.11.3}
+\contentsline {section}{\numberline {12}IVDR compliance documentation and version controls}{17}{section.12}
+\contentsline {subsection}{\numberline {12.1}Introduction to IVDR}{17}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Example: Compliance and audit}{18}{subsection.12.2}
+\contentsline {subsubsection}{\numberline {12.2.1}Document Control}{18}{subsubsection.12.2.1}
+\contentsline {subsubsection}{\numberline {12.2.2}Introduction}{19}{subsubsection.12.2.2}
+\contentsline {subsubsection}{\numberline {12.2.3}System overview}{19}{subsubsection.12.2.3}
+\contentsline {subsubsection}{\numberline {12.2.4}Version control management}{19}{subsubsection.12.2.4}
+\contentsline {subsubsection}{\numberline {12.2.5}Reference genome details}{19}{subsubsection.12.2.5}
+\contentsline {subsubsection}{\numberline {12.2.6}Metadata and compliance tracking}{20}{subsubsection.12.2.6}
+\contentsline {subsubsection}{\numberline {12.2.7}Compliance tagging and audit trails}{20}{subsubsection.12.2.7}
+\contentsline {subsubsection}{\numberline {12.2.8}Case study and example documentation}{20}{subsubsection.12.2.8}
+\contentsline {subsubsection}{\numberline {12.2.9}Conclusion}{20}{subsubsection.12.2.9}
+\contentsline {subsubsection}{\numberline {12.2.10}Appendices}{20}{subsubsection.12.2.10}
+\contentsline {section}{\numberline {13}Future directions and innovation}{21}{section.13}
+\contentsline {section}{\numberline {14}Future products}{21}{section.14}
+\contentsline {subsection}{\numberline {14.1}Pharmacogenomics at Kispi}{21}{subsection.14.1}
+\contentsline {subsection}{\numberline {14.2}DeepInfeR}{23}{subsection.14.2}
+\contentsline {section}{\numberline {15}Benefit analysis}{23}{section.15}
+\contentsline {subsection}{\numberline {15.1}Comparable benchmarks}{23}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Introduction to source data by Federal Statistical Office}{25}{subsection.15.2}
+\contentsline {subsection}{\numberline {15.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{26}{subsection.15.3}
+\contentsline {section}{\numberline {16}Intellectual property}{29}{section.16}
+\contentsline {section}{\numberline {17}Conclusion}{30}{section.17}
+\contentsline {section}{\numberline {18}Abbreviations}{30}{section.18}
+\contentsline {section}{\numberline {19}Supplemental}{31}{section.19}
