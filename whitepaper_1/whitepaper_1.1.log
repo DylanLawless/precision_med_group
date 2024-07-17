@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  16 JUL 2024 17:24
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  17 JUL 2024 09:50
  restricted system commands enabled.
 **whitepaper_1.1.tex
 (./whitepaper_1.1.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.249 seconds
+luaotfload | main : initialization completed in 0.246 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -2126,34 +2126,24 @@ Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
  , page5 used on input line 64.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
  [36<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 67.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 67.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
  (./whitepaper_1.1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 67.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 67.
-
-
-Package rerunfilecheck Warning: File `whitepaper_1.1.out' has changed.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `whitepaper_1.1.out':
-(rerunfilecheck)             Before: 99BBD8B43D0B49CC9561FCB8CDFDB4BD;1214
-(rerunfilecheck)             After:  382A5FE3692A34058CA6BF17A93B1DCA;1117.
-
-LaTeX Warning: Label(s) may have changed. Rerun to get cross-references right.
-
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 66.
+Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
+(rerunfilecheck)             Checksum: 382A5FE3692A34058CA6BF17A93B1DCA;1117.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26553 strings out of 494413
+ 26552 strings out of 494413
  156510,794899 words of node,token memory allocated
  853 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 14 attribute, 122 glue_spec, 14 attribute_l
 ist, 1 write, 10 pdf_action nodes
    avail lists: 1:6,2:920,3:411,4:146,5:794,6:71,7:4571,8:223,9:197,10:19,11:429
 
- 29440 multiletter control sequences out of 65536+600000
+ 29439 multiletter control sequences out of 65536+600000
  74 fonts using 13106431 bytes
  51i,18n,67p,1610b,880s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
@@ -2162,7 +2152,7 @@ monolt10-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
 mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
 rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf>
-Output written on whitepaper_1.1.pdf (36 pages, 2570534 bytes).
+Output written on whitepaper_1.1.pdf (36 pages, 2569822 bytes).
 
 PDF statistics: 814 PDF objects out of 1000 (max. 8388607)
  619 compressed objects within 7 object streams
