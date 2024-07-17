@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  17 JUL 2024 09:53
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  17 JUL 2024 09:58
  restricted system commands enabled.
 **whitepaper_1.1.tex
 (./whitepaper_1.1.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.312 seconds
+luaotfload | main : initialization completed in 0.383 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1993,8 +1993,140 @@ n. This com-mit-ment
 (./whitepaper_1.1.bbl [30
 
 ])
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=693, 614.295pt x 79
+4.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+  used on input line 64.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+  used on input line 64.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=696, page=1, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page1 used on input line 64.
+(luatex.def)             Requested size: 614.29349pt x 794.96806pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page1 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
  [31]
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page1 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page1 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page1 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [32<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=733, page=2, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [33<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=739, page=3, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[34<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=748, page=4, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [35<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=758, page=5, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page5 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page5 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page5 used on input line 64.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [36<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 66.
 Package atveryend Info: Empty hook `AfterLastShipout' on input line 66.
  (./whitepaper_1.1.aux)
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 66.
@@ -2004,26 +2136,26 @@ Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
 )
 
 Here is how much of LuaTeX's memory you used:
- 26408 strings out of 494413
+ 26552 strings out of 494413
  156510,794899 words of node,token memory allocated
  853 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 14 attribute, 122 glue_spec, 14 attribute_l
 ist, 1 write, 10 pdf_action nodes
    avail lists: 1:6,2:920,3:411,4:146,5:794,6:71,7:4571,8:223,9:197,10:19,11:429
 
- 29420 multiletter control sequences out of 65536+600000
+ 29439 multiletter control sequences out of 65536+600000
  74 fonts using 13106431 bytes
- 51i,11n,67p,1610b,880s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 51i,18n,67p,1610b,880s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
 sPro-LightIt.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lm
 monolt10-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
 mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
 rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf>
-Output written on whitepaper_1.1.pdf (31 pages, 2355941 bytes).
+Output written on whitepaper_1.1.pdf (36 pages, 2569822 bytes).
 
-PDF statistics: 738 PDF objects out of 1000 (max. 8388607)
- 567 compressed objects within 6 object streams
- 120 named destinations out of 1000 (max. 131072)
+PDF statistics: 814 PDF objects out of 1000 (max. 8388607)
+ 619 compressed objects within 7 object streams
+ 125 named destinations out of 1000 (max. 131072)
  153 words of extra memory for PDF output out of 10000 (max. 100000000)
 
