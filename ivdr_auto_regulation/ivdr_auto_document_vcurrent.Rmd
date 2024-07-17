@@ -376,6 +376,23 @@ plot(network_graph,
 		 vertex.label.color = "black", 
 		 edge.arrow.size = 0.5,
 		 main = "Database relationship network")
+
+# Open a PNG device
+png("ivdr_auto_network_graph.png", width = 800, height = 400)
+
+plot(network_graph, 
+		 layout = layout_with_fr(network_graph), 
+		 vertex.size = 20, 
+		 vertex.color = "lightblue", 
+		 vertex.frame.color = "#ffffff", 
+		 vertex.label.color = "black", 
+		 edge.arrow.size = 0.5,
+		 main = "Database relationship network")
+
+# Close the device
+dev.off()
+
+
 ```
 
 
