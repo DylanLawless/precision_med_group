@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  4 JUL 2024 12:49
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  20 JUL 2024 09:06
  restricted system commands enabled.
 **introduction.tex
 (./introduction.tex
@@ -6,11 +6,11 @@ LaTeX2e <2018-04-01> patch level 2
 Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
 Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
-llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
-x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
-e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
-luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
-texmf-var/luatex-cache/generic/names.
+llection.(using write cache: /usr/local/texlive/2018/texmf-var/luatex-cache/gene
+ric)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cache/generic /U
+sers/dantes/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
 luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
 -resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
 oader-2017-02-11.lua”.
@@ -22,8 +22,8 @@ Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
 Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
 Inserting `luaotfload.define_font' at position 1 in `define_font'.
 Lua-only attribute luaotfload_color_attribute = 4
-luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
-texmf-var/luatex-cache/generic/names.
+luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
+atex-cache/generic/names.
 Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
 font'.
 Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
@@ -34,11 +34,11 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.153 seconds
+luaotfload | main : initialization completed in 0.145 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 ! Undefined control sequence.
-l.1 \section
-          {Introduction}
+l.1 \customsection
+                [kispiyellow]{0em,-3em}{Introduction}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -52,14 +52,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.1 \section{I
-            ntroduction}
+l.1 \customsection[
+                 kispiyellow]{0em,-3em}{Introduction}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 1--3
-[]Introduction
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--4
+[][kispiyellow]0em,-
  []
 
 
@@ -69,7 +69,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{figure}
+l.5 \begin{figure}
                 [h] \hspace*{0cm}
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
@@ -82,18 +82,18 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.4 \begin{figure}[
+l.5 \begin{figure}[
                  h] \hspace*{0cm}
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 4--5
+Overfull \hbox (20.0pt too wide) in paragraph at lines 5--6
 [][h]
  []
 
 ! Undefined control sequence.
-l.6 	\includegraphics
+l.7 	\includegraphics
                    [width=0.48\textwidth]{precision_med_unit_management}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -104,7 +104,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.6 	\includegraphics[width=0.48\textwidth]
+l.7 	\includegraphics[width=0.48\textwidth]
                                          {precision_med_unit_management}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -113,7 +113,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.6 	\includegraphics[width=0.48\textwidth]
+l.7 	\includegraphics[width=0.48\textwidth]
                                          {precision_med_unit_management}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -125,17 +125,17 @@ two letters. (See Chapter 27 of The TeXbook.)
 ! Missing $ inserted.
 <inserted text> 
 $
-l.6 ...ludegraphics[width=0.48\textwidth]{precision_
+l.7 ...ludegraphics[width=0.48\textwidth]{precision_
                                                   med_unit_management}
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 6.
+(Font)              <7> on input line 7.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 6.
+(Font)              <5> on input line 7.
 ! Extra }, or forgotten $.
-l.6 ....48\textwidth]{precision_med_unit_management}
+l.7 ....48\textwidth]{precision_med_unit_management}
                                                   
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -144,7 +144,7 @@ the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
 ! Undefined control sequence.
-l.7 	\includegraphics
+l.8 	\includegraphics
                    [width=0.48\textwidth]{precision_med_overview}
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -155,7 +155,7 @@ and I'll forget about whatever was undefined.
 ! Missing number, treated as zero.
 <to be read again> 
 ]
-l.7 	\includegraphics[width=0.48\textwidth]
+l.8 	\includegraphics[width=0.48\textwidth]
                                          {precision_med_overview}
 A number should have been here; I inserted `0'.
 (If you can't figure out why I needed to see a number,
@@ -164,7 +164,7 @@ look up `weird error' in the index to The TeXbook.)
 ! Illegal unit of measure (pt inserted).
 <to be read again> 
 ]
-l.7 	\includegraphics[width=0.48\textwidth]
+l.8 	\includegraphics[width=0.48\textwidth]
                                          {precision_med_overview}
 Dimensions can be in units of em, ex, in, pt, pc,
 cm, mm, dd, cc, nd, nc, bp, or sp; but yours is a new one!
@@ -180,14 +180,14 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.8 	\caption
-           {\pmu overview.}
+l.9 	\caption
+           {\pmu overview. The unit needs illustrate the management philosop...
 You're in trouble here.  Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
 
 ! Undefined control sequence.
-l.8 	\caption{\pmu
-                 overview.}
+l.9 	\caption{\pmu
+                 overview. The unit needs illustrate the management philosop...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -201,7 +201,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 \end{center}
+l.11 \end{center}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -213,7 +213,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 \end{center}
+l.11 \end{center}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -225,7 +225,7 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.10 \end{center}
+l.11 \end{center}
                
 Try typing  <return>  to proceed.
 If that doesn't work, type  X <return>  to quit.
@@ -233,7 +233,7 @@ If that doesn't work, type  X <return>  to quit.
 ! Missing $ inserted.
 <inserted text> 
 $
-l.10 \end{center}
+l.11 \end{center}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -244,7 +244,7 @@ my insertion and my current dilemma will both disappear.
 ! Missing } inserted.
 <inserted text> 
 }
-l.10 \end{center}
+l.11 \end{center}
                
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -259,25 +259,25 @@ See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.11 \end{figure}
+l.12 \end{figure}
                
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
 
-Overfull \hbox (131.53297pt too wide) in paragraph at lines 6--12
+Overfull \hbox (131.53297pt too wide) in paragraph at lines 7--13
 [width=0.48]precision$[][]\OML/cmm/m/it/10 ed[]nit[]anagement\OT1/cmr/m/n/10 [\
 OML/cmm/m/it/10 width \OT1/cmr/m/n/10 =
  []
 
 
-Overfull \hbox (162.09148pt too wide) in paragraph at lines 6--12
+Overfull \hbox (1601.89587pt too wide) in paragraph at lines 7--13
 \OT1/cmr/m/n/10 0\OML/cmm/m/it/10 :\OT1/cmr/m/n/10 48][][][]$
  []
 
 ! Undefined control sequence.
-l.13 The \pmu
+l.14 The \pmu
             is ready to update our paediatric healthcare by serving an array...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -285,15 +285,24 @@ misspelled it (e.g., `\hobx'), type `I' and the correct
 spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
-luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
-/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
-/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
--bold.luc)(load luc: /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/
-generic/fonts/otl/lmroman10-regular.luc)
+! Undefined control sequence.
+l.16 enrich basic science at \kispi
+                                 . An overview of our unit is shown in
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+luaotfload | db : Font names database loaded from /usr/local/texlive/2018/texmf-
+var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /usr/local/texlive
+/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-bold.luc)(load luc: /us
+r/local/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10-regular.
+luc)
 ! Undefined control sequence.
 <write> ...ing: Reference `fig:overview' on page \thepage 
                                                   \space undefined\on@line .
-l.16 \textbf{figure \ref{fig:overview}}
+l.17 \textbf{figure \ref{fig:overview}}
                                      .
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -302,30 +311,30 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-LaTeX Warning: Reference `fig:overview' on page  undefined on input line 16.
+LaTeX Warning: Reference `fig:overview' on page  undefined on input line 17.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 13--17
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--18
 []The
  []
 
 
-Overfull \hbox (15.97pt too wide) in paragraph at lines 13--17
+Overfull \hbox (15.97pt too wide) in paragraph at lines 14--18
 \TU/lmr/bx/n/10 fig-
  []
 
 
-Overfull \hbox (16.40001pt too wide) in paragraph at lines 13--17
+Overfull \hbox (16.40001pt too wide) in paragraph at lines 14--18
 \TU/lmr/bx/n/10 ure
  []
 
 
-Overfull \hbox (10.85999pt too wide) in paragraph at lines 13--17
+Overfull \hbox (10.85999pt too wide) in paragraph at lines 14--18
 []. 
  []
 
 ! Undefined control sequence.
-l.25 \href
+l.26 \href
         {https://www.precisionmed.ch/en/}{Swiss Institute of Bioinformatics ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -334,7 +343,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.26 \href
+l.27 \href
         {https://theloopzurich.ch/en/}{The LOOP Zurich},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -343,7 +352,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.27 \href
+l.28 \href
         {https://www.chuv.ch/en/bdsc/research/our-groups/precision-medicine}...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -352,7 +361,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.29 \href
+l.30 \href
         {https://www.roche.com/about/strategy/personalised-healthcare}{Roche},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -361,7 +370,7 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.30 \href
+l.31 \href
         {https://www.gene.com/topics/personalized-healthcare}{Genentech},
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -370,8 +379,8 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.31 \href
-        {https://www.pfizer.com/science/innovation/precision-medicine}{Pfize...
+l.32 and \href
+            {https://www.pfizer.com/science/innovation/precision-medicine}{P...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -379,13 +388,18 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 18--32
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--33
 []Traditionally,
  []
 
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 34--38
+[]There
+ []
+
 ! Undefined control sequence.
-l.33 The \pmu
-            at Kinderspital Zürich is set to collaborate closely with the H...
+l.39 The \pmu
+            at \kispi can be ready to collaborate closely with the Health 20...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -393,7 +407,16 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 ! Undefined control sequence.
-l.33 ...of the Swiss Multi-Omics Center (SMOC) (\url
+l.39 The \pmu at \kispi
+                      can be ready to collaborate closely with the Health 20...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.39 ...of the Swiss Multi-Omics Center (SMOC) (\url
                                                   {http://smoc.ethz.ch}), to...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -402,17 +425,17 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 33--37
+Overfull \hbox (20.0pt too wide) in paragraph at lines 39--43
 []The
  []
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 39--40
+Overfull \hbox (20.0pt too wide) in paragraph at lines 45--46
 []We
  []
 
 ! Undefined control sequence.
-l.50 ...oMedIT network on the sciCORE platform (\url
+l.56 ...oMedIT network on the sciCORE platform (\url
                                                   {https://sphn.ch/network/p...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -421,12 +444,12 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 50--53
+Overfull \hbox (20.0pt too wide) in paragraph at lines 56--59
 []Our
  []
 
 ! Undefined control sequence.
-l.57 ...ices we can provide analysis within the \pmu
+l.60 ...ices we can provide analysis within the \pmu
                                                   :
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
@@ -435,13 +458,22 @@ spelling (e.g., `I\hbox'). Otherwise just continue,
 and I'll forget about whatever was undefined.
 
 
-Overfull \hbox (20.0pt too wide) in paragraph at lines 57--58
+Overfull \hbox (20.0pt too wide) in paragraph at lines 60--61
 []By
  []
 
 ! Undefined control sequence.
-l.67 The \pmu
-            can therefore provide clinical-grade results with fast turnaroun...
+l.70 The \pmu
+            will therefore be able to provide clinical-grade results with fa...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.72 Material will be shipped from \kispi
+                                        to SMOC where high-throughput OMICs ...
 The control sequence at the end of the top line
 of your error message was never \def'ed. If you have
 misspelled it (e.g., `\hobx'), type `I' and the correct
@@ -458,11 +490,11 @@ and I'll forget about whatever was undefined.
 
 Here is how much of LuaTeX's memory you used:
  30 strings out of 494413
- 100000,89155 words of node,token memory allocated 40225 words of node memory still in use:
-   95 hlist, 1 rule, 33 disc, 23 local_par, 1 dir, 2 math, 824 glue, 11 kern, 65
- penalty, 4597 glyph, 99 attribute, 35 glue_spec, 99 attribute_list, 1 temp, 2 w
+ 100000,89155 words of node,token memory allocated 45496 words of node memory still in use:
+   98 hlist, 1 rule, 34 disc, 24 local_par, 1 dir, 2 math, 898 glue, 73 kern, 67
+ penalty, 5225 glyph, 99 attribute, 35 glue_spec, 99 attribute_list, 1 temp, 1 w
 rite nodes
-   avail lists: 2:2,3:4,4:195,5:12,8:57,10:194
+   avail lists: 2:2,3:293,4:195,5:12,8:348,10:194
  4310 multiletter control sequences out of 65536+600000
  26 fonts using 1476487 bytes
  19i,2n,17p,529b,119s stack positions out of 5000i,500n,10000p,200000b,100000s

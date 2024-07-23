@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Germline variant Classification</title>
+<meta name="description" content="Information about VarSome&#x27;s ACMG implementation">
+<meta property="og:title" content="Germline variant Classification">
+<meta property="og:url" content="https://varsome.com/about/resources/germline-implementation/">
+<meta property="og:description" content="Information about VarSome&#x27;s ACMG implementation">
+<meta property="og:type" content="Article">
+<meta property="og:site_name" content="VarSome">
+<meta name="twitter:domain" content="varsome.com">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:title" content="Germline variant Classification">
+<meta name="twitter:url" content="https://varsome.com/about/resources/germline-implementation/">
+<meta name="twitter:description" content="Information about VarSome&#x27;s ACMG implementation">
+<meta name="robots" content="index, follow">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://assets.varsome.com/static/design/css/bootstrap.min.css?v=1680809778">
+<link rel="stylesheet" href="https://assets.varsome.com/static/design/css/varsome.min.css?v=1680809778">
+<link rel="stylesheet" href="https://assets.varsome.com/static/design/css/varsome-style.min.css?v=1680809778">
+<link rel="stylesheet" href="https://assets.varsome.com/static/design/css/minimum-style.min.css?v=1680809778">
+<link rel="stylesheet" href="https://assets.varsome.com/static/design/css/tailwind.min.css?v=1680809778">
+<meta name="msapplication-square150x150logo" content="https://assets.varsome.com/static/img/favicons/mstile-150x150.png?v=2">
+<meta name="msapplication-TileImage" content="https://assets.varsome.com/static/img/favicons/mstile-150x150.png?v=2">
+<meta name="msapplication-TileColor" content="#5bbad5">
+<link rel="apple-touch-icon-precomposed" sizes="114x114" href="https://assets.varsome.com/static/img/favicons/apple-touch-icon-precomposed.png?v=2">
+<link rel="apple-touch-icon" sizes="114x114" href="https://assets.varsome.com/static/img/favicons/apple-touch-icon.png?v=2">
+<link rel="icon" sizes="16x16" href="https://assets.varsome.com/static/img/favicons/favicon-16x16.png?v=2">
+<link rel="icon" sizes="32x32" href="https://assets.varsome.com/static/img/favicons/favicon-32x32.png?v=2">
+<link rel="shortcut icon" href="https://assets.varsome.com/static/img/favicons/favicon.ico?v=2">
+<link rel="mask-icon" href="https://assets.varsome.com/static/img/favicons/safari-pinned-tab.svg?v=2" color="#5bbad5">
+<meta name="mobile-web-app-capable" value="yes">
+<script src="https://cookie-cdn.cookiepro.com/scripttemplates/otSDKStub.js" type="text/javascript" charset="UTF-8" data-domain-script="fcf74f33-f6d6-42fd-a276-c3a60df043d8"></script>
+<script type="text/javascript">function OptanonWrapper(){}</script>
+<script id="requests-config" type="application/json">
+    {
+        "jsonWebToken": {"access": null, "refresh": null},
+        "refreshTokenUrl": "https://sso.varsome.com/jwt/refresh-token/",
+        "logoutUrl": "/connect/oidc/logout/",
+        "csrfCookieName": "csrftoken",
+        "recaptchaCookieName": "recaptcha_cookie",
+        "recaptchaHeaderName": "X-RECAPTCHA"
+    }
+</script>
+<script src="https://assets.varsome.com/static/saphetor_auth/js/varsome-requests.js?v=17e78108-7249-42ee-908b-5af0d437b7f0"></script>
+<script>const configElement=document.getElementById('requests-config');const requestsConfig=JSON.parse(configElement.innerHTML);const varsomeRequests=new VarSomeRequests(requestsConfig);const httpRequest=varsomeRequests.http;const plainHttpRequest=varsomeRequests.plainHttp;</script>
+</head>
+<body id="start" class="narrow-width-page font-roboto tw-w-full tw-bg-blueGray-100">
+<div id="gdpr-page"></div>
+<div style="min-height: calc(100vh - 32px);">
+<div id="menu-container" class="tw-sticky tw-top-0 tw-pointer-events-none tw-z-50">
+<div id="ie-alert" class="tw-bg-red-300 tw-text-red-900 tw-p-4 tw-pointer-events-auto tw-hidden" role="alert">
+VarSome is not fully supported on Internet Explorer - please use Chrome, Firefox, MS Edge or Safari.
+<button onclick="dismissIEAlert()" type="button" class="close" data-dismiss="alert" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="tw-pointer-events-auto">
+<nav class="varsome-menu navbar" style="position: relative; padding-left: 0; padding-right: 0;">
+<div class="nav-fluid tw-flex tw-items-center tw-mx-auto tw-px-10 submenu-width-reference tw-w-full tw-max-w-1800">
+<a class="navbar-brand" href="/">
+<img class="logo only-not-premium" src="https://assets.varsome.com/static/img/svg/light/logo.svg" alt="VarSome" height="32"/>
+<img class="logo-premium only-on-premium tw-hidden" src="https://assets.varsome.com/static/img/svg/light/logo-premium.svg" alt="VarSome" height="32"/>
+</a>
+<div class="tw-flex-grow only-sm"></div>
+<button class="navbar-toggler only-sm" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="navbar-collapse only-lg" id="navbarSupportedContent">
+<div class="header_main">
+<div class="top">
+<div id="query-form"></div>
+</div>
+<div class="bottom">
+<div class="tw-flex">
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">Editions<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/97/e6/97e64409-de97-450a-850b-17fad6bd3942/simple.png" alt="VarSome">
+<p>Global Genomics Community of 500 000+ healthcare professionals and researchers, who share their findings and expertise and look to establish collaborations. It features a massive knowledge base consisting of +140 data resources and powerful variant search engine.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome" class="submenu__link">
+<span class="learn-more">More about VarSome.com</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/03/17/0317e207-629c-49a8-becf-64e803ca4624/premium.png" alt="VarSome Premium">
+<p>VarSome.com Premium is a subscription service allowing you to access additional 3rd party annotation data resources and features without any delays. </p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-premium" class="submenu__link">
+<span class="learn-more">More about VarSome Premium</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/78/f8/78f8ce70-48ff-465c-8804-f32480bd2ab6/clinical.png" alt="VarSome Clinical">
+<p>CE IVD-certified and HIPAA-compliant platform for variant discovery, annotation, and interpretation of NGS data for whole genomes, exomes, and gene panels, for individual samples, trios, families, and cohorts.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-clinical" class="submenu__link">
+<span class="learn-more">More about VarSome Clinical</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/de/42/de42a182-c04e-4316-86d4-ced4bd45ed90/api.png" alt="Application Programming Interfaces">
+<p>All our platforms provide powerful programming interfaces which allow you easy integration with your own software tools.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-api" class="submenu__link">
+<span class="learn-more">Learn more about APIs</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">About<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>Resources</h2>
+<ul>
+<li>
+<a target="_blank" href="https://varsome.com/datasources/">
+140+ Data Resources
+</a>
+</li>
+<li>
+<a href="/about/resources/germline-implementation/">
+Germline Classification
+</a>
+</li>
+<li>
+<a href="/about/resources/amp-implementation/">
+Somatic Classification
+</a>
+</li>
+<li>
+<a href="/about/resources/sv-implementation/">
+SV Documentation
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/whitepapers">
+Whitepapers
+</a>
+</li>
+<li>
+<a target="_blank" href="https://docs.varsome.com/">
+Help Center
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLbkSvXteAxJCD8xK3_YzZ7w7npwdJ0FX5">
+Learning Videos
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>Partners</h2>
+<ul>
+<li>
+<a target="_blank" href="https://landing.varsome.com/distributors">
+Distributors
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/become-varsome-partner">
+Become a partner
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>General</h2>
+<ul>
+<li>
+<a target="_blank" href="https://saphetor.com/about/">
+The Company
+</a>
+</li>
+<li>
+<a href="/about/general/varsome-citations/">
+Cite VarSome!
+</a>
+</li>
+<li>
+<a href="/how-do-i-create-link-varsome/">
+Link to VarSome
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/contact">
+Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/community-contributions/" class="nav-link">Community</a>
+</div>
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a target="_blank" href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">News<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/54/55/54553780-896c-42b3-86ca-e8e3cac1d7c5/company.png" alt="Company News">
+<p>The latest news from Saphetor SA, the creator of the VarSome Suite.</p>
+</div>
+<a target="_blank" href="https://news.varsome.com" class="submenu__link">
+<span class="learn-more">Read Company News</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/b8/3f/b83fb086-d572-4b08-a686-9b135a5f1063/platform-v3.png" alt="Platform Updates">
+<p>The latest updates across the whole VarSome Suite.</p>
+</div>
+<a target="_blank" href="https://updates.varsome.com/" class="submenu__link">
+<span class="learn-more">Read Platform Updates</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a class="nav-link" target="_blank" href="https://landing.varsome.com/contact">Demo</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="tw-flex-grow only-lg"></div>
+<div id="js-notificationsHolder" class="only-lg"></div>
+<div class="only-lg tw-flex-shrink-0">
+<div class="user-sign-btns my-2 my-lg-0">
+<a href="/sign-in/" id="menu-login-link" class="btn btn-secondary mr-sm-2">Sign in</a>
+<a href="/sign-up/" class="btn btn-primary">Join</a>
+</div>
+</div>
+</div>
+<div class="navbar-collapse collapse only-sm" id="navbarSupportedContent">
+<div class="header_main">
+<div class="top">
+<div id="query-form-sm"></div>
+</div>
+<div>
+<div class="">
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">Editions<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/97/e6/97e64409-de97-450a-850b-17fad6bd3942/simple.png" alt="VarSome">
+<p>Global Genomics Community of 500 000+ healthcare professionals and researchers, who share their findings and expertise and look to establish collaborations. It features a massive knowledge base consisting of +140 data resources and powerful variant search engine.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome" class="submenu__link">
+<span class="learn-more">More about VarSome.com</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/03/17/0317e207-629c-49a8-becf-64e803ca4624/premium.png" alt="VarSome Premium">
+<p>VarSome.com Premium is a subscription service allowing you to access additional 3rd party annotation data resources and features without any delays. </p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-premium" class="submenu__link">
+<span class="learn-more">More about VarSome Premium</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/78/f8/78f8ce70-48ff-465c-8804-f32480bd2ab6/clinical.png" alt="VarSome Clinical">
+<p>CE IVD-certified and HIPAA-compliant platform for variant discovery, annotation, and interpretation of NGS data for whole genomes, exomes, and gene panels, for individual samples, trios, families, and cohorts.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-clinical" class="submenu__link">
+<span class="learn-more">More about VarSome Clinical</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/de/42/de42a182-c04e-4316-86d4-ced4bd45ed90/api.png" alt="Application Programming Interfaces">
+<p>All our platforms provide powerful programming interfaces which allow you easy integration with your own software tools.</p>
+</div>
+<a target="_blank" href="https://landing.varsome.com/varsome-api" class="submenu__link">
+<span class="learn-more">Learn more about APIs</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">About<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>Resources</h2>
+<ul>
+<li>
+<a target="_blank" href="https://varsome.com/datasources/">
+140+ Data Resources
+</a>
+</li>
+<li>
+<a href="/about/resources/germline-implementation/">
+Germline Classification
+</a>
+</li>
+<li>
+<a href="/about/resources/amp-implementation/">
+Somatic Classification
+</a>
+</li>
+<li>
+<a href="/about/resources/sv-implementation/">
+SV Documentation
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/whitepapers">
+Whitepapers
+</a>
+</li>
+<li>
+<a target="_blank" href="https://docs.varsome.com/">
+Help Center
+</a>
+</li>
+<li>
+<a target="_blank" href="https://www.youtube.com/playlist?list=PLbkSvXteAxJCD8xK3_YzZ7w7npwdJ0FX5">
+Learning Videos
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>Partners</h2>
+<ul>
+<li>
+<a target="_blank" href="https://landing.varsome.com/distributors">
+Distributors
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/become-varsome-partner">
+Become a partner
+</a>
+</li>
+</ul>
+</div>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content">
+<h2>General</h2>
+<ul>
+<li>
+<a target="_blank" href="https://saphetor.com/about/">
+The Company
+</a>
+</li>
+<li>
+<a href="/about/general/varsome-citations/">
+Cite VarSome!
+</a>
+</li>
+<li>
+<a href="/how-do-i-create-link-varsome/">
+Link to VarSome
+</a>
+</li>
+<li>
+<a target="_blank" href="https://landing.varsome.com/contact">
+Contact
+</a>
+</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="nav-item">
+<a href="/community-contributions/" class="nav-link">Community</a>
+</div>
+<div class="nav-item tw-relative js-has-dropdown-custom-submenu">
+<a target="_blank" href="javascript:void(0);" class="nav-link js-dropdown-custom over-all show-arrow">News<div class="arrow"></div></a>
+<div class="js-dropdown-custom-menu submenu submenu-content" style="z-index: 51;">
+<div class="submenu-wrapper">
+<div class="submenu__wrapper">
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/54/55/54553780-896c-42b3-86ca-e8e3cac1d7c5/company.png" alt="Company News">
+<p>The latest news from Saphetor SA, the creator of the VarSome Suite.</p>
+</div>
+<a target="_blank" href="https://news.varsome.com" class="submenu__link">
+<span class="learn-more">Read Company News</span>
+</a>
+</div>
+<div class="submenu__column media-body">
+<div class="submenu__content with-more-btn">
+<img class="img-fluid" src="https://assets.varsome.com/media/filer_public/b8/3f/b83fb086-d572-4b08-a686-9b135a5f1063/platform-v3.png" alt="Platform Updates">
+<p>The latest updates across the whole VarSome Suite.</p>
+</div>
+<a target="_blank" href="https://updates.varsome.com/" class="submenu__link">
+<span class="learn-more">Read Platform Updates</span>
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<a id="header-demo-request" target="_blank" href="https://landing.varsome.com/contact">Demo</a>
+</div>
+</div>
+</div>
+<div class="">
+<div class="user-sign-btns my-2 my-lg-0">
+<a href="/sign-in/" id="menu-login-link" class="btn btn-secondary mr-sm-2">Sign in</a>
+<a href="/sign-up/" class="btn btn-primary">Join</a>
+</div>
+</div>
+</div>
+</nav>
+</div>
+<div id="varsome-menu-container"></div>
+</div>
+<main style="min-height: calc(100vh - 100px);">
+<section>
+<div class="container-fluid">
+<div class="row flex-xs-middle">
+<div class="col-sm-12">
+<div id="loading" class="varsome-text-center">
+<i class="fa fa-circle-o-notch fa-spin fa-2x"></i>
+<h4 class="varsome-text-muted">Loading, please wait...</h4>
+</div>
+<div id="varsome-acmg-documentation"></div>
+<style>
+    #varsome-acmg-documentation h1 {
+        font-size: 2.4rem!important;
+    }
+    #varsome-acmg-documentation h2 {
+        font-size: 2rem!important;
+    }
+    #varsome-acmg-documentation h3 {
+        font-size: 1.6rem!important;
+    }
+    #varsome-acmg-documentation {
+        font-size: 1.1rem!important;
+        font-family: 'Raleway', 'Helvetica Neue', Helvetica, Arial, sans-serif!important;
+    }
+    #varsome-acmg-documentation h1, h2, h3 {
+        font-weight: bold!important;
+    }
+    .varsome-text-center{
+        text-align: center;
+        margin-top: 30px;
+    }
+</style>
+</div>
+</div>
+</div>
+</section>
+</main>
+<div style="max-width:100vw; overflow: hidden;">
+<footer id="dynamic-footer" style="overflow:hidden; width: 100vw;">
+<div class="box_2">
+<div class="container-fluid">
+<div class="box_2l">
+<h2>Latest News</h2>
+<a href="https://news.varsome.com/en/" target="_blank">See all blog posts</a>
+</div>
+<div id="blog-articles" class="box_2r"></div>
+</div>
+</div>
+<div class="box_3">
+<div class="container-fluid">
+<div class="box_3l">
+<div class="box_3log">
+<img src="https://assets.varsome.com/static/img/svg/light/logo.svg" alt="VarSome" height="34">
+</div>
+<div class="box_3soc">
+<a href="https://twitter.com/varsome" target="_blank">
+<i class="fa fa-twitter"></i>
+</a>
+<a href="https://www.linkedin.com/showcase/varsome/" target="_blank">
+<i class="fa fa-linkedin"></i>
+</a>
+<a href="https://www.youtube.com/channel/UCwEorND5-pl_9juijC1YGQA?view_as=subscriber" target="_blank">
+<i class="fa fa-youtube-play"></i>
+</a>
+<a href="https://news.varsome.com/en/rss.xml" target="_blank"> <i class="fa fa-rss"></i></a>
+</div>
+</div>
+<div class="box_3r">
+<div class="row">
+<div class="box_3cu">
+<h2>VARSOME SUITE</h2>
+<a href="/varsome-editions/varsome/">
+VarSome
+</a>
+<a href="/varsome-editions/varsome-premium/">
+VarSome Premium
+</a>
+<a href="/varsome-editions/varsome-clinical/">
+VarSome Clinical
+</a>
+<a href="/varsome-editions/varsome-api/">
+VarSome API
+</a>
+</div>
+<div class="box_3cu">
+<h2>RESOURCES</h2>
+<a href="/about/resources/examples/">
+Query Examples
+</a>
+<a target="_blank" href="https://docs.varsome.com/">
+Documentation
+</a>
+<a href="/about/resources/acmg-implementation/">
+ACMG Implementation
+</a>
+<a href="/about/resources/amp-implementation/">
+AMP Implementation
+</a>
+<a target="_blank" href="https://blog.varsome.com/varsome-as-human-genomics-community">
+Global Community
+</a>
+<a target="_blank" href="https://blog.varsome.com/varsome-big-data">
+VarSome&#x27;s Big Data
+</a>
+<a target="_blank" href="https://blog.varsome.com/increasing-the-diagnostic-yield-with-varsome-clinical">
+Increasing Diagnostic Yield
+</a>
+</div>
+<div class="box_3cu">
+<h2>THE COMPANY</h2>
+<a target="_blank" href="https://saphetor.com/about/">
+About Saphetor SA
+</a>
+<a target="_blank" href="https://blog.varsome.com/">
+News
+</a>
+<a href="/about/general/varsome-citations/">
+Cite VarSome!
+</a>
+<a target="_blank" href="https://saphetor.com/contact/">
+Contact
+</a>
+</div>
+</div>
+<div class="row">
+<div class="box_3cu">
+<h2>SYSTEM STATUS</h2>
+<a target="_blank" href="https://status.saphetor.com/">
+System status
+</a>
+</div>
+<div class="box_3cu">
+<h2>LEGAL</h2>
+<a href="/information/legal/terms/">
+Terms
+</a>
+<a href="/information/legal/privacy/">
+Privacy
+</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div class="footer">
+<button id="ot-sdk-btn" class="ot-sdk-show-settings">Cookie Settings</button>
+<p class="mt-3">VarSome Suite is brought to you by <a href="https://saphetor.com" rel="noopener" target="_blank">Saphetor SA</a>.</p>
+<p>© 2023 Saphetor SA – All Rights Reserved.</p>
+</div>
+</footer>
+</div>
+</div>
+<input type="hidden" id="environment" name="environment" value="live">
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+<script>$(function(){$("#hideMobileNotice").on("click",function(){$("#mobileGuard").addClass("hidden");});});</script>
+<script type="text/javascript">WebFontConfig={google:{families:['Raleway:400,300,600,700:latin','Cabin:400,400italic,700,700italic:latin','Cutive+Mono::latin']}};(function(){var wf=document.createElement('script');wf.src=('https:'==document.location.protocol?'https':'http')+'://ajax.googleapis.com/ajax/libs/webfont/1.5.18/webfont.js';wf.type='text/javascript';wf.async='true';var s=document.getElementsByTagName('script')[0];s.parentNode.insertBefore(wf,s);})();</script>
+<script type="text/javascript">$.fn.serializeObject=function(){var o={};var a=this.serializeArray();$.each(a,function(){if(o[this.name]!==undefined){if(!o[this.name].push){o[this.name]=[o[this.name]];}o[this.name].push(this.value||'');}else{o[this.name]=this.value||'';}});return o;};</script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/tether/1.1.1/js/tether.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+<script src="https://assets.varsome.com/static/design/js/varsome.js?v=1680809778"></script>
+<script src="https://assets.varsome.com/static/js/native.history.js?v=1680809778"></script>
+<script src="https://assets.varsome.com/static/js/varsome_regex.js?v=1680809778"></script>
+<div id="js-betaAcknowledge" style="display: none;">
+<div class="sticky-notification sticky-notification--bottom sticky-notification--warning">
+<p class="sticky-notification__text">
+You are in a <strong>BETA</strong> Environment and any data or results
+should not be treated as clinically actionable! If you have any questions, feel free to
+contact us.<br/><br/>
+Thank you and enjoy your visit!
+</p>
+<a id="js-betaAccept" href="#" class="uk-button sticky-notification__cta">
+OK
+</a>
+</div>
+</div>
+<div id="js-betaFrame" style="display: none;">
+<div class="fullscreen-frame">
+<div class="fullscreen-frame__top"></div>
+<div class="fullscreen-frame__text">BETA VERSION</div>
+<div class="fullscreen-frame__bottom"></div>
+<div class="fullscreen-frame__left"></div>
+<div class="fullscreen-frame__right"></div>
+</div>
+</div>
+<script>$(function(){if($("#environment").length&&$("#environment").val()==="beta"){$("#js-betaFrame").css("display","block");if(!cookieExists("beta_acknowledge")){$("#js-betaAcknowledge").fadeIn(500);}}});$("#js-betaAccept").on("click",function(e){e.preventDefault();setCookie("beta_acknowledge","1","#js-betaAcknowledge");});function cookieExists(name){if(document.cookie.split(";").some(function(item){return item.trim().startsWith(name)})){return true;}}function setCookie(name,value,domElement){document.cookie=name+"="+value+";path=/;max-age= "+24*60*60;$(domElement).fadeOut(500);}</script>
+<div id="js-smallScreen" style="display: none">
+<div class="sticky-notification sticky-notification--bottom sticky-notification--informational">
+<p class="sticky-notification__text">
+This website may not work correctly with your screen size.
+</p>
+<a id="js-smallScreenAccept" href="#" class="uk-button sticky-notification__cta">
+OK
+</a>
+</div>
+</div>
+<script>$(function(){if($(window).width()<1024){if(!cookieExists("smallScreen_acknowledge")){$("#js-smallScreen").fadeIn(500);}}});$("#js-smallScreenAccept").on("click",function(e){e.preventDefault();setCookie("smallScreen_acknowledge",true,"#js-smallScreen");});</script>
+<div class="modal fade" id="upload-vcf-modal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+<h4 class="modal-title">Introducing VarSome Pro</h4>
+</div>
+<div class="modal-body">
+<p>
+With <i>VarSome Pro</i> you can upload a VCF file containing simple or multiple samples for variant annotation and classification. Subsequently, you can use a sophisticated set of features for browsing and filtering your data.<br>
+<span class="hubspot-btn" id="hbspt-cta-1">
+<span class="hs-cta-wrapper" id="hs-cta-wrapper-0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa"><span class="hs-cta-node hs-cta-0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa" id="hs-cta-0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4384097/0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa"><img class="hs-cta-img" id="hs-cta-img-0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4384097/0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa.png" alt="Compare VarSome Editions"/></a></span></span>
+</span>
+</p>
+<p>
+Already a VarSome user?<br>
+<span class="hubspot-btn hubspot-grey" id="hbspt-cta-2">
+<span class="hs-cta-wrapper" id="hs-cta-wrapper-96a708bf-6d21-428e-8b80-bba234d7d1dd"><span class="hs-cta-node hs-cta-96a708bf-6d21-428e-8b80-bba234d7d1dd" id="hs-cta-96a708bf-6d21-428e-8b80-bba234d7d1dd"><!--[if lte IE 8]><div id="hs-cta-ie-element"></div><![endif]--><a href="https://cta-redirect.hubspot.com/cta/redirect/4384097/96a708bf-6d21-428e-8b80-bba234d7d1dd" target="_blank"><img class="hs-cta-img" id="hs-cta-img-96a708bf-6d21-428e-8b80-bba234d7d1dd" style="border-width:0px;" src="https://no-cache.hubspot.com/cta/default/4384097/96a708bf-6d21-428e-8b80-bba234d7d1dd.png" alt="Proceed to VarSome Pro"/></a></span></span>
+</span>
+</p>
+</div>
+<div class="modal-footer">
+<a data-dismiss="modal" class="btn btn-info">Close</a>
+</p>
+</div>
+</div>
+</div>
+</div>
+<script type="text/javascript">$(document).ready(function(){$('#upload-vcf').click(function(){hbspt.cta.load(4384097,'0a3cf2f8-07b3-436e-ae4d-fe37e6c178fa',{});hbspt.cta.load(4384097,'96a708bf-6d21-428e-8b80-bba234d7d1dd',{});$('#upload-vcf-modal').modal('show');});});</script>
+<script>
+      $(document).ready(function() {
+
+
+        function adjustPosition() {
+            var submenus = document.getElementsByClassName("submenu");
+
+            submenus && Array.from(submenus).forEach(el => {
+                var bBox = el.getBoundingClientRect();
+                var innerWidth = window.innerWidth;
+                var width = bBox.width;
+                var left = bBox.left;
+                var overflow = width + left - innerWidth;
+                var padding = 50;
+
+                if (overflow > 0) {
+                    el.style.transform = "translateX(-" + (overflow + padding) + "px)";   // set the background color of an element to red
+                }
+                if (left < 0) {
+                    el.style.transform =  "translateX(" + (left + padding) + "px)";
+                }
+            });
+        }
+
+        $(".js-has-dropdown-custom-submenu .js-dropdown-custom").on( "click", function(event) {
+
+            event.preventDefault();
+            if ($(this).closest(".js-has-dropdown-custom-submenu").hasClass("menu-expanded")){
+                $(".js-has-dropdown-custom-submenu").removeClass("menu-expanded");
+            } else {
+                $(".js-has-dropdown-custom-submenu").removeClass("menu-expanded");
+                $(this).closest(".js-has-dropdown-custom-submenu").addClass("menu-expanded");
+            }
+            // setTimeout(adjustPosition, 0);
+            // setTimeout(adjustPosition, 10);
+            setTimeout(adjustPosition, 50);
+        });
+        // hide menu when users clicks on the website.
+        $("main").on( "click", function(event) {
+            if ($(".js-has-dropdown-custom-submenu").hasClass("menu-expanded")){
+                $(".js-has-dropdown-custom-submenu").removeClass("menu-expanded");
+            }
+        });
+
+      });
+    </script>
+<script>var api_url='https://api.varsome.com';$(document).ready(function(){$.ajax({url:api_url+'/acmg-rules-doc/',type:'get',success:function(data){$('#varsome-acmg-documentation').html(data.acmg_rules);$('#loading').hide();setTimeout(scrollToHash,1000);},error:function(xhr,ajaxOptions,thrownError){$('#loading').hide();var errorMsg='Documentation is not available at the moment, please try again later.';$('#varsome-acmg-documentation').html(errorMsg);console.log('Ajax request failed: '+xhr.responseText);}});window.addEventListener("hashchange",scrollToHash,false);function scrollToHash(){let hash=window.location.hash.substr(1)
+if(hash){if(event)event.preventDefault();$('html, body, document').animate({scrollTop:$('#'+hash).offset().top-70},0);}}});</script>
+<script>$(document).ready(function(){var RSS_URL='https://news.varsome.com/en/rss.xml';var blogArticles=document.getElementById("blog-articles");$.ajax(RSS_URL,{accepts:{xml:"application/rss+xml"},dataType:"xml",success:function(data){var g=$(data).find("item")
+for(var i=0;i<3;i++){var url=$(g[i]).find("link").text()
+var title=$(g[i]).find("title").text()
+var pubDate=$(g[i]).find("pubDate").text()
+var article="<a class=\"box_2cu\" href=\""+url+"\" target=\"_blank\">"+"<span> "+pubDate+"</span>"+"<h3>"+title+"</h3>"+"</a>";blogArticles.insertAdjacentHTML("beforeend",article);}}});});</script>
+<script>$(function(){$('#feedbackbutton').click(function(){$('#feedback-modal').modal('show');});$('#feedback-form').submit(function(e){var req=$.post('/feedback/',$(this).serialize());req.done(function(data){$('#feedback-form').hide();$('#feedback-success').show();setTimeout(function(){$('#feedback-modal').modal('hide');$('#feedback-form').show();$('#feedback-success').hide();},3000)});req.fail(function(error){console.log('ERROR',error);var errors=JSON.parse(error.responseText);for(field in errors){var errorsHtml=''
+for(var i=0;i<errors[field].length;i++){errorsHtml+='<div class="alert alert-danger">'+errors[field][i]+'</div>'}$('#feedback-'+field+'-errors').html(errorsHtml);}});return false;})});</script>
+<script>function dismissIEAlert(){document.getElementById("ie-alert").remove();}$(function(){function IEdetection(){var ua=window.navigator.userAgent;var msie=ua.indexOf('MSIE ');if(msie>0){return true;}var trident=ua.indexOf('Trident/');if(trident>0){return true;}return false;}var result=IEdetection();if(result){document.getElementById("ie-alert").style.display="block";}});</script>
+<script>function showModal(){gdpr_page.show_modal(true,false,'gdpr-page');}function showSignInModal(){gdpr_page.show_modal(false,true,'gdpr-page');;}</script>
+<script type="text/plain" id="hs-script-loader" async defer src="//js.hs-scripts.com/4384097.js" class="optanon-category-C0002-C0003-C0004-C0005"></script>
+<script charset="utf-8" type="text/plain" src="https://js.hscta.net/cta/current.js" class="optanon-category-C0002-C0003-C0004-C0005"></script>
+<script>var _rollbarConfig={accessToken:"c2023a2998c14da4acfad8f5044ea49a",captureUncaught:true,captureUnhandledRejections:true,payload:{environment:"production"}};!function(r){function e(n){if(o[n])return o[n].exports;var t=o[n]={exports:{},id:n,loaded:!1};return r[n].call(t.exports,t,t.exports,e),t.loaded=!0,t.exports}var o={};return e.m=r,e.c=o,e.p="",e(0)}([function(r,e,o){"use strict";var n=o(1),t=o(4);_rollbarConfig=_rollbarConfig||{},_rollbarConfig.rollbarJsUrl=_rollbarConfig.rollbarJsUrl||"https://cdnjs.cloudflare.com/ajax/libs/rollbar.js/2.4.6/rollbar.min.js",_rollbarConfig.async=void 0===_rollbarConfig.async||_rollbarConfig.async;var a=n.setupShim(window,_rollbarConfig),l=t(_rollbarConfig);window.rollbar=n.Rollbar,a.loadFull(window,document,!_rollbarConfig.async,_rollbarConfig,l)},function(r,e,o){"use strict";function n(r){return function(){try{return r.apply(this,arguments)}catch(r){try{console.error("[Rollbar]: Internal error",r)}catch(r){}}}}function t(r,e){this.options=r,this._rollbarOldOnError=null;var o=s++;this.shimId=function(){return o},"undefined"!=typeof window&&window._rollbarShims&&(window._rollbarShims[o]={handler:e,messages:[]})}function a(r,e){if(r){var o=e.globalAlias||"Rollbar";if("object"==typeof r[o])return r[o];r._rollbarShims={},r._rollbarWrappedError=null;var t=new p(e);return n(function(){e.captureUncaught&&(t._rollbarOldOnError=r.onerror,i.captureUncaughtExceptions(r,t,!0),i.wrapGlobals(r,t,!0)),e.captureUnhandledRejections&&i.captureUnhandledRejections(r,t,!0);var n=e.autoInstrument;return e.enabled!==!1&&(void 0===n||n===!0||"object"==typeof n&&n.network)&&r.addEventListener&&(r.addEventListener("load",t.captureLoad.bind(t)),r.addEventListener("DOMContentLoaded",t.captureDomContentLoaded.bind(t))),r[o]=t,t})()}}function l(r){return n(function(){var e=this,o=Array.prototype.slice.call(arguments,0),n={shim:e,method:r,args:o,ts:new Date};window._rollbarShims[this.shimId()].messages.push(n)})}var i=o(2),s=0,d=o(3),c=function(r,e){return new t(r,e)},p=d.bind(null,c);t.prototype.loadFull=function(r,e,o,t,a){var l=function(){var e;if(void 0===r._rollbarDidLoad){e=new Error("rollbar.js did not load");for(var o,n,t,l,i=0;o=r._rollbarShims[i++];)for(o=o.messages||[];n=o.shift();)for(t=n.args||[],i=0;i<t.length;++i)if(l=t[i],"function"==typeof l){l(e);break}}"function"==typeof a&&a(e)},i=!1,s=e.createElement("script"),d=e.getElementsByTagName("script")[0],c=d.parentNode;s.crossOrigin="",s.src=t.rollbarJsUrl,o||(s.async=!0),s.onload=s.onreadystatechange=n(function(){if(!(i||this.readyState&&"loaded"!==this.readyState&&"complete"!==this.readyState)){s.onload=s.onreadystatechange=null;try{c.removeChild(s)}catch(r){}i=!0,l()}}),c.insertBefore(s,d)},t.prototype.wrap=function(r,e,o){try{var n;if(n="function"==typeof e?e:function(){return e||{}},"function"!=typeof r)return r;if(r._isWrap)return r;if(!r._rollbar_wrapped&&(r._rollbar_wrapped=function(){o&&"function"==typeof o&&o.apply(this,arguments);try{return r.apply(this,arguments)}catch(o){var e=o;throw e&&("string"==typeof e&&(e=new String(e)),e._rollbarContext=n()||{},e._rollbarContext._wrappedSource=r.toString(),window._rollbarWrappedError=e),e}},r._rollbar_wrapped._isWrap=!0,r.hasOwnProperty))for(var t in r)r.hasOwnProperty(t)&&(r._rollbar_wrapped[t]=r[t]);return r._rollbar_wrapped}catch(e){return r}};for(var u="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,captureEvent,captureDomContentLoaded,captureLoad".split(","),f=0;f<u.length;++f)t.prototype[u[f]]=l(u[f]);r.exports={setupShim:a,Rollbar:p}},function(r,e){"use strict";function o(r,e,o){if(r){var t;"function"==typeof e._rollbarOldOnError?t=e._rollbarOldOnError:r.onerror&&!r.onerror.belongsToShim&&(t=r.onerror,e._rollbarOldOnError=t);var a=function(){var o=Array.prototype.slice.call(arguments,0);n(r,e,t,o)};a.belongsToShim=o,r.onerror=a}}function n(r,e,o,n){r._rollbarWrappedError&&(n[4]||(n[4]=r._rollbarWrappedError),n[5]||(n[5]=r._rollbarWrappedError._rollbarContext),r._rollbarWrappedError=null),e.handleUncaughtException.apply(e,n),o&&o.apply(r,n)}function t(r,e,o){if(r){"function"==typeof r._rollbarURH&&r._rollbarURH.belongsToShim&&r.removeEventListener("unhandledrejection",r._rollbarURH);var n=function(r){var o,n,t;try{o=r.reason}catch(r){o=void 0}try{n=r.promise}catch(r){n="[unhandledrejection] error getting `promise` from event"}try{t=r.detail,!o&&t&&(o=t.reason,n=t.promise)}catch(r){t="[unhandledrejection] error getting `detail` from event"}o||(o="[unhandledrejection] error getting `reason` from event"),e&&e.handleUnhandledRejection&&e.handleUnhandledRejection(o,n)};n.belongsToShim=o,r._rollbarURH=n,r.addEventListener("unhandledrejection",n)}}function a(r,e,o){if(r){var n,t,a="EventTarget,Window,Node,ApplicationCache,AudioTrackList,ChannelMergerNode,CryptoOperation,EventSource,FileReader,HTMLUnknownElement,IDBDatabase,IDBRequest,IDBTransaction,KeyOperation,MediaController,MessagePort,ModalWindow,Notification,SVGElementInstance,Screen,TextTrack,TextTrackCue,TextTrackList,WebSocket,WebSocketWorker,Worker,XMLHttpRequest,XMLHttpRequestEventTarget,XMLHttpRequestUpload".split(",");for(n=0;n<a.length;++n)t=a[n],r[t]&&r[t].prototype&&l(e,r[t].prototype,o)}}function l(r,e,o){if(e.hasOwnProperty&&e.hasOwnProperty("addEventListener")){for(var n=e.addEventListener;n._rollbarOldAdd&&n.belongsToShim;)n=n._rollbarOldAdd;var t=function(e,o,t){n.call(this,e,r.wrap(o),t)};t._rollbarOldAdd=n,t.belongsToShim=o,e.addEventListener=t;for(var a=e.removeEventListener;a._rollbarOldRemove&&a.belongsToShim;)a=a._rollbarOldRemove;var l=function(r,e,o){a.call(this,r,e&&e._rollbar_wrapped||e,o)};l._rollbarOldRemove=a,l.belongsToShim=o,e.removeEventListener=l}}r.exports={captureUncaughtExceptions:o,captureUnhandledRejections:t,wrapGlobals:a}},function(r,e){"use strict";function o(r,e){this.impl=r(e,this),this.options=e,n(o.prototype)}function n(r){for(var e=function(r){return function(){var e=Array.prototype.slice.call(arguments,0);if(this.impl[r])return this.impl[r].apply(this.impl,e)}},o="log,debug,info,warn,warning,error,critical,global,configure,handleUncaughtException,handleUnhandledRejection,_createItem,wrap,loadFull,shimId,captureEvent,captureDomContentLoaded,captureLoad".split(","),n=0;n<o.length;n++)r[o[n]]=e(o[n])}o.prototype._swapAndProcessMessages=function(r,e){this.impl=r(this.options);for(var o,n,t;o=e.shift();)n=o.method,t=o.args,this[n]&&"function"==typeof this[n]&&("captureDomContentLoaded"===n||"captureLoad"===n?this[n].apply(this,[t[0],o.ts]):this[n].apply(this,t));return this},r.exports=o},function(r,e){"use strict";r.exports=function(r){return function(e){if(!e&&!window._rollbarInitialized){r=r||{};for(var o,n,t=r.globalAlias||"Rollbar",a=window.rollbar,l=function(r){return new a(r)},i=0;o=window._rollbarShims[i++];)n||(n=o.handler),o.handler._swapAndProcessMessages(l,o.messages);window[t]=n,window._rollbarInitialized=!0}}}}]);</script>
+<script type="text/javascript" class="optanon-category-C0002-C0004">(function(c,l,a,r,i,t,y){c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};t=l.createElement(r);t.async=1;t.src="https://www.clarity.ms/tag/"+i;y=l.getElementsByTagName(r)[0];y.parentNode.insertBefore(t,y);})(window,document,"clarity","script","actg9bgab9");</script>
+<div id="footer-floating-buttons" class="tw-pl-6 tw-fixed tw-left-0 tw-bottom-0">
+<div class="buttons">
+<button class="no-print btn btn-primary" id="feedbackbutton">Feedback</button>
+<a id="cite_varsome_btn" href="/varsome-citations/" target="_blank" class="btn btn-primary">
+Cite VarSome
+</a>
+</div>
+</div>
+<div class="modal fade" id="feedback-modal">
+<div class="modal-dialog" role="document">
+<div class="modal-content">
+<div class="modal-header">
+<h4 class="modal-title">Submit feedback</h4>
+<button type="button" class="close" data-dismiss="modal" aria-label="Close">
+<span aria-hidden="true">&times;</span>
+</button>
+</div>
+<div class="modal-body">
+<div id="feedback-success" style="display: none;">
+<i class="fa fa-check" style="color: green"></i> Thank you for your feedback.
+</div>
+<form id="feedback-form" action="#">
+<p class="card-text">
+Please fill in the form below to provide us with confidential feedback.
+<br>
+<ul>
+<li>
+If you are asking a question or reporting an issue, please first read our <a href="https://varsome.com/information/faq/">FAQ</a>. If you are reporting a suggestion or issue here, please be as specific as possible, state all relevant facts, include all links, etc, in a way that we can easily find or reproduce the data.
+</li>
+</ul>
+<b>We are unable to provide support to users of our free VarSome.com platform.</b>
+We welcome, read and take into account all feedback submitted here, but we may not reply to you.
+</p>
+<input type="hidden" name="csrfmiddlewaretoken" value="LFNvTLgDSrYVboUG9FNFGPB4cs03zJwvNKL37rivXTLdrjWCXPRSRUNWSFfdJV5c">
+<fieldset class="form-group">
+<div class="row">
+<div class="col-lg-6">
+<input class="form-control" type="text" name="feedback-name" id="id_feedback-name" required placeholder="Your name"/>
+<div id="feedback-name-errors"></div>
+</div>
+<div class="col-lg-6">
+<input class="form-control" type="email" name="feedback-email" id="id_feedback-email" required placeholder="Your email"/>
+<div id="feedback-email-errors"></div>
+</div>
+</div>
+<hr/>
+<textarea class="form-control" id="id_feedback-message" name="feedback-message" required="required" placeholder="Your comments" rows="5"></textarea>
+<div id="feedback-message-errors"></div>
+</fieldset>
+<div class="clearfix">
+<button type="submit" class="btn btn-success pull-right">Submit</button>
+</div>
+</form>
+</div>
+</div>
+</div>
+</div>
+</body>
+</html>

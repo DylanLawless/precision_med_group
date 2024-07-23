@@ -1,0 +1,233 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  23 JUL 2024 12:09
+ restricted system commands enabled.
+**philosophy.tex
+(./philosophy.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.245 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+          {Core philosophy}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{C
+            ore philosophy}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[]Core
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 A
+   t the \pmu of \kispi, we redefine translational medicine not merely throu...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.3 At the \pmu
+              of \kispi, we redefine translational medicine not merely throu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.3 At the \pmu of \kispi
+                       , we redefine translational medicine not merely throu...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--4
+[]At
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \textbf{The challenge}
+                        :
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-bold.luc)
+Overfull \hbox (39.66pt too wide) in paragraph at lines 5--8
+[]\TU/lmr/bx/n/10 The
+ []
+
+
+Overfull \hbox (23.79pt too wide) in paragraph at lines 5--8
+\TU/lmr/bx/n/10 chal-
+ []
+
+
+Overfull \hbox (25.87001pt too wide) in paragraph at lines 5--8
+\TU/lmr/bx/n/10 lenge\nullfont :
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \textbf{Our approach}
+                       :
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (39.77pt too wide) in paragraph at lines 9--10
+[]\TU/lmr/bx/n/10 Our
+ []
+
+
+Overfull \hbox (15.81pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 ap-
+ []
+
+
+Overfull \hbox (33.65pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 proach\nullfont : 
+ []
+
+! Undefined control sequence.
+l.11 ...nt framework for all projects under the \pmu
+                                                   umbrella, streamlining se...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (39.66pt too wide) in paragraph at lines 16--19
+[]\TU/lmr/bx/n/10 The
+ []
+
+
+Overfull \hbox (16.6pt too wide) in paragraph at lines 16--19
+\TU/lmr/bx/n/10 im-
+ []
+
+
+Overfull \hbox (21.56pt too wide) in paragraph at lines 16--19
+\TU/lmr/bx/n/10 pact\nullfont :
+ []
+
+
+Overfull \hbox (41.27pt too wide) in paragraph at lines 20--24
+[]\TU/lmr/bx/n/10 Phi-
+ []
+
+
+Overfull \hbox (17.31pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 los-
+ []
+
+
+Overfull \hbox (9.58pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 o-
+ []
+
+
+Overfull \hbox (18.53pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 phy
+ []
+
+
+Overfull \hbox (15.81001pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 be-
+ []
+
+
+Overfull \hbox (19.27pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 fore
+ []
+
+
+Overfull \hbox (24.02pt too wide) in paragraph at lines 20--24
+\TU/lmr/bx/n/10 tools\nullfont :
+ []
+
+)
+! Emergency stop.
+<*> philosophy.tex
+               
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 13 strings out of 494413
+ 100000,89155 words of node,token memory allocated 14038 words of node memory still in use:
+   42 hlist, 14 disc, 10 local_par, 1 dir, 323 glue, 9 kern, 31 penalty, 1525 gl
+yph, 31 attribute, 35 glue_spec, 31 attribute_list, 1 temp nodes
+   avail lists: 2:4,4:79,5:6,8:1,10:78
+ 4305 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,318b,77s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

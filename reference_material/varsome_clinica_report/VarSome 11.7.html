@@ -1,0 +1,1197 @@
+<!doctype html><!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en" > <![endif]--><!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en" >        <![endif]--><!--[if IE 8]>    <html class="no-js lt-ie9" lang="en" >               <![endif]--><!--[if gt IE 8]><!--><html class="no-js" lang="en"><!--<![endif]--><head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="author" content="Richard Meyer">
+    <meta name="description" content="New variant filtering, LOVD component integration, CNV VCF sub-analysis for multi-sample analyses, and more added to VarSome Clinical. Improvements to CNV and Region browsers, and upgrades on Publications and in-silico predictors in VarSome.">
+    <meta name="generator" content="HubSpot">
+    <title>VarSome 11.7</title>
+    <link rel="shortcut icon" href="https://updates.varsome.com/hubfs/main-square-400.png">
+    
+
+    <script src="/hs/hsstatic/jquery-libs/static-1.1/jquery/jquery-1.7.1.js"></script>
+<script>hsjQuery = window['jQuery'];</script>
+    <meta property="og:description" content="New variant filtering, LOVD component integration, CNV VCF sub-analysis for multi-sample analyses, and more added to VarSome Clinical. Improvements to CNV and Region browsers, and upgrades on Publications and in-silico predictors in VarSome.">
+    <meta property="og:title" content="VarSome 11.7">
+    <meta name="twitter:description" content="New variant filtering, LOVD component integration, CNV VCF sub-analysis for multi-sample analyses, and more added to VarSome Clinical. Improvements to CNV and Region browsers, and upgrades on Publications and in-silico predictors in VarSome.">
+    <meta name="twitter:title" content="VarSome 11.7">
+
+    
+
+    
+    <style>
+a.cta_button{-moz-box-sizing:content-box !important;-webkit-box-sizing:content-box !important;box-sizing:content-box !important;vertical-align:middle}.hs-breadcrumb-menu{list-style-type:none;margin:0px 0px 0px 0px;padding:0px 0px 0px 0px}.hs-breadcrumb-menu-item{float:left;padding:10px 0px 10px 10px}.hs-breadcrumb-menu-divider:before{content:'›';padding-left:10px}.hs-featured-image-link{border:0}.hs-featured-image{float:right;margin:0 0 20px 20px;max-width:50%}@media (max-width: 568px){.hs-featured-image{float:none;margin:0;width:100%;max-width:100%}}.hs-screen-reader-text{clip:rect(1px, 1px, 1px, 1px);height:1px;overflow:hidden;position:absolute !important;width:1px}
+</style>
+
+<link rel="stylesheet" href="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/module_assets/27302739877/1585832953997/module_27302739877_Page_Preloader.min.css">
+<link rel="stylesheet" href="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/module_assets/27300121185/1584632435725/module_27300121185_Blog_Search_Input.min.css">
+<link rel="stylesheet" href="/hs/hsstatic/AsyncSupport/static-1.122/sass/comments_listing_asset.css">
+<link rel="stylesheet" href="/hs/hsstatic/AsyncSupport/static-1.122/sass/rss_post_listing.css">
+<link rel="stylesheet" href="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/module_assets/26477861144/1586246750390/module_26477861144_Footer_Social_Share_VarSome_February2020.min.css">
+    
+
+    
+<!--  Added by GoogleAnalytics integration -->
+<script>
+var _hsp = window._hsp = window._hsp || [];
+_hsp.push(['addPrivacyConsentListener', function(consent) { if (consent.allowed || (consent.categories && consent.categories.analytics)) {
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create','UA-59750306-1','auto');
+  ga('send','pageview');
+}}]);
+</script>
+
+<!-- /Added by GoogleAnalytics integration -->
+
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="amphtml" href="https://updates.varsome.com/en/varsome-11.7?hs_amp=true">
+
+<meta property="og:image" content="https://lh4.googleusercontent.com/VRoi4Bai44Xj6q7mejMsHwnOLXivI0k_FYH8fUd6Eu2v_zEUz8ENEbaB7vM1sgAy9znLUu9VkVgF9bDVGDYJU6_8MUh2T3-aImOVDmTATLzdOrE_vC6SHh1c6Q6vdP0LQZWIewbO-bEsNmgp6UrD6Kc#keepProtocol">
+<meta property="og:image:width" content="1600">
+<meta property="og:image:height" content="519">
+
+<meta name="twitter:image" content="https://lh4.googleusercontent.com/VRoi4Bai44Xj6q7mejMsHwnOLXivI0k_FYH8fUd6Eu2v_zEUz8ENEbaB7vM1sgAy9znLUu9VkVgF9bDVGDYJU6_8MUh2T3-aImOVDmTATLzdOrE_vC6SHh1c6Q6vdP0LQZWIewbO-bEsNmgp6UrD6Kc#keepProtocol">
+
+
+<meta property="og:url" content="https://updates.varsome.com/en/varsome-11.7">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="canonical" href="https://updates.varsome.com/en/varsome-11.7">
+
+<meta property="og:type" content="article">
+<link rel="alternate" type="application/rss+xml" href="https://updates.varsome.com/en/rss.xml">
+<meta name="twitter:domain" content="updates.varsome.com">
+<meta name="twitter:site" content="@varsome">
+<script src="//platform.linkedin.com/in.js" type="text/javascript">
+    lang: en_US
+</script>
+
+<meta http-equiv="content-language" content="en">
+<link rel="stylesheet" href="//cdn2.hubspot.net/hub/7052064/hub_generated/template_assets/1680798541133/hubspot/hubspot_default/shared/responsive/layout.min.css">
+
+
+<link rel="stylesheet" href="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/template_assets/32785597130/1597400224582/Marketplace/Awwal_Design/Awwal_-_Blog_Template/Coded_Files/AD_Varsome_-_Updates_Blog_Template_Style.min.css">
+<link rel="stylesheet" href="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/template_assets/27302646571/1585802645744/Marketplace/Awwal_Design/Awwal_-_Blog_Template/Coded_Files/carousal.min.css">
+
+
+    <link href="https://fonts.googleapis.com/css?family=Domine:400,700" rel="stylesheet"> 
+<link href="https://fonts.googleapis.com/css?family=Roboto:100,100i,300,300i,400,400i,500,500i,700,700i,900,900i" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&amp;display=swap" rel="stylesheet">
+
+    
+
+</head>
+<body class="   hs-content-id-109660021142 hs-blog-post hs-blog-id-32442071184" style="">
+    <div class="header-container-wrapper">
+    <div class="header-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1548307137654231" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><!-- Preloader -->
+<div id="preloader">
+  <div class="uil-reload-css">
+    <div class="loader01"></div>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<div class="" data-global-widget-path="generated_global_groups/25988332122.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-header-outer" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-header" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span2 widget-span widget-type-custom_widget custom-logo" style="" data-widget-type="custom_widget" data-x="0" data-w="2">
+<div id="hs_cos_wrapper_module_1582017461227416" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_1582017461227416_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><a href="https://varsome.com/"> <img src="https://updates.varsome.com/hubfs/VarSome_February2020%20Theme/Images/logo.png" alt="VarSome"> </a></span></div>
+
+</div><!--end widget-span -->
+<div class="span10 widget-span widget-type-cell cm-header-right-pan" style="" data-widget-type="cell" data-x="2" data-w="10">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget custom-menu-primary desktop" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_151811933987828" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<span id="hs_cos_wrapper_module_151811933987828_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_151811933987828_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-horizontal" role="navigation" data-sitemap-name="default" data-menu-id="25992978891" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Editions</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/varsome-editions/varsome/" role="menuitem">More about VarSome.com</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/varsome-editions/varsome-premium/" role="menuitem">More about VarSome Premium</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/varsome-editions/varsome-clinical/" role="menuitem">More about VarSome Clinical</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/information/varsome-api-info/" role="menuitem">Learn more about APIs</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">About</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="javascript:;" role="menuitem">Resources</a>
+     <ul role="menu" class="hs-menu-children-wrapper">
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/library/" role="menuitem">Library</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://docs.varsome.com/" role="menuitem" target="_blank" rel="noopener">Documentation</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/about/examples/" role="menuitem">Query types</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/about/resources/acmg-implementation/" role="menuitem">Germline Classification</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/about/resources/amp-implementation/" role="menuitem">Somatic Classification</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://www.youtube.com/watch?v=jJlbz1KQxMg&amp;list=PLbkSvXteAxJBWPhDxaquuvVf0HFjEy79i" role="menuitem"> Learning Videos</a></li>
+     </ul></li>
+    <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="javascript:;" role="menuitem"> Partners</a>
+     <ul role="menu" class="hs-menu-children-wrapper">
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/distributors/" role="menuitem"> Distributors</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/partners/" role="menuitem"> Partners</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://landing.varsome.com/become-varsome-partner" role="menuitem">Become a partner</a></li>
+     </ul></li>
+    <li class="hs-menu-item hs-menu-depth-2 hs-item-has-children" role="none"><a href="javascript:;" role="menuitem">General</a>
+     <ul role="menu" class="hs-menu-children-wrapper">
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://saphetor.com/about/" role="menuitem">The Company</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/about/varsome-citations/" role="menuitem"> Cite VarSome</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://varsome.com/how-do-i-create-link-varsome/" role="menuitem">Link to VarSome</a></li>
+      <li class="hs-menu-item hs-menu-depth-3" role="none"><a href="https://landing.varsome.com/contact" role="menuitem">Contact</a></li>
+     </ul></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://varsome.com/community-contributions/" role="menuitem">Community</a></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="https://blog.varsome.com/" role="menuitem">Blog</a></li>
+ </ul>
+</div></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div>
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end header -->
+</div><!--end header wrapper -->
+
+<div class="body-container-wrapper">
+    <div class="body-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell blog-post-top-header" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-raw_jinja " style="" data-widget-type="raw_jinja" data-x="0" data-w="12">
+<div class="blog-post-header" style="background-image:url(https://lh4.googleusercontent.com/VRoi4Bai44Xj6q7mejMsHwnOLXivI0k_FYH8fUd6Eu2v_zEUz8ENEbaB7vM1sgAy9znLUu9VkVgF9bDVGDYJU6_8MUh2T3-aImOVDmTATLzdOrE_vC6SHh1c6Q6vdP0LQZWIewbO-bEsNmgp6UrD6Kc);">
+    <div class="section post-header">
+      	<div class="page-center">
+          
+              <a class="topic-link" href="https://updates.varsome.com/en/tag/platform-updates">Platform Updates</a>
+          
+              <a class="topic-link" href="https://updates.varsome.com/en/tag/varsome-com">VarSome.com</a>
+          
+              <a class="topic-link" href="https://updates.varsome.com/en/tag/varsome-clinical">VarSome Clinical</a>
+          
+              <a class="topic-link" href="https://updates.varsome.com/en/tag/varsome-com-premium">VarSome.com Premium</a>
+          
+              <a class="topic-link" href="https://updates.varsome.com/en/tag/release">Release</a>
+          
+          <h1><span id="hs_cos_wrapper_name" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="text">VarSome 11.7</span></h1>
+          <div id="hubspot-author_data" class="hubspot-editable" data-hubspot-form-id="author_data" data-hubspot-name="Blog Author">
+              By
+              
+                  <a class="author-link" href="https://updates.varsome.com/en/author/richard-meyer">Richard Meyer</a> on   April, 5 2023  
+              
+          </div>
+      	</div>
+    </div>
+</div></div><!--end widget-span -->
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell top-bar" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-5 ">
+<div class="row-fluid ">
+<div class="span5 widget-span widget-type-cell topic-list" style="" data-widget-type="cell" data-x="0" data-w="5">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-6 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-raw_jinja " style="" data-widget-type="raw_jinja" data-x="0" data-w="12">
+<h3>Categories</h3> 
+<div class="blog-topics">
+    
+    <ul>
+        <li class="topic">Select a Topic <i class="fa fa-angle-down"></i></li>
+        <ul>
+          <li><a href="https://updates.varsome.com/en">All</a></li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/platform-updates">Platform Updates</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/varsome-com">VarSome.com</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/varsome-clinical">VarSome Clinical</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/varsome-com-premium">VarSome.com Premium</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/varsome-api">VarSome API</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/acmg">ACMG</a>
+        </li>
+        
+        <li>
+          <a href="https://updates.varsome.com/en/tag/release">Release</a>
+        </li>
+        
+        </ul>
+    </ul>
+</div>
+</div><!--end widget-span -->
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-7 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-raw_html " style="" data-widget-type="raw_html" data-x="0" data-w="12">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_149978443977669" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_raw_html" style="" data-hs-cos-general-type="widget" data-hs-cos-type="raw_html"><script>
+$(".blog-topics li.topic").click(function() {
+$(this).parent().addClass('active').siblings().removeClass('active');
+});
+$(document).click(function(e){
+var targetbox = $('.blog-topics ul');
+if(!targetbox.is(e.target) && targetbox.has(e.target).length === 0){
+$('.blog-topics ul').removeClass("active");
+}
+});
+</script></span>
+</div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+<div class="span7 widget-span widget-type-cell blog-subscription-box" style="" data-widget-type="cell" data-x="5" data-w="7">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-8 ">
+<div class="row-fluid ">
+<div class="span10 widget-span widget-type-blog_subscribe " style="" data-widget-type="blog_subscribe" data-x="0" data-w="10">
+<div class="cell-wrapper layout-widget-wrapper">
+<span id="hs_cos_wrapper_module_1499706834749274" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_subscribe"><h3 id="hs_cos_wrapper_module_1499706834749274_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Stay up to date</h3>
+
+<div id="hs_form_target_module_1499706834749274_387"></div>
+
+
+
+</span></div><!--end layout-widget-wrapper -->
+</div><!--end widget-span -->
+<div class="span2 widget-span widget-type-custom_widget subscrib-social-share" style="" data-widget-type="custom_widget" data-x="10" data-w="2">
+<div id="hs_cos_wrapper_module_1585891824521278" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="social_icons">
+  <a href="https://twitter.com/varsome" target="_blank"> <i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/showcase/varsome/" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/channel/UCwEorND5-pl_9juijC1YGQA?view_as=subscriber" target="_blank" style="line-height: .5rem;"> <i class="fa fa-youtube-play"></i></a>
+  <a href="https://blog.saphetor.com/rss.xml" target="_blank"> <i class="fa fa-rss"></i></a>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-9 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center search-box" style="display:none;" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-10 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1548307213547338" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="hs-search-field"> 
+  <h5>Search The Blog</h5>
+    <div class="hs-search-field__bar"> 
+      <form id="search-form" action="/hs-search-results">
+        <input type="text" class="hs-search-field__input" name="term" autocomplete="off" placeholder="Search Here">
+        <input type="hidden" name="type" value="BLOG_POST">
+        <input type="hidden" name="pathPrefix" value="blog">
+        <button type="submit" form="search-form" value="Submit" class="hs-button primary"><i class="fa fa-search"></i></button>
+        <ul class="hs-search-field__suggestions"></ul>
+      </form>
+    </div>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-11 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-12 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell padding-100" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-13 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-blog_content " style="" data-widget-type="blog_content" data-x="0" data-w="12">
+<div class="blog-post-content">
+<div class="span2">
+  <div class="author-box">
+  <a class="back-main-blog" href="https://updates.varsome.com/en"><i class="fa fa-angle-left"></i> Back to main Blog</a>
+  <div class="author-detail">
+    
+    <div class="avatar-module">
+      <img class="avatar" height="100" src="https://updates.varsome.com/hs-fs/hubfs/richard.jpg?height=100&amp;name=richard.jpg">
+    </div>
+    
+    <h6>Richard Meyer</h6>
+    <p>
+      CTO
+    </p>
+    <div class="hs-author-social-links">
+      
+      
+      <a href="https://www.linkedin.com/in/richardpmeyer/" target="_blank" class="hs-author-social-link hs-social-linkedin"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+      
+      
+    </div>
+  </div>
+    </div>
+</div>
+<div class="span10 post-detail">
+  <div class="blog-section">
+      <div class="blog-post-wrapper cell-wrapper">
+         <div class="blog-section">
+              <div class="blog-post-wrapper cell-wrapper">
+                <div class="section post-body">
+                  <div class="section post-header">
+                      <div class="social-sharing">
+                          <a class="share_facebook" href="javascript:;" title="facebook" target="popup" onclick="window.open('http://www.facebook.com/sharer/sharer.php?u=https://updates.varsome.com/en/varsome-11.7','Facebook Share','width=600,height=400')"></a>
+                          <a class="share_twitter" href="javascript:;" title="twitter" target="popup" onclick="window.open('https://twitter.com/home?status=VarSome 11.7+https://updates.varsome.com/en/varsome-11.7','Twitter Share','width=600,height=400')"></a>
+                          <a class="share_linkedin" href="javascript:;" title="linkedin" target="popup" onclick="window.open('http://www.linkedin.com/shareArticle?mini=true&amp;url=https://updates.varsome.com/en/varsome-11.7','LinkedIn Share','width=600,height=400')"></a>
+                      </div>
+                    </div>
+                    <span id="hs_cos_wrapper_post_body" class="hs_cos_wrapper hs_cos_wrapper_meta_field hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="meta_field" data-hs-cos-type="rich_text"><h1><span style="font-size: 20px; color: #000000;">Summary of Key New Features</span></h1>
+<h3 style="font-size: 18px;"><span style="color: #000000;">VarSome Clinical</span></h3>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Integration of LOVD component&nbsp;</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">CNV VCF sub analysis option for multi-sample analyses</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Integration of PharmCat for pharmacogenomics reporting</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">VarSome Picks algorithmic filter for germline and gene list analyses</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Filter analysis results based on custom variant classifications</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Filter variants based on their germline pathogenicity classification points score</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Add user comments at gene level</span></li>
+</ul>
+<h3 style="font-size: 18px;"><span style="color: #434343;"><span style="color: #000000;">VarSome</span>&nbsp;</span></h3>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">CNV Browser improvements</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Region Browser improvements</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Publications improvements</span></li>
+<li style="color: #000000;" aria-level="1"><em><span style="color: #000000;">In-silico</span></em><span style="color: #000000;"> predictors improvements</span></li>
+</ul>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Germline pathogenicity classification</span></h3>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Modification in the way we filter gnomAD variants</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Integration of LOVD for <a href="https://landing.varsome.com/varsome-clinical" rel="noopener" target="_blank">Clinical</a> and <a href="https://landing.varsome.com/varsome-premium" rel="noopener" target="_blank">Premium</a> customers</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Further inclusion of ClinGen recommendations for mitochondrial variants</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">New </span><em><span style="color: #000000;">in-silico</span></em><span style="color: #000000;"> pathogenicity predictor, MaxEntScan, which can classify indels as well as SNVs</span></li>
+</ul>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Somatic classification</span></h3>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">The somatic classification (based on the AMP guidelines) no longer uses COSMIC when annotating somatic samples</span></li>
+</ul>
+<p><strong>Note: We have removed the 'Old Layout' option and the links back to VarSome from the results table of VarSome Clinical.</strong></p>
+<!--more--><h1><span style="font-size: 20px; color: #000000;">New Features<br></span><span style="font-size: 20px; color: #000000;">VarSome Clinical</span></h1>
+<p><strong>LOVD component&nbsp;</strong></p>
+<p>We are pleased to have completed the second phase of the <a href="https://www.lovd.nl/" rel="noopener" target="_blank"><span>Leiden Open Variation Database (LOVD)</span></a> integration. In Phase 1 we integrated LOVD data into VarSome Premium and API. For Phase 2, VarSome Clinical users can benefit from these data which have been incorporated into the VarSome’s germline classification as a new source of clinical evidence.&nbsp;</p>
+<p><strong><span style="color: #ff0000;"><img src="https://lh4.googleusercontent.com/VRoi4Bai44Xj6q7mejMsHwnOLXivI0k_FYH8fUd6Eu2v_zEUz8ENEbaB7vM1sgAy9znLUu9VkVgF9bDVGDYJU6_8MUh2T3-aImOVDmTATLzdOrE_vC6SHh1c6Q6vdP0LQZWIewbO-bEsNmgp6UrD6Kc" width="624" height="203" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></span></strong></p>
+<p><strong>Integration of PharmCat for pharmacogenomics variant annotation Pgx report&nbsp;</strong></p>
+<p>PharmCAT is a pharmacogenomics clinical annotation tool that generates a report containing genotype-based prescribing recommendation (PGx report). It has been developed in collaboration with <a href="https://www.pharmgkb.org/" rel="noopener" target="_blank"><span>Pharmacogenomics Knowledgebase (PharmGKB)</span></a> and the former <a href="http://www.pgrn.org/p-star.html" rel="noopener" target="_blank"><span>PGRN Statistical Analysis Resource (P-STAR)</span></a>, with input from other groups.</p>
+<p>We are now offering the option to automatically generate a PGx report when a WGS sample is run through VarSome Clinical. Supervisors will need to contact our support team and we can then set this up in the group settings at no additional cost.</p>
+<p>The PGx report will only be produced when:</p>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">The group setting has been set to PGx report required</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">You are running a WGS</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">You are running against hg38</span></li>
+</ul>
+<p>For further information please see the <a href="https://docs.varsome.com/en/what-is-varsome-clinical-pgx" rel="noopener" target="_blank">PGx help page.</a></p>
+<p>&nbsp;</p>
+<p><strong>Multi-Sample card added to the card layout to display multi-sample analysis details.</strong></p>
+<p>This option was available in the old view of data and has now been included in the card view option.</p>
+<p><strong><span style="color: #ff0000;"><img src="https://lh4.googleusercontent.com/vmiQx8q4NnQtiqhEVj_SgRltgmffwmuPhF4fM1gWYF9hHuRNTCPnVUR2EpE1FX1INEXT9owv-qThxjxEqKHB0sbvPmewRh4JPSWeqaPKjzDGfyikJVDEqTsksJcboXPbWxOuzFXGk5-12nLroR-2G0c" width="169" height="52" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></span></strong></p>
+<p><strong><span style="color: #ff0000;"><img src="https://lh4.googleusercontent.com/ELcbyZxkRgjbcjezWGmnpgGb_axBnUG2iLB_wCdWkRqzKXDAh5PLa0xmbX59OjvG_XTv5R2DQdUif21mL70clW6BT7KpWtI_L2Uiwrdyx2fPQbJREm5XiOXFMrKX5eeqq_TaV9CjOA7q8ciN-RNaPW0" width="624" height="111" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></span></strong></p>
+<p><strong>Add user comments at gene level</strong></p>
+<p>It is now possible to share comments at gene level in addition to variant level.&nbsp;</p>
+<p><strong><img src="https://lh3.googleusercontent.com/AaTXacD3reJ7uBAxMsIlLWu7YuMkhcPM3hRPITselI6-IdrfbhEDeVbspaPu_MNoWxDcFzU3IlL4PcdM8BXqLQnkBw3wX-0otxghpB87pCuUhRswNHX63YXF4p4xBK9AjZhsKFBaQX4jaiwEGPTsZgk" width="224" height="121" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong><img src="https://lh6.googleusercontent.com/wkpaal01-LKb490II0TIBsebBFFreTkAzUwe8FaC3J8khELHFioB9mSjl7ISoOa6YoByh8v22Eel1nRTIF5ujZP_KBczWsouwWs65EQmOazezcleDVKvq5kuhYSq4VdojIrdZVmL8gPbjPZowGhJ_r0" width="470" height="207" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong>Tooltip for allelic balance</strong></p>
+<p>A new tooltip has been added to the Allelic Balance and Coverage columns on multi sample and tumor normal analyses that displays which values correspond to which samples.&nbsp;</p>
+<p><strong><img src="https://lh3.googleusercontent.com/fdo7gIKX8DVtAv3sIWxAUGYwFaCmBnFhy5aoXMIQZoLMoBI8sOrQh7063yO_wOPJlpCPVmbtBjufpyF52ogsqZBKJwKYsiPP5US2EppOS0QfA1XPpZu8nqzxGC5-OJ4n7mg0lh3lGX2gz9bLPTZ5VrA" width="174" height="121" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p>&nbsp;</p>
+<p><strong><img src="https://lh6.googleusercontent.com/oqb0GCILj5XJn1aOdIakkAUjgxA8_I7Dz6cVeLnLw4ewRXCuSoL4UjrWx64jDVxkW2s4D0DfIRbfv4_uj6u2uQoKRQDGvLPHCq9P7oYZmx4D6tKRZlveCVZZSJbCOoW6epZDksKn0Ken8yPWxvo2HFQ" width="186" height="141" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong>CNV VCF sub analysis option for multiple samples</strong></p>
+<p>Previously we could only associate a VCF file with CNVs to be annotated to single samples. The option has now also been added to multi-sample analyses.</p>
+<p><img src="https://lh5.googleusercontent.com/1JSyjMCLzrIqDyg2ZCTlkm2QJdQZ-1ZYZJpHQd9AyIIKzwjCLW8XjLzh8f4SF6GPhyCjP4BS7oyS8H5GGYa_whu9GmQlSkAkSCuTJ3FuAWhwrPfuNgWkmtQInNJY1NInx5NSrV-jhBTJwg6VaKiNV6U" width="624" height="112" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Filtering&nbsp;</span></h3>
+<p><span style="color: #000000;"><strong>VarSome Picks - Filtering</strong></span></p>
+<p style="text-align: justify;">VarSome Picks is a new algorithmic filter that takes into account parameters such as phenotype, gene and variant data in order to rank higher the potential causative variants in a disease-specific context.&nbsp;</p>
+<p style="text-align: justify;">VarSome Picks will return variants classified as pathogenic, likely pathogenic or VUS found in the <em>top 10 genes* </em>associated to the phenotype(s) selected by the user. The data regarding the gene-disease association and phenotype ontology are coming from the following datasources:</p>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://hpo.jax.org/app/" rel="noopener" target="_blank">HPO</a><span style="color: #000000;">&nbsp;</span></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://thegencc.org/" rel="noopener" target="_blank">GenCC</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://research.nhgri.nih.gov/CGD/" rel="noopener" target="_blank">CGD</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://clinicalgenome.org/curation-activities/gene-disease-validity/" rel="noopener" target="_blank">ClinGen Disease Validity</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://mondo.monarchinitiative.org/" rel="noopener" target="_blank">MONDO</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://www.omim.org/about" rel="noopener" target="_blank">OMIM</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://www.ebi.ac.uk/gene2phenotype" rel="noopener" target="_blank">Gene2phenotype</a></span></li>
+<li style="color: #000000;" aria-level="1"><span style="font-size: 16px;"><a href="https://panelapp.genomicsengland.co.uk/" rel="noopener" target="_blank">PanelApp</a></span></li>
+</ul>
+<p style="text-align: justify; font-size: 14px;"><em>*Note that there is no single source from which all relevant genes can reliably be mined. As a result, extracting data for gene-disease associations from multiple databases is likely to produce a more comprehensive list of variants found to be causative for the disease. Some of those are likely to have been classified as VUS.</em></p>
+<p style="text-align: justify;">VarSome Picks also takes into account:</p>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Zygosity (variant-related information)&nbsp;</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">VarSome germline pathogenicity classification (based on&nbsp; the ACMG criteria)</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Mode of inheritance (gene-related information)&nbsp;</span></li>
+</ul>
+<p style="text-align: justify;">As well as quality parameters of:</p>
+<ul style="font-size: 16px;">
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Allelic Balance (threshold for germline variants)&nbsp;</span></li>
+<li style="color: #000000;" aria-level="1"><span style="color: #000000;">Coverage in the sample</span></li>
+</ul>
+<p style="text-align: justify; font-weight: normal;">For further information please review the <a href="https://docs.varsome.com/en/varsome-picks" rel="noopener" target="_blank">VarSome Picks help page</a>.&nbsp;</p>
+<p>&nbsp;</p>
+<p><strong>Algorithmic filters now appear in alphabetical order</strong></p>
+<p>We have made the launch algorithmic filter page more user friendly, displaying only available filters and in alphabetical order. It is also possible to view the filters that are not applicable for the related samples.&nbsp;</p>
+<p><img src="https://lh6.googleusercontent.com/x0SpXETYn4yokk6tjD6-u8zSSehrrTRhZqE6D2WBQnwz0K0UJZm_hxKHDvUpq14rvwydFz8IuvFoLEB25014oMnqmUYOjFzaUzLN3qJ-5cfimIb70z81_NX1mB_15VZz3UI7sn_0ptlDsRw8rKWI-ms" width="196" height="289" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">New Filter Options</span></h3>
+<p><strong>New - Filter variants by custom classification</strong></p>
+<p><strong><img src="https://lh5.googleusercontent.com/HfC15Earcb-k8t5xzk3N-KoRD331ySD2yHgRqITDCx2U5gSWQ1GKva_V8xmlNrvpSpGSlUz78iDT9BV-LmZDN-mC5M-K6dFeeO1lDFugkOuT8eJnEUrUCdbNFtE6kOn0p2WiONtPU5ItD6ZAuHAgcXo" width="624" height="83" loading="lazy"></strong></p>
+<p>&nbsp;</p>
+<p><strong>New - Germline Classification (ACMG) Points Score filter&nbsp;</strong></p>
+<p><img src="https://lh3.googleusercontent.com/vpSvMfPJCvqSgIm8Vfg4oJ3A-to_QT8neAHa4nwKEVOyn5weXthXJeUseJ1dUQku4ULc8X1t4bZ6_Z-R2_aorxEZu1fUXl9c72mQyZqTDGZEvxybrYzp5M4YT2d09nZ79idTfyvKg0zp9KbLu-aaYbM" width="624" height="80" loading="lazy"></p>
+<h1><span style="font-size: 20px; color: #000000;">Germline classification</span></h1>
+<p>We no longer refer to 'ACMG Classification' and instead we use the term 'Germline Classification'&nbsp;</p>
+<p><img src="https://lh6.googleusercontent.com/HvmUsvKcXAUq21Fbth4rZ76wJp4H3blXjb6I5I7qYogzoOGTaWwLlmL8FjykPKnywV2hdywFtca-TlZGlXbwDYs77Rmhf2kK7wkJM_7HOZYySTHYru7ArEa6c0gLt-EKV1Z18LHNBiEfOTF5cg9-AFk" width="291" height="85" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<p><strong>We have further improved our germline pathogenicity classification:</strong></p>
+<ul style="font-size: 16px;">
+<li><span style="color: #000000;">We have reduced double counting between UniProt and ClinVar where both are mentioned in the same publication.&nbsp;</span></li>
+<li><strong><span style="color: #000000;">Modified filtering of gnomAD variants</span></strong><br>We are introducing some changes in the way we use the gnomAD data in our germline variant pathogenicity classification. Our aim is to be as consistent as possible with the way gnomAD data are used.
+<ul style="font-size: 16px;">
+<li><span style="color: #000000;">gnomAD filters: if the variant has an entry in the gnomAD project, we check its associated filter and if it is “PASS”, we will consider the gnomAD frequency of that variant for the VarSome’s Germline Classification.</span></li>
+<li><span style="color: #000000;">Indel coverage: we are using the same approach as used by gnomAD to retrieve the coverage of an indel: the coverage of the first position before the indel of interest.&nbsp;</span></li>
+</ul>
+</li>
+<li><strong><span style="color: #000000;">Integration of LOVD evidence into the Germline Variant Classification&nbsp;</span></strong><br>Clinical evidence is the foundation stone of our germline variant pathogenicity classification. TO date, we have been sourcing this from ClinVar, Uniprot, MitoMap and VarSome user contributions. We are now using LOVD as a new source of clinical evidence. In particular, the new data will be used to trigger the clinical evidence rules (PP5 or BP6) and will be included in the region browser. This is a huge milestone in our that will certainly improve the germline classification. In fact, we have observed that LOVD contains around 150k variants that are not yet reported in ClinVar.&nbsp;</li>
+<li><strong><span style="color: #000000;">Further inclusion of ClinGen recommendations for mitochondrial variants</span></strong><br><span style="background-color: transparent;">In </span><a href="https://updates.varsome.com/en/varsome-11.5" style="background-color: transparent;">VarSome’s 11.5 release</a><span style="background-color: transparent;"> we introduced some improvements into our germline classification for the mitochondrial variants following </span><a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC7717623/" style="background-color: transparent;">ClinGen's recommendations</a><span style="background-color: transparent;">. In an effort to keep improving the mitochondrial annotation we are introducing a new rule modification suggested as well by the ClinGen’s mitochondrial expert panel. The rule PM5 will be now used as supporting pathogenic evidence (PM5_Supporting) in non-coding mitochondrial variants where a same nucleotide position as previously established pathogenic variant has been observed.</span></li>
+<li><span style="color: #000000;">We have incorporated a new in-silico predictor MaxEntScan for splicing sites for rules BP7 and PP3.<br></span><span style="background-color: transparent;">For more information please see:&nbsp; </span><a href="http://hollywood.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq.html" style="background-color: transparent;">http://hollywood.mit.edu/burgelab/maxent/Xmaxentscan_scoreseq.html</a></li>
+</ul>
+<h1><span style="font-size: 20px; color: #000000;">VarSome</span></h1>
+<h3><span style="font-size: 14px; color: #000000;">HGVS notation extensions</span></h3>
+<p>HGVS notation supported by VarSome has been extended to include single amino acid deletions and duplications within the same exon, which were previously not supported in VarSome queries:</p>
+<p><img src="https://lh4.googleusercontent.com/4mqL9q4ybGhtjvtTi0-FbOc7fe81yuglzmV41rqi4vpyYvAobfVWAYBR2vLl3xUXsIjmA4wKCLWggPfZFQrYWL3-dOhAcdmUvtESEOd-oij9meWyy2GEeIMxTiicI8_5jVVojACq-JMvRu5oHzU2gL8" width="237" height="123" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<p><span style="color: #000000;"><strong>ClinVar Card</strong></span></p>
+<p>We have increased the detail shown on the ClinVar summary card:</p>
+<h3><span style="font-size: 14px; color: #434343;"><img src="https://lh5.googleusercontent.com/gC5KEStQgIcO-MA9H189wmJ3JY46dZwjfos46p2_mL0BvlpTyQs0hHYKlQRNL0SzvK16jQ4Kub16SZ65HLzTstPBrgN_5THrG3nOr_zAShfhL7eyJ661ta3oocHa2ZcjpcAbMtRhlUPSfBCvU2PFZ1k" width="353" height="103" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></span></h3>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Region Browser</span></h3>
+<p><strong>ClinVar conflicting evidence</strong></p>
+<p>On the pathogenicity track we have added a tool tip that displays information on variants where there is conflicting ClinVar evidence:&nbsp;</p>
+<p><img src="https://lh4.googleusercontent.com/amSVaC609lHbnJbXjcG1jnWcsoMOTZi-oehn5F7UfcSo0Ef9bAOUKX3R-LEMmKjYoKO-2hGpt4d6OxRii6TdNDn28Ktq0knShkpr53lulZxnW8mXIqburfVEag_vFZIH0hPzg_5zdBa2Ynt7lv_NuZc" width="374" height="134" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<p><strong>Display User linked publications&nbsp;</strong></p>
+<p>We have over 90k variants that have been identified as pathogenic in PubMed articles. We now provide a link to any relevant articles within the Region Browser:</p>
+<p><img src="https://lh6.googleusercontent.com/M8njKd_hNnabg_1vo4zGR0IZl5eZfcxQfTzIEIIjEfghzGZcJS-lrlovKmB_wx1ngchoVmIpkKl-5JZKyUXvm1mIrn-oTw8cDbfwfUBUaJUfyCh1-xcZROcttuQncK2PFTdhDfc-pz6xgrwcIC31Ab4" width="324" height="229" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<p><strong>For Premium users, LOVD data have been included in the Region Browser pathogenicity track and included as an option in the filtering:</strong></p>
+<p><strong><img src="https://lh4.googleusercontent.com/7I-pVryai1Lp5D_CbFdmjUl5z_JWScgl-orul6sMesyJ2NDGgeHIdiG4_rl1iRJcDSUJakLbscGUyaNX3lHyIXAv3MCSGP6g60X3uLti_tCIgvFFqYBgUWpGpuKsmmQAzRj2HvKc7_QhArKOiQDZmac" width="310" height="170" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong><img src="https://lh5.googleusercontent.com/4e8Q7nwO9cAUG3mkEfkpo8SOqxIbuOGVLgTRj0cWyQEzJDQ9_osuf1Q5f_VG5PB5Czcb72fckxoG-r57k8pMvTKolg4ol0jF5a1PxFJAAJ0Kh_G3_B7d0sFwBYD6HUR3sHahBZAR802H1-hvyyqHd-M" width="187" height="145" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong>You can now limit the number of visible transcript rows shown:</strong></p>
+<p><strong><img src="https://lh3.googleusercontent.com/OfSmOvMFbfbsPpvxMd0ftS5rTj5ngdsG0QEMI7Nfy5Rm_8wYdZhfhKnQ5gUCD2rgoq_j8Sz9zlCpwhWUBjNePOCaei2g0AnE8zrZiDJF8goEp6yMZABWaQKQH0ciuGpAuWUiVG1Xxhh-CFnpr7XyFjg" width="275" height="162" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong>For structural variants, we have added auto filtering according to the visualized region:</strong></p>
+<p><strong><img src="https://lh5.googleusercontent.com/r4D1F5RgTpXAd4YJM1SLFvVuVSzOG5iverihTmu2igSnNwJIFCkxPuV5JaiI2_ngziEIMdUuLurNaCPUKFZgWZXIfoy03Tf7muTYqWWixyLXjprqOjOinz84FZp7xoUFKZeDktV1UyS9aN7lagYLtVw" width="624" height="175" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong><strong>&nbsp;</strong></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">CNV Browser</span></h3>
+<p><strong>We now display all chromosomes in a single view with the CNVs highlighted:&nbsp;</strong></p>
+<p><strong><img src="https://lh5.googleusercontent.com/Q_VsGmOyWNOzF-kcb0kaoEtkQHvaIEg53zYtYVOVrcUz8raVH7LZmddndOTYu0MukpYkbfAvNtniX_vBJ9BoFZroCo-2Rf7UNf98TzCtIwQC_y3U6ECH-cS8pEDRNEN8Ld_aZmkWX-OXUTXe8AcpS4Y" width="543" height="250" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<p><strong>On the coverage track we now highlight the reference sample using color coding and have provided the option to filter by sample:</strong></p>
+<p><strong><img src="https://lh4.googleusercontent.com/TukxE2bXDBATD0qwmOQfnzkFATirQVEyYbWD8eROUzdcFKNjlM_sPJ8DvO5oS1qCCpyEec1npodXStsJ8PUX9gHTiFm7jUiETXjEwDArSZhqjIKRZHUQpLHa_SC9yMS7MPgUz6snhTcnB3ME19-vO2k" width="624" height="219" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong><strong>&nbsp;</strong></p>
+<p><strong><img src="https://lh6.googleusercontent.com/XuxEeZ3qISOCyU0oIelvI0zcvGynCnnWN55ph1N2UZFPNFNLkJ2c606kX_cygNOHR_fSb29FgDL2lWyG26QfnBmNP3-LMGhQnyepOrzoJjIio9EckI1e-EgwUoDvuLpqOlhNz97zDS4kT9y1fqaqrwM" width="194" height="158" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">In-Silico Predictions</span></h3>
+<p><strong style="background-color: transparent;"><span style="color: #000000;">Strength of prediction using calibrated thresholds</span></strong></p>
+<span style="background-color: transparent;">We have added a new tool-tip to the Score column of the </span><em style="background-color: transparent;">in-silico </em><span style="background-color: transparent;">predictors component (Pathogenicity scores). For a single variant we may have different available transcripts with different predictions and scores. We display all available scores and you can hover over them to see the transcript reference and its calibrated prediction.&nbsp;</span><br>
+<p><strong><span style="color: #ff0000;"><img src="https://lh6.googleusercontent.com/IXclA9eJvO6YqpTv7RTkd90hnevczSgc0UHd3ScVtGkp9MsSXJHFv6dcT5mm0IOlfe8RrJ-5wEFcAEoPhMY0GGk6Ind-GqspqRJ_hc-L0_Bht5PyObyR-ctv6gcNpV2JwqcLhpWP39mDWJkoTZ5jY4A" width="624" height="225" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></span></strong></p>
+<p><strong>New </strong><strong><em>in-silico</em></strong><strong> pathogenicity predictor for splice sites: Maxentscan&nbsp;</strong></p>
+<p><strong><img src="https://lh4.googleusercontent.com/WITtoTKOwmATjR1XdLyi4StwqTfdfoulirgijplHvfJxUGwfP5eSUrPvMPSuWbwdduMJl7OgQjgMpj-7BdrwdjOFvKvVZhSiM2oTWEQAEtEzYQrP8Uvtnu4GfWMyjHXAHPljHPEuvNqBvpy2gAM9wPY" width="459" height="274" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></strong></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Clinvar - New Clinical Significance summary&nbsp;</span></h3>
+<p>A new column has been added to the ClinVar component that displays a color coded summary of the verdicts from different sources.&nbsp;</p>
+<p><img src="https://lh4.googleusercontent.com/ewXfuxLIkxzEGeKQj1ZQzdvclofecPPkAu26MxBMg4-1N4NRnHvNxqMzdh8Qtd3D6X6GbtUFFYqf3ONEB5iAVk5pfvwo_oFPSI65r6O4J0rEgxpNeawI5M4AqRcwIqBPe-bh-UlxeAY80WPu4sPhKM4" width="434" height="219" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<h3 style="font-size: 18px;"><span style="color: #000000;">Publications Improvements</span></h3>
+<p>We have improved our publications tagger to better identify cases where keywords can have different meanings in different contexts, plus extended the way we identify and handle acronyms in publications, so that the full word corresponding to an acronym can be identified and highlighted throughout the text.</p>
+<p><img src="https://lh3.googleusercontent.com/r14wcwMdtC9owtFa-jszTTYg7s2-CrEB9tiuurrCYgf3BnP06yVKPdjl-VgE3wrh_cQRjTNoDvBIlMrCEyYi7POPP03mZ7MMJMypxPVejz5saDDW6D2kUu-9U74FXBTvbvgKoxhfyRtxY9LiZspoiaY" width="371" height="189" loading="lazy" style="margin-left: auto; margin-right: auto; display: block;"></p>
+<h1><span style="font-size: 20px; color: #000000;">Support</span></h1>
+<p><span style="color: #000000;">As ever we hope you find these changes &amp; improvements helpful, we’d love to hear any suggestions you may have, support is available as usual from</span> <a href="mailto:support@varsome.com"><span>support@varsome.com.</span></a></p>
+<h1>&nbsp;</h1>
+<p style="font-size: 16px;"><span style="color: #000000;">The VarSome Team.</span></p></span>
+                  </div>
+              </div>
+          </div>
+
+      </div>
+  </div>
+  <div class="next-prev-post">
+    <div class="previous-post">
+         
+            <a class="previous-post-link" href="/en/varsome-api-update-v-11.6.1"><i class="fa fa-angle-left" aria-hidden="true"></i> Previous Post</a> 
+         
+    </div>
+    <div class="next-post">
+        
+    </div>
+  </div>
+</div>
+  </div></div>
+
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-14 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell comment-form-box" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-15 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-16 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell comment-form" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-17 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_15526534328861466" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_15526534328861466_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h4>Submit a Comment</h4></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-18 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_15526533622141383" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-blog_comments" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_15526533622141383_blog_comments" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_comments" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_comments">
+<div class="section post-footer">
+    <div id="comments-listing" class="new-comments"></div>
+    
+      <div id="hs_form_target_6470f0c5-9344-460c-acf1-a12e33125b53"></div>
+      
+      
+      
+    
+</div>
+
+</span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-19 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell top-bar post-page" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-20 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-21 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell blog-subscription-box" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-22 ">
+<div class="row-fluid ">
+<div class="span10 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="10">
+<div id="hs_cos_wrapper_module_15563507929101698" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_15563507929101698_blog_subscribe" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_blog_subscribe" style="" data-hs-cos-general-type="widget" data-hs-cos-type="blog_subscribe"><h3 id="hs_cos_wrapper_module_15563507929101698_blog_subscribe_title" class="hs_cos_wrapper form-title" data-hs-cos-general-type="widget_field" data-hs-cos-type="text">Stay up to date</h3>
+
+<div id="hs_form_target_module_15563507929101698_blog_subscribe_1819"></div>
+
+
+
+</span></div>
+
+</div><!--end widget-span -->
+<div class="span2 widget-span widget-type-custom_widget subscrib-social-share" style="" data-widget-type="custom_widget" data-x="10" data-w="2">
+<div id="hs_cos_wrapper_module_1585892384223353" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="social_icons">
+  <a href="https://twitter.com/varsome" target="_blank"> <i class="fa fa-twitter"></i></a>
+  <a href="https://www.linkedin.com/showcase/varsome/" target="_blank"><i class="fa fa-linkedin"></i></a>
+  <a href="https://www.youtube.com/channel/UCwEorND5-pl_9juijC1YGQA?view_as=subscriber" target="_blank" style="line-height: .5rem;"> <i class="fa fa-youtube-play"></i></a>
+  <a href="https://blog.saphetor.com/rss.xml" target="_blank"> <i class="fa fa-rss"></i></a>
+</div></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end body -->
+</div><!--end body wrapper -->
+
+<div class="footer-container-wrapper">
+    <div class="footer-container container-fluid">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-global_group " style="" data-widget-type="global_group" data-x="0" data-w="12">
+<div class="" data-global-widget-path="generated_global_groups/25988361050.html"><div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell cm-footer" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-footer-rss-section" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-4 ">
+<div class="row-fluid ">
+<div class="span3 widget-span widget-type-custom_widget cm-footer-rss-title" style="" data-widget-type="custom_widget" data-x="0" data-w="3">
+<div id="hs_cos_wrapper_module_1582875357287839" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_1582875357287839_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><h2>Latest News</h2>
+<a href="https://blog.varsome.com">See all blog posts</a></span></div>
+
+</div><!--end widget-span -->
+<div class="span9 widget-span widget-type-cell cm_footer-menu_wrapper" style="" data-widget-type="cell" data-x="3" data-w="9">
+
+<div class="row-fluid-wrapper row-depth-2 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget footer-rss" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_1582875229463684" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rss_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+    
+    
+
+
+
+
+<span id="hs_cos_wrapper_module_1582875229463684_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rss_listing" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rss_listing">
+<h3></h3>
+
+
+    <div class="hs-rss-module feedreader_box hs-hash-1009202195"></div>
+
+</span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell custom-footer-top" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-2 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-cell page-center" style="" data-widget-type="cell" data-x="0" data-w="12">
+
+<div class="row-fluid-wrapper row-depth-1 row-number-3 ">
+<div class="row-fluid ">
+<div class="span3 widget-span widget-type-custom_widget " style="" data-widget-type="custom_widget" data-x="0" data-w="3">
+<div id="hs_cos_wrapper_module_1582874368379588" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><div class="cm_footer_social_share">
+  <div class="cm_footer_social_box">
+    <img src="https://updates.varsome.com/hubfs/VarSome_February2020%20Theme/Images/logo.png" alt="">
+  </div>
+  <div class="social_icons" style="margin: 20px 0px;">
+    <a target="_blank" href="https://twitter.com/varsome"> <i class="fa fa-twitter"></i></a>
+    <a target="_blank" href="https://www.linkedin.com/showcase/varsome/"><i class="fa fa-linkedin"></i></a>
+    <a target="_blank" href="https://www.youtube.com/channel/UCwEorND5-pl_9juijC1YGQA?view_as=subscriber" style="line-height: .5rem;"> <i class="fa fa-youtube-play"></i></a>
+    <a target="_blank" href="https://blog.varsome.com/rss.xml"> <i class="fa fa-rss"></i></a>
+  </div>
+</div></div>
+
+</div><!--end widget-span -->
+<div class="span9 widget-span widget-type-cell cm_footer-menu_wrapper" style="" data-widget-type="cell" data-x="3" data-w="9">
+
+<div class="row-fluid-wrapper row-depth-2 row-number-1 ">
+<div class="row-fluid ">
+<div class="span4 widget-span widget-type-custom_widget footer-nav" style="" data-widget-type="custom_widget" data-x="0" data-w="4">
+<div id="hs_cos_wrapper_module_1582874368379590" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<span id="hs_cos_wrapper_module_1582874368379590_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_1582874368379590_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="default" data-menu-id="26477808175" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">VarSome Suite</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://saphetor.com/varsome-editions/varsome/" role="menuitem">VarSome.com</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://saphetor.com/varsome-editions/varsome-premium/" role="menuitem">VarSome Premium</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://saphetor.com/varsome-editions/varsome-clinical/" role="menuitem">VarSome Clinical</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/information/varsome-api-info/" role="menuitem">VarSome API</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1" role="none"><a href="javascript:;" role="menuitem"><br></a></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">System Status</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="http://status.saphetor.com/" role="menuitem" target="_blank" rel="noopener">System Status</a></li>
+   </ul></li>
+ </ul>
+</div></span></div>
+
+</div><!--end widget-span -->
+<div class="span4 widget-span widget-type-custom_widget footer-nav" style="" data-widget-type="custom_widget" data-x="4" data-w="4">
+<div id="hs_cos_wrapper_module_1582874368379591" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<span id="hs_cos_wrapper_module_1582874368379591_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_1582874368379591_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="default" data-menu-id="26477972256" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Resources</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/about/examples/" role="menuitem">Query Examples</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://docs.varsome.com/" role="menuitem" target="_blank" rel="noopener">Documentation</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/about/acmg-implementation/" role="menuitem">ACMG Implementation</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://blog.varsome.com/varsome-as-human-genomics-community" role="menuitem">Global Community</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://blog.varsome.com/varsome-big-data" role="menuitem">VarSome's Big Data</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://blog.varsome.com/increasing-the-diagnostic-yield-with-varsome-clinical" role="menuitem">Increasing Diagnostic Yield</a></li>
+   </ul></li>
+ </ul>
+</div></span></div>
+
+</div><!--end widget-span -->
+<div class="span4 widget-span widget-type-custom_widget footer-nav" style="" data-widget-type="custom_widget" data-x="8" data-w="4">
+<div id="hs_cos_wrapper_module_1582874368379592" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module">
+<span id="hs_cos_wrapper_module_1582874368379592_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_menu" style="" data-hs-cos-general-type="widget" data-hs-cos-type="menu"><div id="hs_menu_wrapper_module_1582874368379592_" class="hs-menu-wrapper active-branch flyouts hs-menu-flow-vertical" role="navigation" data-sitemap-name="default" data-menu-id="26477876637" aria-label="Navigation Menu">
+ <ul role="menu">
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">The Company</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://saphetor.com/about/" role="menuitem" target="_blank" rel="noopener">About Saphetor SA</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://blog.varsome.com" role="menuitem">News</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/varsome-citations/" role="menuitem">Cite VarSome!</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://saphetor.com/contact/" role="menuitem" target="_blank" rel="noopener">Contact</a></li>
+   </ul></li>
+  <li class="hs-menu-item hs-menu-depth-1 hs-item-has-children" role="none"><a href="javascript:;" aria-haspopup="true" aria-expanded="false" role="menuitem">Legal</a>
+   <ul role="menu" class="hs-menu-children-wrapper">
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/terms/" role="menuitem">Terms of Use</a></li>
+    <li class="hs-menu-item hs-menu-depth-2" role="none"><a href="https://varsome.com/privacy/" role="menuitem">Privacy Policy</a></li>
+   </ul></li>
+ </ul>
+</div></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+<div class="row-fluid-wrapper row-depth-1 row-number-1 ">
+<div class="row-fluid ">
+<div class="span12 widget-span widget-type-custom_widget cm-footer-copyright" style="" data-widget-type="custom_widget" data-x="0" data-w="12">
+<div id="hs_cos_wrapper_module_151811920816247" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_module widget-type-rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="module"><span id="hs_cos_wrapper_module_151811920816247_" class="hs_cos_wrapper hs_cos_wrapper_widget hs_cos_wrapper_type_rich_text" style="" data-hs-cos-general-type="widget" data-hs-cos-type="rich_text"><p>VarSome Suite is brought to you by <a href="https://saphetor.com" rel="noopener" target="_blank">Saphetor SA</a>.</p>
+<p>© 2023 Saphetor SA – All Rights Reserved.</p></span></div>
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+</div>
+</div><!--end widget-span -->
+</div><!--end row-->
+</div><!--end row-wrapper -->
+
+    </div><!--end footer -->
+</div><!--end footer wrapper -->
+
+    
+<script>
+(function () {
+    window.addEventListener('load', function () {
+        setTimeout(function () {
+            var xhr = new XMLHttpRequest();
+            xhr.open('POST', '/_hcms/perf', true /*async*/);
+            xhr.setRequestHeader("Content-type", "application/json");
+            xhr.onreadystatechange = function () {
+                // do nothing.
+            };
+            var connection = navigator.connection || navigator.mozConnection || navigator.webkitConnection;
+            function populateNetworkInfo(name, connection, info) {
+                if (name in connection) {
+                    info[name] = connection[name];
+                }
+            }
+            var networkInfo = {};
+            if (connection) {
+                ['type', 'effectiveType', 'downlink', 'rtt'].forEach(function(name) {
+                    populateNetworkInfo(name, connection, networkInfo);
+                });
+            }
+            var perfData = {
+                url: location.href,
+                portal: 4384097,
+                content: 109660021142,
+                group: -1,
+                connection: networkInfo,
+                timing: performance.timing
+            };
+            xhr.send(JSON.stringify(perfData));
+        }, 3000);  // Execute this 3 seconds after onload.
+    });
+})();
+</script>
+
+<script src="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/template_assets/27302722040/1584632438120/Marketplace/Awwal_Design/Awwal_-_Blog_Template/Coded_Files/Owl_Carousal.min.js"></script>
+<script src="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/template_assets/25988405925/1660224166774/VarSome_February2020_Theme/Coded_Files/VarSome_February2020-main.min.js"></script>
+<script>
+var hsVars = hsVars || {}; hsVars['language'] = 'en';
+</script>
+
+<script src="/hs/hsstatic/cos-i18n/static-1.53/bundles/project.js"></script>
+<script src="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/module_assets/27302739877/1585832953844/module_27302739877_Page_Preloader.min.js"></script>
+<script src="/hs/hsstatic/keyboard-accessible-menu-flyouts/static-1.17/bundles/project.js"></script>
+
+    <!--[if lte IE 8]>
+    <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+    <![endif]-->
+
+<script data-hs-allowed="true" src="/_hcms/forms/v2.js"></script>
+
+  <script data-hs-allowed="true">
+      hbspt.forms.create({
+          portalId: '4384097',
+          formId: '898b9425-4cd2-4e98-9276-11a0d5397cbc',
+          formInstanceId: '387',
+          pageId: '109660021142',
+          region: 'na1',
+          
+          pageName: 'VarSome 11.7',
+          
+          contentType: 'blog-post',
+          
+          formsBaseUrl: '/_hcms/forms/',
+          
+          
+          inlineMessage: "<h6 style=\"text-align: center;\">Thanks for Subscribing!</h6>",
+          
+          css: '',
+          target: '#hs_form_target_module_1499706834749274_387',
+          
+          formData: {
+            cssClass: 'hs-form stacked'
+          }
+      });
+  </script>
+
+<script src="https://updates.varsome.com/hs-fs/hub/4384097/hub_generated/module_assets/1584632435197/module_27300121185_Blog_Search_Input.js"></script>
+<script src="/hs/hsstatic/AsyncSupport/static-1.122/js/comment_listing_asset.js"></script>
+<script>
+  function hsOnReadyPopulateCommentsFeed() {
+    var options = {
+      commentsUrl: "https://api-na1.hubapi.com/comments/v3/comments/thread/public?portalId=4384097&offset=0&limit=10000&contentId=109660021142&collectionId=32442071184",
+      maxThreadDepth: 1,
+      showForm: true,
+      
+      skipAssociateContactReason: 'blogComment',
+      disableContactPromotion: true,
+      
+      target: "hs_form_target_6470f0c5-9344-460c-acf1-a12e33125b53"
+    };
+    window.hsPopulateCommentsFeed(options);
+  }
+
+  if (document.readyState === "complete" ||
+      (document.readyState !== "loading" && !document.documentElement.doScroll)
+  ) {
+    hsOnReadyPopulateCommentsFeed();
+  } else {
+    document.addEventListener("DOMContentLoaded", hsOnReadyPopulateCommentsFeed);
+  }
+
+</script>
+
+
+          <!--[if lte IE 8]>
+          <script charset="utf-8" src="https://js.hsforms.net/forms/v2-legacy.js"></script>
+          <![endif]-->
+      
+
+        <script data-hs-allowed="true">
+            hbspt.forms.create({
+                portalId: '4384097',
+                formId: '6470f0c5-9344-460c-acf1-a12e33125b53',
+                pageId: '109660021142',
+                region: 'na1',
+                pageName: "VarSome 11.7",
+                contentType: 'blog-post',
+                
+                formsBaseUrl: '/_hcms/forms/',
+                
+                
+                
+                css: '',
+                target: "#hs_form_target_6470f0c5-9344-460c-acf1-a12e33125b53",
+                type: 'BLOG_COMMENT',
+                
+                submitButtonClass: 'hs-button primary',
+                formInstanceId: '654',
+                getExtraMetaDataBeforeSubmit: window.hsPopulateCommentFormGetExtraMetaDataBeforeSubmit
+            });
+
+            window.addEventListener('message', function(event) {
+              var origin = event.origin; var data = event.data;
+              if ((origin != null && (origin === 'null' || document.location.href.toLowerCase().indexOf(origin.toLowerCase()) === 0)) && data !== null && data.type === 'hsFormCallback' && data.id == '6470f0c5-9344-460c-acf1-a12e33125b53') {
+                if (data.eventName === 'onFormReady') {
+                  window.hsPopulateCommentFormOnFormReady({
+                    successMessage: "Your comment has been received.",
+                    target: "#hs_form_target_6470f0c5-9344-460c-acf1-a12e33125b53"
+                  });
+                } else if (data.eventName === 'onFormSubmitted') {
+                  window.hsPopulateCommentFormOnFormSubmitted();
+                }
+              }
+            });
+        </script>
+      
+
+  <script data-hs-allowed="true">
+      hbspt.forms.create({
+          portalId: '4384097',
+          formId: '898b9425-4cd2-4e98-9276-11a0d5397cbc',
+          formInstanceId: '1819',
+          pageId: '109660021142',
+          region: 'na1',
+          
+          pageName: 'VarSome 11.7',
+          
+          contentType: 'blog-post',
+          
+          formsBaseUrl: '/_hcms/forms/',
+          
+          
+          inlineMessage: "<h3 style=\"text-align: center;\">Thanks for subscribing!</h3>",
+          
+          css: '',
+          target: '#hs_form_target_module_15563507929101698_blog_subscribe_1819',
+          
+          formData: {
+            cssClass: 'hs-form stacked'
+          }
+      });
+  </script>
+
+<script src="/hs/hsstatic/AsyncSupport/static-1.122/js/rss_listing_asset.js"></script>
+<script>
+  function hsOnReadyPopulateRssFeed_1009202195() {
+    var options = {
+      'id': "1009202195",
+      'rss_hcms_url': "/_hcms/rss/feed?feedId=NDM4NDA5Nzo1ODI2MjI4MDQ4OjA%3D&limit=3&dateLanguage=ZW5fVVM%3D&dateFormat=TU1NTSBkLCB5eXl5ICdhdCcgaDptbSBh&zone=RXVyb3BlL0Ftc3RlcmRhbQ%3D%3D&clickThrough=UmVhZCBtb3Jl&maxChars=200&property=link&property=title&property=date&property=published&hs-expires=1712379289&hs-version=2&hs-signature=AJ2IBuH_4lPwxHob1mxt_fDuTXRCs0i-tg",
+      'show_author': false,
+      'show_date': true,
+      'include_featured_image': false,
+      'show_detail' : false,
+      'attribution_text': "by ",
+      'publish_date_text': "",
+      'item_title_tag' : "span",
+      'click_through_text': "Read more",
+      'limit_to_chars': 200,
+    };
+    window.hsPopulateRssFeed(options);
+  }
+
+  if (document.readyState === "complete" ||
+      (document.readyState !== "loading" && !document.documentElement.doScroll)
+  ) {
+    hsOnReadyPopulateRssFeed_1009202195();
+  } else {
+    document.addEventListener("DOMContentLoaded", hsOnReadyPopulateRssFeed_1009202195);
+  }
+
+</script>
+
+
+<!-- Start of HubSpot Analytics Code -->
+<script type="text/javascript">
+var _hsq = _hsq || [];
+_hsq.push(["setContentType", "blog-post"]);
+_hsq.push(["setCanonicalUrl", "https:\/\/updates.varsome.com\/en\/varsome-11.7"]);
+_hsq.push(["setPageId", "109660021142"]);
+_hsq.push(["setContentMetadata", {
+    "contentPageId": 109660021142,
+    "legacyPageId": "109660021142",
+    "contentFolderId": null,
+    "contentGroupId": 32442071184,
+    "abTestId": null,
+    "languageVariantId": 109660021142,
+    "languageCode": "en",
+    
+}]);
+</script>
+
+<script type="text/javascript" id="hs-script-loader" async defer src="/hs/scriptloader/4384097.js"></script>
+<!-- End of HubSpot Analytics Code -->
+
+
+<script type="text/javascript">
+var hsVars = {
+    ticks: 1680843289165,
+    page_id: 109660021142,
+    
+    content_group_id: 32442071184,
+    portal_id: 4384097,
+    app_hs_base_url: "https://app.hubspot.com",
+    cp_hs_base_url: "https://cp.hubspot.com",
+    language: "en",
+    analytics_page_type: "blog-post",
+    analytics_page_id: "109660021142",
+    category_id: 3,
+    folder_id: 0,
+    is_hubspot_user: false
+}
+</script>
+
+
+<script defer src="/hs/hsstatic/HubspotToolsMenu/static-1.154/js/index.js"></script>
+
+
+
+<div id="fb-root"></div>
+ <script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_GB/all.js#xfbml=1&status=0";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+ <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="https://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+ 
+
+
+    <script>
+$( document ).ready(function() {
+  console.log( "document ready!" );
+
+  var $sticky = $('.social-sharing-wrapper');
+  var $stickyrStopper = $('.comment-form-box');
+  if (!!$sticky.offset()) { // make sure ".sticky" element exists
+
+    var generalSidebarHeight = $sticky.innerHeight();
+    var stickyTop = $sticky.offset().top;
+    var stickOffset = 0;
+    var stickyStopperPosition = $stickyrStopper.offset().top;
+    var stopPoint = stickyStopperPosition - generalSidebarHeight - stickOffset;
+    var diff = stopPoint + stickOffset;
+
+    $(window).scroll(function(){ // scroll event
+      var windowTop = $(window).scrollTop(); // returns number
+
+      if (stopPoint < windowTop) {
+          $sticky.css({ position: 'relative', top: 0});
+      } else if (stickyTop < windowTop+stickOffset) {
+          $sticky.css({ position: 'fixed', top: stickOffset + 60 });
+      } else {
+          $sticky.css({position: 'relative', top: 0 });
+      }
+    });
+
+  }
+});
+
+</script>
+    <!-- Generated by the HubSpot Template Builder - template version 1.03 -->
+
+</body></html>

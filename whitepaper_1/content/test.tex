@@ -1,0 +1,28 @@
+\documentclass{article}
+\usepackage{tikz}
+\usepackage{titlesec}
+\usepackage{lipsum}  % Just for sample text
+
+% Define a command to create a section title with a circle
+% #1 - Optional, color of the circle (default red)
+% #2 - Required, position of the circle
+% #3 - Required, title of the section
+\newcommand{\customsection}[3][red]{%
+  \tikz[overlay, remember picture]{
+    \node[fill=#1, circle, minimum size=2cm] at (#2) {};
+  }%
+  \section{#3}%
+}
+
+\begin{document}
+
+\customsection[blue]{0em,-1em}{Introduction}
+\lipsum[1]
+
+\section{Methodology}
+\lipsum[2]
+
+\customsection[yellow]{0em,-1em}{Introduction}
+\lipsum[3]
+
+\end{document}
