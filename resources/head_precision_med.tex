@@ -19,6 +19,7 @@
 
 \setlength{\RaggedRightParindent}{\parindent}
 \setlength{\parskip}{1em}
+
   
 \usepackage{fontspec}
 %\defaultfontfeatures{Mapping=tex-text,Scale=MatchLowercase}
@@ -102,3 +103,6 @@
          }
 
 %\usepackage[a4paper,margin=5pt]{geometry}
+% Define a new column type for left-aligned text in a fixed width column
+% \newcolumntype{L}[1]{>{\raggedright\arraybackslash}p{#1}}
+\newcolumntype{L}[1]{>{\noindent\arraybackslash\hspace{-1.5em}}p{#1}}

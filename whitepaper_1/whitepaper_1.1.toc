@@ -32,15 +32,16 @@
 \contentsline {subsubsection}{\numberline {13.2.8}Case study and example documentation}{22}{subsubsection.13.2.8}
 \contentsline {subsubsection}{\numberline {13.2.9}Conclusion}{22}{subsubsection.13.2.9}
 \contentsline {subsubsection}{\numberline {13.2.10}Appendices}{22}{subsubsection.13.2.10}
-\contentsline {section}{\numberline {14}Future directions and innovation}{22}{section.14}
-\contentsline {section}{\numberline {15}Future products}{23}{section.15}
-\contentsline {subsection}{\numberline {15.1}Pharmacogenomics at Kispi}{23}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}DeepInfeR}{24}{subsection.15.2}
-\contentsline {section}{\numberline {16}Benefit analysis}{25}{section.16}
-\contentsline {subsection}{\numberline {16.1}Comparable benchmarks}{25}{subsection.16.1}
-\contentsline {subsection}{\numberline {16.2}Introduction to source data by Federal Statistical Office}{27}{subsection.16.2}
-\contentsline {subsection}{\numberline {16.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{27}{subsection.16.3}
-\contentsline {section}{\numberline {17}Intellectual property}{31}{section.17}
-\contentsline {section}{\numberline {18}Conclusion}{32}{section.18}
-\contentsline {section}{\numberline {19}Abbreviations}{32}{section.19}
-\contentsline {section}{\numberline {20}Supplemental}{33}{section.20}
+\contentsline {section}{\numberline {14}Example project}{22}{section.14}
+\contentsline {section}{\numberline {15}Future directions and innovation}{25}{section.15}
+\contentsline {section}{\numberline {16}Future products}{26}{section.16}
+\contentsline {subsection}{\numberline {16.1}Pharmacogenomics at Kispi}{26}{subsection.16.1}
+\contentsline {subsection}{\numberline {16.2}DeepInfeR}{27}{subsection.16.2}
+\contentsline {section}{\numberline {17}Benefit analysis}{28}{section.17}
+\contentsline {subsection}{\numberline {17.1}Comparable benchmarks}{28}{subsection.17.1}
+\contentsline {subsection}{\numberline {17.2}Introduction to source data by Federal Statistical Office}{30}{subsection.17.2}
+\contentsline {subsection}{\numberline {17.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{30}{subsection.17.3}
+\contentsline {section}{\numberline {18}Intellectual property}{34}{section.18}
+\contentsline {section}{\numberline {19}Conclusion}{35}{section.19}
+\contentsline {section}{\numberline {20}Abbreviations}{35}{section.20}
+\contentsline {section}{\numberline {21}Supplemental}{36}{section.21}

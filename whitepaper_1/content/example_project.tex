@@ -1,0 +1,149 @@
+\section{Example project}
+
+\subsection*{Objective}
+Develop a predictive model to forecast the need for ICU admission based on daily clinical measurements, thereby enhancing patient care and resource allocation.
+
+\subsection*{Funding and Project Initiation}
+\begin{itemize}
+    \item \textbf{Funding Source:} Grant application starts with project variables.
+        \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{project\_id}, the scientific basis of the product e.g. \texttt{code\_repository}, \texttt{public\_documentation},
+    and examples of outcomes that we expect, e.g. \texttt{action\_taken}
+    \end{itemize}
+    \item \textbf{Project Registration:} Register the project within the \pmu framework to ensure consistent data handling and integration with existing structures.
+    \begin{itemize}
+        \item \textbf{Example Variable:} \texttt{project\_id}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Patient Enrolment and Data Collection}
+\begin{itemize}
+    \item \textbf{Patient Enrolment:} Follow a standardised protocol for patient recruitment to ensure uniform data collection across the unit.
+    \begin{itemize}
+        \item \textbf{Example Variables:}  \texttt{project\_id}, \texttt{patient\_id}, \texttt{enrolment\_date}, \texttt{consent\_status}, \texttt{public\_documentation}
+    \end{itemize}
+    \item \textbf{Data Collection:} Implement automated systems to use daily clinical measurements from a centralised database.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{measurement\_date}, \texttt{clinical\_metrics}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Analysis and Software Development}
+\begin{itemize}
+    \item \textbf{Software Development:} Use the published predictive algorithms in a version-controlled environment where code is systematically documented and linked to project variables.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{algorithm\_version}, \texttt{code\_repository}, \texttt{public\_documentation}
+    \end{itemize}
+    \item \textbf{Data Processing:} Use automated scripts to process the incoming data daily, structuring it according to predefined templates that facilitate easy integration and analysis.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{processed\_data\_output}, \texttt{analysis\_date}, \texttt{code\_repository}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Result Generation and Clinical Integration}
+\begin{itemize}
+    \item \textbf{Result Generation:} Generate predictive results daily, storing them in an accessible format within the centralised system.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{patient\_id}, \texttt{result\_id}, \texttt{prediction\_score}, \texttt{prediction\_date}, \texttt{public\_documentation}
+    \end{itemize}
+    \item \textbf{Data Return to Clinic:}  Integrate the predictive results back into the clinical workflow, enabling real-time decision-making.
+    \begin{itemize}
+        \item \textbf{Example Variables:}  \texttt{patient\_id}, \texttt{result\_id}, \texttt{clinical\_integration\_date}, \texttt{action\_taken}, \texttt{public\_documentation}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Outcome and Impact}
+\begin{itemize}
+    \item \textbf{Actionable Clinical Outcomes:} Provide clinicians with daily reports of patients potentially requiring ICU care, supporting timely and effective clinical interventions.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{report\_id}, \texttt{report\_date}, \texttt{public\_documentation}
+    \end{itemize}
+    \item \textbf{Feedback Loop:} Regularly update the predictive model based on clinician feedback and outcome data to enhance accuracy and relevance.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{feedback\_id}, \texttt{modification\_date}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Project Tracking and Management}
+\begin{itemize}
+    \item \textbf{Variable Tracking:} Maintain a centralised log of all project variables, ensuring that updates are propagated automatically to all linked documents and systems.
+    \item \textbf{Documentation:} Employ Markdown or LaTeX for all project documentation, linked directly to the variable tracking system for consistency and real-time updates.
+    \begin{itemize}
+        \item \textbf{Example Variables:} \texttt{document\_id}, \texttt{last\_updated}
+    \end{itemize}
+\end{itemize}
+
+\subsection*{Benefits of the Unified Approach}
+\begin{itemize}
+    \item \textbf{Efficiency:} Streamlines project management by reducing redundancy and automating updates, ensuring that project components are efficiently managed.
+    \item \textbf{Transparency:} Provides clear visibility into project operations through centralised tracking of all critical variables and documentation.
+    \item \textbf{Scalability:} Facilitates easy scaling of the project framework to include new patient cohorts or measurement types without extensive modifications.
+\end{itemize}
+
+
+
+\begin{longtable}{|L{0.2\textwidth}|L{0.2\textwidth}|L{0.2\textwidth}|L{0.4\textwidth}|}
+\caption{Example of variables for a project lifecycle} \\
+\toprule
+\textbf{Variable Name} & \textbf{Example Content} & \textbf{Phase(s) Used} & \textbf{Description/Usage} \\
+\midrule
+\endfirsthead
+
+\multicolumn{4}{c}%
+{{\bfseries \tablename\ \thetable{} -- continued from previous page}} \\
+\toprule
+\textbf{Variable Name} & \textbf{Example Content} & \textbf{Phase(s) Used} & \textbf{Description/Usage} \\
+\midrule
+\endhead
+
+\bottomrule
+\endfoot
+
+\bottomrule
+\endlastfoot
+
+project\_id & PMU2024-001 & Funding and Project Initiation, Tracking and Management & Unique identifier for the project within the Precision Med framework. \\
+\hline
+\hline
+patient\_id & PID123456 & Patient Enrollment, Data Collection, Result Generation, Data Processing & Unique identifier for each enrolled patient. \\
+\hline
+enrolment\_date & 2024-01-01 & Patient Enrollment, Data Processing, Result Generation & Date when the patient was enrolled in the study. \\
+\hline
+consent\_status & Consented & Patient Enrollment, Data Processing & Consent status of the patient for participation in the study. \\
+\hline
+measurement\_date & 2024-01-02 & Data Collection, Data Processing, Result Generation  & Date on which clinical measurements were taken. \\
+\hline
+clinical\_metrics & Blood pressure, Heart rate & Data Collection, Data Processing, Result Generation  & Types of clinical measurements collected daily. \\
+\hline
+algorithm\_version & v1.0 & Software Development, Data Processing, Result Generation  & Version of the predictive algorithm used. \\
+\hline
+code\_repository & \url{https://github.com} & Funding and Project initiation, Software Development, Data Processing, Result Generation & URL of the version-controlled repository storing the project's code. \\
+\hline
+data\_output & Data\_20240102.csv & Data Processing, Result Generation   & Filename or identifier for the output from data processing. \\
+\hline
+analysis\_date & 2024-01-03 & Data Processing, Result Generation  & Date on which the data was analyzed. \\
+\hline
+result\_id & RES12345678 & Result Generation & Unique identifier for a set of predictive results. \\
+\hline
+prediction\_score & 0.85 & Result Generation & Score indicating the likelihood of ICU need. \\
+\hline
+prediction\_date & 2024-01-04 & Result Generation & Date when the prediction was made. \\
+\hline
+clinical\_integration\_date & 2024-01-05 & Clinical Integration & Date when predictive results were integrated into the clinical workflow. \\
+\hline
+action\_taken & Reviewed by clinician & Clinical Integration & Description of the clinical action taken based on predictions. \\
+\hline
+report\_id & REP20240105 & Outcome and Impact, Data Processing & Unique identifier for the generated daily report. \\
+\hline
+report\_date & 2024-01-05 & Outcome and Impact, Data Processing & Date when the report was generated. \\
+\hline
+feedback\_id & FB20240106 & Feedback Loop & Unique identifier for feedback entry from clinicians. \\
+\hline
+modification\_date & 2024-01-07 & Feedback Loop, Data Processing & Date when modifications were made to the predictive model. \\
+\hline
+document\_id & DOC1234 & Project Tracking and Management, Data Processing & Identifier for a specific project document. \\
+\hline
+last\_updated & 2024-01-08 & Project Tracking and Management, Data Processing & Last date the document was updated. \\
+\hline
+
+\end{longtable}

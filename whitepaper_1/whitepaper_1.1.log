@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  23 JUL 2024 12:38
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  23 JUL 2024 19:02
  restricted system commands enabled.
 **whitepaper_1.1.tex
 (./whitepaper_1.1.tex
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.165 seconds
+luaotfload | main : initialization completed in 0.249 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -686,7 +686,7 @@ luaotfload | aux : no font with id 27
 . <->"SourceSansPro-LightItalic:mode=node;script=latn;language=DFLT;+tlig;"
 . - 'italic small caps'  (m/itsc) with NFSS spec.: 
 .................................................
-LaTeX Info: Redefining \rmfamily on input line 25.
+LaTeX Info: Redefining \rmfamily on input line 26.
 
 (/usr/local/texlive/2018/texmf-dist/tex/latex/xurl/xurl.sty
 Package: xurl 2018/01/09 v 0.03 modify URL breaks
@@ -1507,7 +1507,7 @@ Overfull \hbox (0.13843pt too wide) in paragraph at lines 7--17
  77% of di-ag-nosed cases [[]]. A well-managed work-flow can re-sult in 
  []
 
-<../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf, id=137
+<../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf, id=142
 , 867.24pt x 361.35pt>
 File: ../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf Gr
 aphic file (type pdf)
@@ -1519,13 +1519,13 @@ rly_forecast.pdf  used on input line 23.
 
 <../stats/foph_key_stats/output/p_cases_sepsis_kispi_yearly_forecast.pdf>]
 (./content/introduction.tex
-<images/precision_med_unit_management.pdf, id=163, 1907.125pt x 1835.85875pt>
+<images/precision_med_unit_management.pdf, id=168, 1907.125pt x 1835.85875pt>
 File: images/precision_med_unit_management.pdf Graphic file (type pdf)
 <use images/precision_med_unit_management.pdf>
 Package luatex.def Info: images/precision_med_unit_management.pdf  used on input
  line 6.
 (luatex.def)             Requested size: 204.85802pt x 197.18289pt.
-<images/precision_med_overview.pdf, id=164, 1686.3pt x 1626.075pt>
+<images/precision_med_overview.pdf, id=169, 1686.3pt x 1626.075pt>
 File: images/precision_med_overview.pdf Graphic file (type pdf)
 <use images/precision_med_overview.pdf>
 Package luatex.def Info: images/precision_med_overview.pdf  used on input line 7
@@ -1645,7 +1645,7 @@ Overfull \hbox (0.15623pt too wide) in paragraph at lines 17--20
 sam-ple pro-cess-ing to data anal-y-sis, in-clud-ing specifics like li-brary 
  []
 
-<images/precision_med_dataflow.pdf, id=214, 913.4125pt x 1410.26875pt>
+<images/precision_med_dataflow.pdf, id=219, 913.4125pt x 1410.26875pt>
 File: images/precision_med_dataflow.pdf Graphic file (type pdf)
 <use images/precision_med_dataflow.pdf>
 Package luatex.def Info: images/precision_med_dataflow.pdf  used on input line 2
@@ -1654,12 +1654,12 @@ Package luatex.def Info: images/precision_med_dataflow.pdf  used on input line 2
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<images/concept_f1.png, id=215, 1071.00125pt x 640.3925pt>
+<images/concept_f1.png, id=220, 1071.00125pt x 640.3925pt>
 File: images/concept_f1.png Graphic file (type png)
 <use images/concept_f1.png>
 Package luatex.def Info: images/concept_f1.png  used on input line 34.
 (luatex.def)             Requested size: 341.43437pt x 204.15782pt.
-<images/concept_f2.png, id=216, 1062.97125pt x 499.8675pt>
+<images/concept_f2.png, id=221, 1062.97125pt x 499.8675pt>
 File: images/concept_f2.png Graphic file (type png)
 <use images/concept_f2.png>
 Package luatex.def Info: images/concept_f2.png  used on input line 35.
@@ -1686,7 +1686,7 @@ Overfull \hbox (0.14922pt too wide) in paragraph at lines 3--4
  []
 
 [13]
-<images/Research_Funding_Pathways.pdf, id=259, 752.65205pt x 486.30386pt>
+<images/Research_Funding_Pathways.pdf, id=264, 752.65205pt x 486.30386pt>
 File: images/Research_Funding_Pathways.pdf Graphic file (type pdf)
 <use images/Research_Funding_Pathways.pdf>
 Package luatex.def Info: images/Research_Funding_Pathways.pdf  used on input lin
@@ -1737,7 +1737,7 @@ Overfull \hbox (0.1046pt too wide) in paragraph at lines 24--26
 data'' is up-dated as a project up-dates, all of the sub-se-quent uses of 
  []
 
-<images/precision_med_single_source_management.pdf, id=401, 3056.41875pt x 1155.
+<images/precision_med_single_source_management.pdf, id=406, 3056.41875pt x 1155.
 31625pt>
 File: images/precision_med_single_source_management.pdf Graphic file (type pdf)
 <use images/precision_med_single_source_management.pdf>
@@ -1750,13 +1750,13 @@ Overfull \hbox (0.11969pt too wide) in paragraph at lines 55--64
 di-cate their im-por-tance and fre-quent us-age. These vari-ables serve not 
  []
 
-<images/network_usage_plot_1.png, id=415, 716.6775pt x 571.13374pt>
+<images/network_usage_plot_1.png, id=420, 716.6775pt x 571.13374pt>
 File: images/network_usage_plot_1.png Graphic file (type png)
 <use images/network_usage_plot_1.png>
 Package luatex.def Info: images/network_usage_plot_1.png  used on input line 79.
 
 (luatex.def)             Requested size: 192.0548pt x 153.0491pt.
-<images/network_usage_plot_2.png, id=416, 709.65125pt x 493.845pt>
+<images/network_usage_plot_2.png, id=421, 709.65125pt x 493.845pt>
 File: images/network_usage_plot_2.png Graphic file (type png)
 <use images/network_usage_plot_2.png>
 Package luatex.def Info: images/network_usage_plot_2.png  used on input line 80.
@@ -1856,14 +1856,96 @@ Overfull \hbox (6.59157pt too wide) in paragraph at lines 109--110
 n-tain-ing IVDR com-pli-ance 
  []
 
-) (./content/future_directions_and_innovation.tex)
+) (./content/example_project.tex [22]
+Overfull \hbox (74.83014pt too wide) in paragraph at lines 23--24
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Ex-am-ple Vari-ables: \TU/lmtt/m/n/10 pro
+ject_-id\TU/SourceSansPro--Light(0)/m/n/10 , \TU/lmtt/m/n/10 patient_-id\TU/Sou
+rceSansPro--Light(0)/m/n/10 , \TU/lmtt/m/n/10 enrolment_-date\TU/SourceSansPro-
+-Light(0)/m/n/10 , \TU/lmtt/m/n/10 consent_-status\TU/SourceSansPro--Light(0)/m
+/n/10 , \TU/lmtt/m/n/10 public_-documentation  
+ []
+
+
+Overfull \hbox (1.27734pt too wide) in paragraph at lines 25--27
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Data Col-lec-tion: \TU/SourceSansPro--Lig
+ht(0)/m/n/10 Im-ple-ment au-to-mated sys-tems to use daily clin-i-cal mea-sure-
+ments from a cen-tralised 
+ []
+
+
+Overfull \hbox (0.1205pt too wide) in paragraph at lines 33--35
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Soft-ware De-vel-op-ment: \TU/SourceSansP
+ro--Light(0)/m/n/10 Use the pub-lished pre-dic-tive al-go-rithms in a version-c
+ontrolled en-vi-ron-ment 
+ []
+
+
+Overfull \hbox (8.73013pt too wide) in paragraph at lines 51--52
+[]\TU/SourceSansPro--Light(0)/bx/n/10 Ex-am-ple Vari-ables: \TU/lmtt/m/n/10 pat
+ient_-id\TU/SourceSansPro--Light(0)/m/n/10 , \TU/lmtt/m/n/10 result_-id\TU/Sour
+ceSansPro--Light(0)/m/n/10 , \TU/lmtt/m/n/10 clinical_-integration_-date\TU/Sou
+rceSansPro--Light(0)/m/n/10 , \TU/lmtt/m/n/10 action_-taken\TU/SourceSansPro--L
+ight(0)/m/n/10 , 
+ []
+
+[23]
+Overfull \hbox (15.0pt too wide) in paragraph at lines 86--86
+[][]  
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 85--90
+ [][][][] 
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 90--97
+ [][][][] 
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 97--100
+ [][][][] 
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 100--103
+ [][][][] 
+ []
+
+
+Underfull \hbox (badness 1478) in paragraph at lines 118--118
+[]| \TU/SourceSansPro--Light(0)/m/n/10 Soft-ware 
+ []
+
+
+Underfull \hbox (badness 4341) in paragraph at lines 132--132
+[]| 
+ []
+
+
+Overfull \hbox (13.1846pt too wide) in paragraph at lines 132--132
+\TU/SourceSansPro--Light(0)/m/n/10 clin-i-cal_-in-te-gra-tion_-date|  
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 103--145
+ [][][][] 
+ []
+
+
+Overfull \hbox (49.99344pt too wide) in alignment at lines 145--149
+ [][][][] 
+ []
+
+[24]) (./content/future_directions_and_innovation.tex)
 (./content/future_products.tex
 Overfull \hbox (0.13655pt too wide) in paragraph at lines 7--1
 []\TU/SourceSansPro--Light(0)/m/n/10 Our on-go-ing com-mit-ment to in-no-va-tio
 n and ex-cel-lence en-sures that we will con-tinue to en-hance health 
  []
 
-[22]
+[25]
 Overfull \hbox (0.55458pt too wide) in paragraph at lines 15--21
 \TU/SourceSansPro--Light(0)/m/n/10 ef-fec-tive-ness of drugs used in the clinic
 . \TU/SourceSansPro--Light(0)/bx/n/10 Fig-ure [][]8[][] \TU/SourceSansPro--Ligh
@@ -1891,13 +1973,13 @@ Overfull \hbox (0.10422pt too wide) in paragraph at lines 45--48
 491[][] - MSc New tools & re-search strate-gies in per-son-al-ized health 
  []
 
-[23]
-<images/DNA_to_effect.pdf, id=501, 1564.84625pt x 1280.785pt>
+[26]
+<images/DNA_to_effect.pdf, id=531, 1564.84625pt x 1280.785pt>
 File: images/DNA_to_effect.pdf Graphic file (type pdf)
 <use images/DNA_to_effect.pdf>
 Package luatex.def Info: images/DNA_to_effect.pdf  used on input line 51.
 (luatex.def)             Requested size: 234.73654pt x 192.10945pt.
-<images/effect_to_drug.pdf, id=502, 1564.84625pt x 1849.91125pt>
+<images/effect_to_drug.pdf, id=532, 1564.84625pt x 1849.91125pt>
 File: images/effect_to_drug.pdf Graphic file (type pdf)
 <use images/effect_to_drug.pdf>
 Package luatex.def Info: images/effect_to_drug.pdf  used on input line 52.
@@ -1915,7 +1997,7 @@ Light(0)/m/n/10 Our ap-proach up-dates the prob-a-bil-ity of each vari-ant caus
 -ing spe-cific dis-eases 
  []
 
-[24<./images/DNA_to_effect.pdf><./images/effect_to_drug.pdf>]
+[27<./images/DNA_to_effect.pdf><./images/effect_to_drug.pdf>]
 Overfull \hbox (0.16309pt too wide) in paragraph at lines 71--72
 \TU/SourceSansPro--Light(0)/m/n/10 strate-gies in pe-di-atric care tai-lored to
  the ge-netic pro-files of in-di-vid-ual pa-tients, sig-nif-i-cantly trans-form
@@ -1935,14 +2017,14 @@ Overfull \hbox (7.93486pt too wide) in paragraph at lines 13--14
 ient, re-flect-ing in-ter-na-tional 
  []
 
-[25]
+[28]
 Overfull \hbox (8.83395pt too wide) in paragraph at lines 55--56
 []\TU/SourceSansPro--Light(0)/bx/n/10 Key statis-tics\TU/SourceSansPro--Light(0
 )/m/n/10 : Iden-ti-fies causative vari-ants in 8.2% of cases pre-vi-ously un-de
 -tected by ex-ome se-quenc-ing.  
  []
 
-[26]
+[29]
 Overfull \hbox (0.11288pt too wide) in paragraph at lines 72--73
 \TU/SourceSansPro--Light(0)/m/n/10 from the United States and is also uti-lized
  by the Qual-ity Medicine Ini-tia-tive (IQM) in Ger-many and na-tion-ally 
@@ -1974,7 +2056,7 @@ Overfull \hbox (0.12222pt too wide) in paragraph at lines 77--82
 unit[] \TU/SourceSansPro--Light(0)/m/n/10 cost anal-y-sis overview 
  []
 
-<../stats/foph_key_stats/output/p_cost.pdf, id=644, 775.89874pt x 447.6725pt>
+<../stats/foph_key_stats/output/p_cost.pdf, id=673, 775.89874pt x 447.6725pt>
 File: ../stats/foph_key_stats/output/p_cost.pdf Graphic file (type pdf)
 <use ../stats/foph_key_stats/output/p_cost.pdf>
 Package luatex.def Info: ../stats/foph_key_stats/output/p_cost.pdf  used on inpu
@@ -1996,8 +2078,8 @@ Overfull \hbox (0.14618pt too wide) in paragraph at lines 102--119
 of 37 hours on av-er-age [[]]. Based on such val-ues, the fore-cast 
  []
 
-[27]
-<../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf, id=669, 867.24pt 
+[30]
+<../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf, id=698, 867.24pt 
 x 361.35pt>
 File: ../stats/foph_key_stats/output/p_cases_sepsis_uni_yearly.pdf Graphic file 
 (type pdf)
@@ -2018,7 +2100,7 @@ rly_forecast.pdf  used on input line 135.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-<../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf, id=677, 11
+<../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf, id=706, 11
 56.32pt x 433.62pt>
 File: ../stats/foph_key_stats/output/p_cases_per_indicator_kispi_2022.pdf Graphi
 c file (type pdf)
@@ -2029,8 +2111,8 @@ spi_2022.pdf  used on input line 165.
 
 LaTeX Warning: `h' float specifier changed to `ht'.
 
-) [28<../stats/foph_key_stats/output/p_cost.pdf>] [29<../stats/foph_key_stats/ou
-tput/p_cases_sepsis_uni_yearly.pdf>] [30<../stats/foph_key_stats/output/p_cases_
+) [31<../stats/foph_key_stats/output/p_cost.pdf>] [32<../stats/foph_key_stats/ou
+tput/p_cases_sepsis_uni_yearly.pdf>] [33<../stats/foph_key_stats/output/p_cases_
 per_indicator_kispi_2022.pdf>] (./content/ip.tex
 Overfull \hbox (0.13376pt too wide) in paragraph at lines 3--5
 \TU/SourceSansPro--Light(0)/m/n/10 Our ap-proach to in-tel-lec-tual prop-erty (
@@ -2044,165 +2126,165 @@ ro--Light(0)/m/n/10 We are com-mit-ted to open-source code and doc-u-men-ta-tio
 n. This com-mit-ment 
  []
 
-) [31
+) [34
 
 ] (./content/conclusion.tex) (./content/abbreviations.tex)
-(./whitepaper_1.1.bbl [32
+(./whitepaper_1.1.bbl [35
 
 ])
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=729, 614.295pt x 79
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=758, 614.295pt x 79
 4.97pt>
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
-  used on input line 63.
+  used on input line 66.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
-  used on input line 63.
+  used on input line 66.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=732, page=1, 614.29
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=761, page=1, 614.29
 5pt x 794.97pt>
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page1 used on input line 63.
+ , page1 used on input line 66.
 (luatex.def)             Requested size: 614.29349pt x 794.96806pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page1 used on input line 63.
+ , page1 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
- [33]
+ [36]
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page1 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page1 used on input line 63.
+ , page1 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page1 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
- [34<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=768, page=2, 614.29
-5pt x 794.97pt>
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page2 used on input line 63.
+ , page1 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 1>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page2 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page2 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
- [35<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=774, page=3, 614.29
-5pt x 794.97pt>
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page3 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page3 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page3 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-
-[36<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=783, page=4, 614.29
-5pt x 794.97pt>
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page4 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page4 used on input line 63.
-(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
-File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
- pdf)
-<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
-Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page4 used on input line 63.
+ , page1 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
  [37<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=793, page=5, 614.29
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=797, page=2, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 2>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page2 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [38<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=803, page=3, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 3>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page3 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+
+[39<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=813, page=4, 614.29
+5pt x 794.97pt>
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
+ pdf)
+<use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 4>
+Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
+ , page4 used on input line 66.
+(luatex.def)             Requested size: 597.78697pt x 773.60669pt.
+ [40<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, id=823, page=5, 614.29
 5pt x 794.97pt>
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page5 used on input line 63.
+ , page5 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page5 used on input line 63.
+ , page5 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
 File: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf Graphic file (type
  pdf)
 <use ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf, page 5>
 Package luatex.def Info: ../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf
- , page5 used on input line 63.
+ , page5 used on input line 66.
 (luatex.def)             Requested size: 597.78697pt x 773.60669pt.
- [38<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 65.
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 65.
+ [41<../ivdr_auto_regulation/ivdr_auto_document_vcurrent.pdf>]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 68.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 68.
  (./whitepaper_1.1.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 65.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 65.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 68.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 68.
 Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
-(rerunfilecheck)             Checksum: F39EF8D275F54EB6D0A7AE8E7C61148C;1169.
+(rerunfilecheck)             Checksum: E4C291CEE01AFAFBECF42867BC136AB0;1221.
 )
 
 Here is how much of LuaTeX's memory you used:
- 27184 strings out of 494413
+ 27211 strings out of 494413
  156510,794899 words of node,token memory allocated
- 868 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 15 attribute, 123 glue_spec, 15 attribute_l
-ist, 1 write, 11 pdf_action nodes
-   avail lists: 1:7,2:1127,3:433,4:146,5:871,6:70,7:5584,8:221,9:206,10:19,11:46
-3,12:1
- 29995 multiletter control sequences out of 65536+600000
+ 878 words of node memory still in use:
+   3 hlist, 1 vlist, 1 rule, 2 glue, 16 attribute, 123 glue_spec, 16 attribute_l
+ist, 1 write, 12 pdf_action nodes
+   avail lists: 1:7,2:1609,3:685,4:147,5:1217,6:173,7:8481,8:853,9:1287,10:19,11
+:707,12:1
+ 30000 multiletter control sequences out of 65536+600000
  74 fonts using 13106431 bytes
- 51i,18n,67p,1611b,880s stack positions out of 5000i,500n,10000p,200000b,100000s
+ 51i,18n,67p,1611b,960s stack positions out of 5000i,500n,10000p,200000b,100000s
 </usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sourcesanspro/SourceSan
 sPro-LightIt.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/lm
 monolt10-bold.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/public/lm/l
@@ -2210,10 +2292,10 @@ mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
 rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on whitepaper_1.1.pdf (38 pages, 2801722 bytes).
+Output written on whitepaper_1.1.pdf (41 pages, 2811571 bytes).
 
-PDF statistics: 853 PDF objects out of 1000 (max. 8388607)
- 651 compressed objects within 7 object streams
- 138 named destinations out of 1000 (max. 131072)
- 161 words of extra memory for PDF output out of 10000 (max. 100000000)
+PDF statistics: 883 PDF objects out of 1000 (max. 8388607)
+ 678 compressed objects within 7 object streams
+ 151 named destinations out of 1000 (max. 131072)
+ 169 words of extra memory for PDF output out of 10000 (max. 100000000)
 
