@@ -63,6 +63,27 @@ The variables source contains declarations for key terms and concepts used acros
 These variables serve not only as identifiers within texts/code/etc. but also help to  connect the reader/user with recurring themes and important concepts across multiple documents. 
 
 
+\subsection{Example}
+Long-term projects use data from a range of sources. 
+Common databases or core files are often reused multiple times. 
+Some data can remain dormant for long periods of time. 
+In the following example from
+\url{https://lawlessgenomics.com/data_usage_network},
+we built automated data tracing systems that are used to present summarised analytics that are conducive to multipurpose usage and error prevention. 
+This software scans entire data servers or project code to find and quantify all data sources. 
+It then produces live interactive reports without the need for manual curation as shown in 
+\textbf{figure \ref{fig:network_usage_plot_1}}.
+
+\begin{figure}[h] \hspace*{0cm} 
+\begin{center}
+	\includegraphics[width=.45\textwidth]{network_usage_plot_1}
+	\includegraphics[width=.45\textwidth]{network_usage_plot_2}
+	\caption{Left: Usage of all data showing dates, sizes, the purpose of usage, and projects. Double clicking a file will show all files that have the same datatype purpose (e.g. all files required for RNAseq analysis). Right: The interaction between data uses, within and between projects. Teal coloured edges illustrate single-purpose data. Dark coloured edges illustrate multi-purpose data.
+}
+	\label{fig:network_usage_plot_1}
+\end{center}
+\end{figure}
+
 \subsection{Benefits}
 
 The benefits of single-source management in our precision medicine research are manifold:
@@ -73,3 +94,4 @@ The benefits of single-source management in our precision medicine research are 
 \end{itemize}
 
 Implementing this system requires rigorous discipline and a well-organised file management structure, but the return on investment in terms of time saved and error reduction is substantial.
+

@@ -16,29 +16,30 @@
 \contentsline {section}{\numberline {11}Single-source management in precision medicine}{16}{section.11}
 \contentsline {subsection}{\numberline {11.1}Principles of single-source management}{16}{subsection.11.1}
 \contentsline {subsection}{\numberline {11.2}Implementation example in our documentation}{17}{subsection.11.2}
-\contentsline {subsection}{\numberline {11.3}Benefits}{18}{subsection.11.3}
-\contentsline {section}{\numberline {12}IVDR compliance documentation and version controls}{18}{section.12}
-\contentsline {subsection}{\numberline {12.1}Introduction to IVDR}{18}{subsection.12.1}
-\contentsline {subsection}{\numberline {12.2}Example: Compliance and audit}{19}{subsection.12.2}
-\contentsline {subsubsection}{\numberline {12.2.1}Document Control}{19}{subsubsection.12.2.1}
+\contentsline {subsection}{\numberline {11.3}Example}{18}{subsection.11.3}
+\contentsline {subsection}{\numberline {11.4}Benefits}{18}{subsection.11.4}
+\contentsline {section}{\numberline {12}IVDR compliance documentation and version controls}{19}{section.12}
+\contentsline {subsection}{\numberline {12.1}Introduction to IVDR}{19}{subsection.12.1}
+\contentsline {subsection}{\numberline {12.2}Example: Compliance and audit}{20}{subsection.12.2}
+\contentsline {subsubsection}{\numberline {12.2.1}Document Control}{20}{subsubsection.12.2.1}
 \contentsline {subsubsection}{\numberline {12.2.2}Introduction}{20}{subsubsection.12.2.2}
 \contentsline {subsubsection}{\numberline {12.2.3}System overview}{20}{subsubsection.12.2.3}
-\contentsline {subsubsection}{\numberline {12.2.4}Version control management}{20}{subsubsection.12.2.4}
-\contentsline {subsubsection}{\numberline {12.2.5}Reference genome details}{20}{subsubsection.12.2.5}
+\contentsline {subsubsection}{\numberline {12.2.4}Version control management}{21}{subsubsection.12.2.4}
+\contentsline {subsubsection}{\numberline {12.2.5}Reference genome details}{21}{subsubsection.12.2.5}
 \contentsline {subsubsection}{\numberline {12.2.6}Metadata and compliance tracking}{21}{subsubsection.12.2.6}
-\contentsline {subsubsection}{\numberline {12.2.7}Compliance tagging and audit trails}{21}{subsubsection.12.2.7}
-\contentsline {subsubsection}{\numberline {12.2.8}Case study and example documentation}{21}{subsubsection.12.2.8}
-\contentsline {subsubsection}{\numberline {12.2.9}Conclusion}{21}{subsubsection.12.2.9}
-\contentsline {subsubsection}{\numberline {12.2.10}Appendices}{21}{subsubsection.12.2.10}
+\contentsline {subsubsection}{\numberline {12.2.7}Compliance tagging and audit trails}{22}{subsubsection.12.2.7}
+\contentsline {subsubsection}{\numberline {12.2.8}Case study and example documentation}{22}{subsubsection.12.2.8}
+\contentsline {subsubsection}{\numberline {12.2.9}Conclusion}{22}{subsubsection.12.2.9}
+\contentsline {subsubsection}{\numberline {12.2.10}Appendices}{22}{subsubsection.12.2.10}
 \contentsline {section}{\numberline {13}Future directions and innovation}{22}{section.13}
-\contentsline {section}{\numberline {14}Future products}{22}{section.14}
-\contentsline {subsection}{\numberline {14.1}Pharmacogenomics at Kispi}{22}{subsection.14.1}
+\contentsline {section}{\numberline {14}Future products}{23}{section.14}
+\contentsline {subsection}{\numberline {14.1}Pharmacogenomics at Kispi}{23}{subsection.14.1}
 \contentsline {subsection}{\numberline {14.2}DeepInfeR}{24}{subsection.14.2}
-\contentsline {section}{\numberline {15}Benefit analysis}{24}{section.15}
-\contentsline {subsection}{\numberline {15.1}Comparable benchmarks}{24}{subsection.15.1}
-\contentsline {subsection}{\numberline {15.2}Introduction to source data by Federal Statistical Office}{26}{subsection.15.2}
+\contentsline {section}{\numberline {15}Benefit analysis}{25}{section.15}
+\contentsline {subsection}{\numberline {15.1}Comparable benchmarks}{25}{subsection.15.1}
+\contentsline {subsection}{\numberline {15.2}Introduction to source data by Federal Statistical Office}{27}{subsection.15.2}
 \contentsline {subsection}{\numberline {15.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{27}{subsection.15.3}
-\contentsline {section}{\numberline {16}Intellectual property}{30}{section.16}
-\contentsline {section}{\numberline {17}Conclusion}{31}{section.17}
-\contentsline {section}{\numberline {18}Abbreviations}{31}{section.18}
-\contentsline {section}{\numberline {19}Supplemental}{32}{section.19}
+\contentsline {section}{\numberline {16}Intellectual property}{31}{section.16}
+\contentsline {section}{\numberline {17}Conclusion}{32}{section.17}
+\contentsline {section}{\numberline {18}Abbreviations}{32}{section.18}
+\contentsline {section}{\numberline {19}Supplemental}{33}{section.19}
