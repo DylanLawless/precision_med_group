@@ -1,4 +1,4 @@
-This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.6.5)  5 SEP 2024 15:27
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.19)  16 SEP 2024 11:16
  restricted system commands enabled.
 **whitepaper_1.1.tex
 (./whitepaper_1.1.tex
@@ -8,7 +8,7 @@ Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
 Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
 llection.(using write cache: /usr/local/texlive/2018/texmf-var/luatex-cache/gene
 ric)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cache/generic /U
-sers/dantes/Library/texlive/2018/texmf-var/luatex-cache/generic)
+sers/dylanlawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
 luaotfload | conf : Root cache directory is /usr/local/texlive/2018/texmf-var/lu
 atex-cache/generic/names.
 luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
@@ -34,7 +34,7 @@ Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
 '.
 Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
 .
-luaotfload | main : initialization completed in 0.251 seconds
+luaotfload | main : initialization completed in 0.105 seconds
 Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
 (/usr/local/texlive/2018/texmf-dist/tex/latex/base/article.cls
 Document Class: article 2014/09/29 v1.4h Standard LaTeX document class
@@ -1466,6 +1466,13 @@ ic/fonts/otl/lmmono12-regular.luc) (./whitepaper_1.1.toc [1
 
 \openout7 = whitepaper_1.1.toc
  [2] (./content/philosophy.tex
+Overfull \hbox (0.16762pt too wide) in paragraph at lines 5--8
+\TU/SourceSansPro--Light(0)/m/n/10 Clin-i-cal and re-search teams cur-rently sp
+end ex-ten-sive time man-u-ally col-lab-o-rat-ing and search-ing for crit-i-cal
+ 
+ []
+
+
 Overfull \hbox (4.08044pt too wide) in paragraph at lines 13--14
 []\TU/SourceSansPro--Light(0)/m/n/10 Stan-dard-ised for-mat: A uni-form for-mat
  across the board en-sures quick ac-cess to nec-es-sary in-for-ma-tion 
@@ -2343,11 +2350,11 @@ Package rerunfilecheck Info: File `whitepaper_1.1.out' has not changed.
 
 Here is how much of LuaTeX's memory you used:
  27276 strings out of 494413
- 156510,794899 words of node,token memory allocated
+ 125171,794899 words of node,token memory allocated
  878 words of node memory still in use:
    3 hlist, 1 vlist, 1 rule, 2 glue, 16 attribute, 123 glue_spec, 16 attribute_l
 ist, 1 write, 12 pdf_action nodes
-   avail lists: 1:7,2:1609,3:685,4:145,5:1218,6:173,7:8481,8:853,9:1287,10:19,11
+   avail lists: 1:6,2:1609,3:685,4:145,5:1218,6:173,7:8481,8:853,9:1287,10:19,11
 :707,12:1
  30017 multiletter control sequences out of 65536+600000
  74 fonts using 13106431 bytes
@@ -2359,7 +2366,7 @@ mmono10-regular.otf></usr/local/texlive/2018/texmf-dist/fonts/opentype/adobe/sou
 rcesanspro/SourceSansPro-Light.otf></usr/local/texlive/2018/texmf-dist/fonts/ope
 ntype/adobe/sourcesanspro/SourceSansPro-Regular.otf></usr/local/texlive/2018/tex
 mf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb>
-Output written on whitepaper_1.1.pdf (45 pages, 4644494 bytes).
+Output written on whitepaper_1.1.pdf (45 pages, 4644742 bytes).
 
 PDF statistics: 1017 PDF objects out of 1200 (max. 8388607)
  756 compressed objects within 8 object streams
