@@ -1,0 +1,25 @@
+\contentsline {section}{\numberline {1}Summary}{2}{section.1}
+\contentsline {section}{\numberline {2}Introduction and background}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Multi-omics for diagnosis and discovery to inborn errors of metabolism}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}GenomeSwift}{3}{subsection.2.2}
+\contentsline {subsection}{\numberline {2.3}Precision medicine unit operational design}{3}{subsection.2.3}
+\contentsline {section}{\numberline {3}Objective and hypotheses}{4}{section.3}
+\contentsline {subsection}{\numberline {3.1}Hypotheses:}{4}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Objectives:}{4}{subsection.3.2}
+\contentsline {section}{\numberline {4}Materials and methods}{4}{section.4}
+\contentsline {section}{\numberline {5}Expected outcomes and significance}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}Added value for the applicant's career and home institution}{6}{subsection.5.1}
+\contentsline {subsection}{\numberline {5.2}Value analysis}{6}{subsection.5.2}
+\contentsline {subsubsection}{\numberline {5.2.1}Comparable benchmarks}{6}{subsubsection.5.2.1}
+\contentsline {subsection}{\numberline {5.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{7}{subsection.5.3}
+\contentsline {section}{\numberline {6}Collaborations and network}{8}{section.6}
+\contentsline {subsection}{\numberline {6.1}Involved persons}{8}{subsection.6.1}
+\contentsline {subsection}{\numberline {6.2}National / international collaborations}{9}{subsection.6.2}
+\contentsline {section}{\numberline {7}Timeline and milestones}{9}{section.7}
+\contentsline {section}{\numberline {8}Financial plan and budget}{10}{section.8}
+\contentsline {subsection}{\numberline {8.1}Available resources}{10}{subsection.8.1}
+\contentsline {subsection}{\numberline {8.2}Requested resources}{10}{subsection.8.2}
+\contentsline {subsubsection}{\numberline {8.2.1}Personal costs (including social security contributions)}{10}{subsubsection.8.2.1}
+\contentsline {subsubsection}{\numberline {8.2.2}Material costs}{10}{subsubsection.8.2.2}
+\contentsline {subsection}{\numberline {8.3}Summary budget table}{10}{subsection.8.3}
+\contentsline {section}{\numberline {9}References}{11}{section.9}

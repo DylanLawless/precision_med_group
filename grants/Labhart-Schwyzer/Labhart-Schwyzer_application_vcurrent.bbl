@@ -1,0 +1,257 @@
+\begin{thebibliography}{34}
+\providecommand{\natexlab}[1]{#1}
+\providecommand{\url}[1]{\texttt{#1}}
+\expandafter\ifx\csname urlstyle\endcsname\relax
+  \providecommand{\doi}[1]{doi: #1}\else
+  \providecommand{\doi}{doi: \begingroup \urlstyle{rm}\Url}\fi
+
+\bibitem[Casanova and Abel(2020)]{ref1}
+Jean-Laurent Casanova and Laurent Abel.
+\newblock The human genetic determinism of life-threatening infectious
+  diseases: genetic heterogeneity and physiological homogeneity?
+\newblock \emph{Hum. Genet.}, 139:\penalty0 681--694, 2020.
+
+\bibitem[Povysil et~al.(2019)Povysil, Petrovski, Hostyk, Aggarwal, Allen, and
+  Goldstein]{ref2}
+Gundula Povysil, Slavé Petrovski, Jason Hostyk, Vandana Aggarwal, A.~S. Allen,
+  and David~B. Goldstein.
+\newblock Rare-variant collapsing analyses for complex traits: guidelines and
+  applications.
+\newblock \emph{Nat. Rev. Genet.}, 20\penalty0 (12), 2019.
+\newblock \doi{10.1038/s41576-019-0177-4}.
+
+\bibitem[Pedersen et~al.(2021)]{ref3}
+B.~S. Pedersen et~al.
+\newblock Effective variant filtering and expected candidate variant yield in
+  studies of rare human disease.
+\newblock \emph{NPJ Genomic Med.}, 6\penalty0 (1):\penalty0 1--8, 2021.
+
+\bibitem[der Auwera et~al.(2013)]{ref4}
+G.~A.~Van der Auwera et~al.
+\newblock From fastq data to high-confidence variant calls: The genome analysis
+  toolkit best practices pipeline.
+\newblock \emph{Curr. Protoc. Bioinforma.}, 43\penalty0 (1):\penalty0
+  11.10.1--11.10.33, 2013.
+\newblock \doi{10.1002/0471250953.bi1110s43}.
+
+\bibitem[Lawless et~al.(2023{\natexlab{a}})]{ref5}
+D.~Lawless et~al.
+\newblock Prevalence of cftr variants in primary immunodeficiency patients with
+  bronchiectasis is an important modifying cofactor.
+\newblock \emph{J. Allergy Clin. Immunol.}, 152\penalty0 (1):\penalty0
+  257--265, 2023{\natexlab{a}}.
+\newblock \doi{10.1016/j.jaci.2023.01.035}.
+
+\bibitem[Lawless et~al.(2023{\natexlab{b}})]{ref6}
+D.~Lawless et~al.
+\newblock Viral genetic determinants of prolonged respiratory syncytial virus
+  infection among infants in a healthy term birth cohort.
+\newblock \emph{J. Infect. Dis.}, 227\penalty0 (10):\penalty0 1194--1202,
+  2023{\natexlab{b}}.
+\newblock \doi{10.1093/infdis/jiac442}.
+
+\bibitem[Xu et~al.(2023)]{ref7}
+Z.~M. Xu et~al.
+\newblock Genome-to-genome analysis reveals associations between human and
+  mycobacterial genetic variation in tuberculosis patients from tanzania.
+\newblock \emph{Published online}, 2023.
+\newblock \doi{10.1101/2023.05.11.23289848}.
+
+\bibitem[Szklarczyk et~al.(2016)]{ref8}
+D.~Szklarczyk et~al.
+\newblock The string database in 2017: quality-controlled protein-protein
+  association networks, made broadly accessible.
+\newblock \emph{Nucleic Acids Res.}, 45\penalty0 (D1):\penalty0 D362--D368,
+  2016.
+\newblock \doi{10.1093/nar/gkw937}.
+
+\bibitem[Wu et~al.(2011)Wu, Lee, Cai, Li, Boehnke, and Lin]{ref9}
+M.~C. Wu, S.~Lee, T.~Cai, Y.~Li, M.~Boehnke, and X.~Lin.
+\newblock Rare-variant association testing for sequencing data with the
+  sequence kernel association test.
+\newblock \emph{Am. J. Hum. Genet.}, 89\penalty0 (1):\penalty0 82--93, 2011.
+\newblock \doi{10.1016/j.ajhg.2011.05.029}.
+
+\bibitem[Lee et~al.(2012{\natexlab{a}})]{ref10}
+S.~Lee et~al.
+\newblock Optimal unified approach for rare-variant association testing with
+  application to small-sample case-control whole-exome sequencing studies.
+\newblock \emph{Am. J. Hum. Genet.}, 91\penalty0 (2):\penalty0 224--237,
+  2012{\natexlab{a}}.
+\newblock \doi{10.1016/j.ajhg.2012.06.007}.
+
+\bibitem[Lee et~al.(2012{\natexlab{b}})Lee, Wu, and Lin]{ref11}
+S.~Lee, M.~C. Wu, and X.~Lin.
+\newblock Optimal tests for rare variant effects in sequencing association
+  studies.
+\newblock \emph{Biostatistics}, 13\penalty0 (4):\penalty0 762--775,
+  2012{\natexlab{b}}.
+\newblock \doi{10.1093/biostatistics/kxs014}.
+
+\bibitem[Richards et~al.(2015)]{ref12}
+S.~Richards et~al.
+\newblock Standards and guidelines for the interpretation of sequence variants:
+  a joint consensus recommendation of the american college of medical genetics
+  and genomics and the association for molecular pathology.
+\newblock \emph{Genet Med}, 17\penalty0 (5):\penalty0 405--424, 2015.
+\newblock \doi{10.1038/gim.2015.30}.
+
+\bibitem[Consortium(2016)]{ref16}
+The~UniProt Consortium.
+\newblock Uniprot: the universal protein knowledgebase.
+\newblock \emph{Nucleic Acids Res.}, 45\penalty0 (D1):\penalty0 D158--D169,
+  2016.
+\newblock \doi{10.1093/nar/gkw1099}.
+
+\bibitem[Li et~al.(2020)]{ref17}
+X.~Li et~al.
+\newblock Dynamic incorporation of multiple in silico functional annotations
+  empowers rare variant association analysis of large whole-genome sequencing
+  studies at scale.
+\newblock \emph{Nat. Genet.}, 52\penalty0 (9):\penalty0 969--983, 2020.
+\newblock \doi{10.1038/s41588-020-0676-4}.
+
+\bibitem[Li et~al.(2022)]{ref18}
+Z.~Li et~al.
+\newblock A framework for detecting noncoding rare-variant associations of
+  large-scale whole-genome sequencing studies.
+\newblock \emph{Nat. Methods}, 19\penalty0 (12):\penalty0 1599--1611, 2022.
+\newblock \doi{10.1038/s41592-022-01640-x}.
+
+\bibitem[Li and Leal(2008)]{ref19}
+B.~Li and S.~M. Leal.
+\newblock Methods for detecting associations with rare variants for common
+  diseases: application to analysis of sequence data.
+\newblock \emph{Am. J. Hum. Genet.}, 83\penalty0 (3):\penalty0 311--321, 2008.
+
+\bibitem[Madsen and Browning(2009)]{ref20}
+B.~E. Madsen and S.~R. Browning.
+\newblock A groupwise association test for rare mutations using a weighted sum
+  statistic.
+\newblock \emph{PLoS Genet}, 5\penalty0 (2):\penalty0 e1000384, 2009.
+\newblock \doi{10.1371/journal.pgen.1000384}.
+
+\bibitem[Neale et~al.(2011)]{ref21}
+B.~M. Neale et~al.
+\newblock Testing for an unusual distribution of rare variants.
+\newblock \emph{PLoS Genet.}, 7\penalty0 (3):\penalty0 e1001322, 2011.
+
+\bibitem[Liu et~al.(2019)Liu, Chen, Li, Morrison, Boerwinkle, and Lin]{ref22}
+Y.~Liu, S.~Chen, Z.~Li, A.~C. Morrison, E.~Boerwinkle, and X.~Lin.
+\newblock Acat: a fast and powerful p value combination method for rare-variant
+  analysis in sequencing studies.
+\newblock \emph{Am. J. Hum. Genet.}, 104\penalty0 (3):\penalty0 410--421, 2019.
+
+\bibitem[Mbatchou et~al.(2021)]{ref23}
+J.~Mbatchou et~al.
+\newblock Computationally efficient whole-genome regression for quantitative
+  and binary traits.
+\newblock \emph{Nat. Genet.}, 53\penalty0 (7):\penalty0 1097--1103, 2021.
+\newblock \doi{10.1038/s41588-021-00870-7}.
+
+\bibitem[Zhou et~al.(2022)]{ref24}
+W.~Zhou et~al.
+\newblock Saige-gene+ improves the efficiency and accuracy of set-based rare
+  variant association tests.
+\newblock \emph{Nat. Genet.}, 54\penalty0 (10):\penalty0 1466--1469, 2022.
+\newblock \doi{10.1038/s41588-022-01178-w}.
+
+\bibitem[Van~den Berg et~al.(2022)Van~den Berg, Van~Beuningen, Ter~Maaten, and
+  Bouma]{van2022hospital}
+M~Van~den Berg, FE~Van~Beuningen, JC~Ter~Maaten, and HR~Bouma.
+\newblock Hospital-related costs of sepsis around the world: A systematic
+  review exploring the economic burden of sepsis.
+\newblock \emph{Journal of Critical Care}, 71:\penalty0 154096, 2022.
+
+\bibitem[Meng et~al.(2017)Meng, Pammi, Saronwala, Magoulas, Ghazi, Vetrini,
+  Zhang, He, Dharmadhikari, Qu, et~al.]{meng2017use}
+Linyan Meng, Mohan Pammi, Anirudh Saronwala, Pilar Magoulas, Andrew~Ray Ghazi,
+  Francesco Vetrini, Jing Zhang, Weimin He, Avinash~V Dharmadhikari, Chunjing
+  Qu, et~al.
+\newblock Use of exome sequencing for infants in intensive care units:
+  ascertainment of severe single-gene disorders and effect on medical
+  management.
+\newblock \emph{JAMA pediatrics}, 171\penalty0 (12):\penalty0 e173438--e173438,
+  2017.
+
+\bibitem[Lunke et~al.(2023)Lunke, Bouffler, Patel, Sandaradura, Wilson, Pinner,
+  Hunter, Barnett, Wallis, Kamien, et~al.]{lunke2023integrated}
+Sebastian Lunke, Sophie~E Bouffler, Chirag~V Patel, Sarah~A Sandaradura,
+  Meredith Wilson, Jason Pinner, Matthew~F Hunter, Christopher~P Barnett,
+  Mathew Wallis, Benjamin Kamien, et~al.
+\newblock Integrated multi-omics for rapid rare disease diagnosis on a national
+  scale.
+\newblock \emph{Nature medicine}, 29\penalty0 (7):\penalty0 1681--1691, 2023.
+
+\bibitem[Jensson et~al.(2023)Jensson, Arnadottir, Katrinardottir,
+  Fridriksdottir, Helgason, Oddsson, Sveinbjornsson, Eggertsson, Halldorsson,
+  Atlason, et~al.]{jensson2023actionable}
+Brynjar~O Jensson, Gudny~A Arnadottir, Hildigunnur Katrinardottir, Run
+  Fridriksdottir, Hannes Helgason, Asmundur Oddsson, Gardar Sveinbjornsson,
+  Hannes~P Eggertsson, Gisli~H Halldorsson, Bjarni~A Atlason, et~al.
+\newblock Actionable genotypes and their association with life span in iceland.
+\newblock \emph{New England Journal of Medicine}, 389\penalty0 (19):\penalty0
+  1741--1752, 2023.
+
+\bibitem[Sanchis-Juan et~al.(2023)Sanchis-Juan, Megy, Stephens, Ricaurte,
+  Dewhurst, Low, French, Grozeva, Stirrups, Erwood, et~al.]{sanchis2023genome}
+Alba Sanchis-Juan, Karyn Megy, Jonathan Stephens, Camila~Armirola Ricaurte,
+  Eleanor Dewhurst, Kayyi Low, Courtney~E French, Detelina Grozeva, Kathleen
+  Stirrups, Marie Erwood, et~al.
+\newblock Genome sequencing and comprehensive rare-variant analysis of 465
+  families with neurodevelopmental disorders.
+\newblock \emph{The American Journal of Human Genetics}, 110\penalty0
+  (8):\penalty0 1343--1355, 2023.
+
+\bibitem[Abou~Tayoun and Alsheikh-Ali(2023)]{abou2023rapid}
+Ahmad~N Abou~Tayoun and Alawi Alsheikh-Ali.
+\newblock A rapid whole-genome sequencing service for infants with rare
+  diseases in the united arab emirates.
+\newblock \emph{Nature Medicine}, 29\penalty0 (12):\penalty0 2979--2980, 2023.
+
+\bibitem[Wojcik et~al.(2024)Wojcik, Lemire, Berger, Zaki, Wissmann, Win, White,
+  Weisburd, Wieczorek, Waddell, et~al.]{wojcik2024genome}
+Monica~H Wojcik, Gabrielle Lemire, Eva Berger, Maha~S Zaki, Mariel Wissmann,
+  Wathone Win, Susan~M White, Ben Weisburd, Dagmar Wieczorek, Leigh~B Waddell,
+  et~al.
+\newblock Genome sequencing for diagnosing rare diseases.
+\newblock \emph{New England Journal of Medicine}, 390\penalty0 (21):\penalty0
+  1985--1997, 2024.
+
+\bibitem[Wright et~al.(2023)Wright, Campbell, Eberhardt, Aitken, Perrett,
+  Brent, Danecek, Gardner, Chundru, Lindsay, et~al.]{wright2023genomic}
+Caroline~F Wright, Patrick Campbell, Ruth~Y Eberhardt, Stuart Aitken, Daniel
+  Perrett, Simon Brent, Petr Danecek, Eugene~J Gardner, V~Kartik Chundru,
+  Sarah~J Lindsay, et~al.
+\newblock Genomic diagnosis of rare pediatric disease in the united kingdom and
+  ireland.
+\newblock \emph{New England Journal of Medicine}, 388\penalty0 (17):\penalty0
+  1559--1571, 2023.
+
+\bibitem[Miszczyńska and Miszczyński(2002)]{ref25}
+D.~Miszczyńska and M.~Miszczyński.
+\newblock \emph{Wybrane metody badań operacyjnych}.
+\newblock Published independently, 2002.
+
+\bibitem[Murthy(2005)]{ref26}
+P.~R. Murthy.
+\newblock \emph{Operations research (linear programming)}.
+\newblock bohem press, 2005.
+
+\bibitem[Cohen and Sadeh(2007)]{ref27}
+Y.~Cohen and A.~Sadeh.
+\newblock A new approach for constructing and generating aoa networks.
+\newblock \emph{J. Eng. Comput. Archit.}, 1\penalty0 (1):\penalty0 1--13, 2007.
+
+\bibitem[Taha(2007)]{ref28}
+H.~A. Taha.
+\newblock \emph{Operations research an introduction}.
+\newblock Published independently, 2007.
+
+\bibitem[Konarzewska et~al.(2020)Konarzewska, Jewczak, and Kucharski]{ref29}
+I.~Konarzewska, M.~Jewczak, and A.~Kucharski.
+\newblock \emph{Optymalizacja w logistyce, tom 1. Modelowanie logistycznych
+  procesów decyzyjnych}.
+\newblock Wydawnictwo Uniwersytetu Łódzkiego, 2020.
+
+\end{thebibliography}

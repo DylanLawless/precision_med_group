@@ -1,0 +1,90 @@
+\documentclass[11pt, a4paper]{letter}
+\usepackage[document]{ragged2e}  % remove line justify
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{xcolor}  % Color text
+\hypersetup{
+    colorlinks=true,
+    urlcolor=[rgb]{0, 0.28, 0.8}
+}
+\usepackage{microtype}
+% \microtypesetup{nopatch=footnote} % Disable problematic patches
+
+\usepackage{geometry}
+\geometry{ a4paper, left=3.5cm, right=3.5cm, bottom=2.5cm, top=3cm}
+\usepackage{setspace}
+\setstretch{1.0}
+
+% Include ifthen for conditional logic
+\usepackage{ifthen}
+\usepackage{xspace}
+
+% Importing recipient and postcode definition
+\input{apply.tex}
+
+% Import variable definitions
+\input{variables.tex}
+
+\signature{Vera Jäggi \& Dylan Lawless}
+
+\begin{document} 
+\begin{letter}{} 
+
+% Recipient address on the left
+\begin{minipage}[t]{0.48\textwidth}
+\raggedright
+% \recipient
+\end{minipage}
+\hfill
+% Sender address on the right
+\begin{minipage}[t]{0.48\textwidth}
+\raggedleft
+\href{mailto:verajaggi@gmail.com}{verajaggi@gmail.com} \\
+% $+41 77 463 23 74
++41 79 373 01 54
+\end{minipage}
+
+\opening{Sehr geehrte Damen und Herren,}
+%These variables are set for the \currentpostcode{} side of Zurich:
+%Local sports \sports{}. local hobbies  \hobbies{}. local museums \museum{}.  Die Lage Ihrer Immobilie in \area{} ist ideal, Unsere Freunde, \friends{}.
+
+Wir sind Dylan und Vera, 34 und 33 Jahre alt und arbeiten beide am Universitätskinderspital Zürich.
+
+% **Hintergrund \& Persönlichkeiten:**
+% Dylan, ursprünglich aus Irland, kam als Postdoktorand in Präzisionsmedizin zur EPFL und arbeitet jetzt als Genetiker an der UZH und in der Abteilung für Intensivmedizin und Neonatologie am Universitätskinderspital Zürich.
+
+Dylan, ursprünglich aus Irland, kam als Postdoktorand in Präzisionsmedizin zur EPFL und lebt seit fast sieben Jahren in der Schweiz. 
+Er arbeitet jetzt als Genetiker an der UZH und in der Abteilung für Intensivmedizin und Neonatologie am Universitätskinderspital Zürich.
+
+Vera, ist im Kreis 6 und 10 in Zürich aufgewachsen und lebt seit 2019 in der Zürcher Altstadt. Sie studierte Pharmazie an der ETH Zürich und hat nach mehreren weiterführenden Abschlüssen die Position als Stellvertreterin des Datenintelligenz Teans am Universitäts - Kinderspital Zürich übernommen. Sie leitet und setzt technische Projekte um, welche für den klinischen Betrieb und die wissenschaftliche Forschung entscheidend sind.
+
+Wir sind beide sehr ordentlich, ruhig und unkompliziert und widmen uns abends gerne dem Tennis, Volleyball, Schwimmen und Radfahren. Zu Hause entspannen wir uns mit Malen und Lesen.
+
+% **Motivation für den Umzug:**
+Wir möchten gerne ein neues Zuhause finden in der Stadt Zürich. 
+Wir sind mit unseren Freunden, Fanilie und Hobbies stark in Zürich verwurzelt und möchten dies auch in Velo Distanz bleiben.
+Wir genießen viele kulturelle Aktivitäten, gehen gerne Abends in Museen oder Töpfern in Gemeindschaftszentren. 
+
+Die Wohnung gefällt uns besonders wegen ihrer zentralen Lage, der freundlichen Nachbarschaft und der hellen, großzügigen Raumaufteilung, die ideal für ein ruhiges und angenehmes Leben ist
+
+% **Langfristige Pläne:**
+Wir sind langfristig an Zürich gebunden und planen, unsere Karrieren an der Universität und im Kinderspital fortzusetzen.
+Wir schätzen Stabilität und Gemeinschaft und streben danach, positiv zu unserem neuen Zuhause und seiner Umgebung beizutragen.
+
+% **Persönlicher Abschnitt**
+Unsere Freunde sprechen sehr positiv über Ihre Gegend und haben uns empfohlen, uns zu bewerben.
+
+% **Schlussfolgerung:**
+Vielen Dank, dass Sie unsere Bewerbung in Betracht ziehen. Wir sind würden uns sehr freuen, wenn wir ihre Wohnung unserem neuen Zuhause machen und positiv zur Gemeinschaft beizutragen könnten.
+
+\closing{Herzliche Grüsse,} 
+% Check if the page number is odd
+\ifodd\value{page}
+    \newpage
+    \thispagestyle{empty}  % Optional: ensures the blank page has no header or footer
+    \mbox{}                % Ensures the page is truly blank
+    \newpage
+\fi
+\end{letter}
+
+\end{document}

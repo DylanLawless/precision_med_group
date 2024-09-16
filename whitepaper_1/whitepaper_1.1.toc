@@ -41,7 +41,8 @@
 \contentsline {subsection}{\numberline {17.1}Comparable benchmarks}{28}{subsection.17.1}
 \contentsline {subsection}{\numberline {17.2}Introduction to source data by Federal Statistical Office}{30}{subsection.17.2}
 \contentsline {subsection}{\numberline {17.3}Analysis results for \textbf {\leavevmode {\color {kispidarkgreen}Precision medicine unit}}\xspace }{30}{subsection.17.3}
-\contentsline {section}{\numberline {18}Intellectual property}{34}{section.18}
-\contentsline {section}{\numberline {19}Conclusion}{35}{section.19}
-\contentsline {section}{\numberline {20}Abbreviations}{35}{section.20}
-\contentsline {section}{\numberline {21}Supplemental}{36}{section.21}
+\contentsline {section}{\numberline {18}National sepsis registry}{34}{section.18}
+\contentsline {section}{\numberline {19}Intellectual property}{38}{section.19}
+\contentsline {section}{\numberline {20}Conclusion}{39}{section.20}
+\contentsline {section}{\numberline {21}Abbreviations}{39}{section.21}
+\contentsline {section}{\numberline {22}Supplemental}{40}{section.22}

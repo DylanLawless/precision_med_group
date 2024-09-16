@@ -65,7 +65,6 @@ read_my_data <- function(file_path) {
 # Use purrr's map_df with safely to read data and handle potential errors
 results <- map_df(file_paths, safely(read_my_data), .id = "file")
 
-
 # Extract data frames and errors
 data_frames <- results$result
 errors <- results$error
@@ -85,6 +84,8 @@ combined_df <- bind_rows(data_frames) %>%
 	distinct()  # Remove duplicate rows if any
 
 df <- combined_df 
+
+rm(data_frames, results, combined_df, errors, file_paths, read_my_data)
 
 # df <- df %>%
 	# mutate(institution = stringi::stri_trans_general(institution, "Latin-ASCII"))
@@ -407,7 +408,6 @@ ggsave("../output/p_cases_sepsis_kispi_yearly_forecast.pdf", plot = p_ks_forecas
 
 
 # universitat ----
-
 # Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
 df_uni_sepsis <- df_long %>%
 	filter(str_detect(institution, "Universit") | str_detect(institution, "Kinderspital Z")) %>%
@@ -422,9 +422,15 @@ wrap_labeller <- labeller(
   institution = function(x) str_wrap(x, width = 30)
 )
 
+# df_uni_sepsis$year <- ymd(df_uni_sepsis$year)
+
+# Convert the year column to Date format with the first day of each year
+df_uni_sepsis$year <- ymd(paste0(df_uni_sepsis$year, "-01-01"))
+
 p_us <- df_uni_sepsis %>%
 	ungroup() %>%
 	group_by(institution, indicator, year) %>%
+		group_by(institution, indicator, year) %>%
 	summarise(total_cases = sum(`cases`)) %>% 
 	filter(total_cases > 0) %>%
 	ggplot(aes(x = year, y = total_cases, color = indicator, group = indicator)) +  # Add group aesthetic
@@ -441,4 +447,427 @@ p_us <- df_uni_sepsis %>%
 p_us
 
 ggsave("../output/p_cases_sepsis_uni_yearly.pdf", plot = p_us, width =12, height = 5)
+
+
+# Federal level ----
+# Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
+df_federal_sepsis <- df_long %>%
+	filter(subgroup == "J.2") #%>%
+
+unique(df_uni_sepsis$institution)
+
+
+# Define a custom labeller function to wrap facet labels
+wrap_labeller <- labeller(
+	institution = function(x) str_wrap(x, width = 30)
+)
+
+# Convert the year column to Date format with the first day of each year
+df_federal_sepsis$year <- ymd(paste0(df_federal_sepsis$year, "-01-01"))
+
+p_fed <- df_federal_sepsis %>%
+	ungroup() %>%
+	# group_by(institution, indicator, year) %>%
+	group_by(indicator, year) %>%
+	summarise(total_cases = sum(`cases`)) %>% 
+	filter(total_cases > 0) %>%
+	ggplot(aes(x = year, y = total_cases, color = indicator, group = indicator)) +  # Add group aesthetic
+	geom_point() +
+	geom_line() +
+	# facet_wrap(~ institution, labeller = wrap_labeller) +
+	labs(
+		title = "Total cases of sepsis in University hospitals per main indicator by subgroup",
+		fill = "Subgroup"
+	) +
+	theme_minimal() +
+	theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) 
+
+p_fed
+
+ggsave("../output/p_cases_sepsis_uni_yearly.pdf", plot = p_us, width =12, height = 5)
+
+
+# Federal with weight metadata ----
+# First get the meta data about institution sizes. Are some large ones skewing the results?
+cases_threshold <- 1000
+
+library(lubridate)
+library(ggplot2)
+library(dplyr)
+library(stringr)
+
+# add a "Class" label to the dataset
+df_federal_sepsis <- df_federal_sepsis %>%
+	mutate(
+		Class = if_else(
+			str_detect(institution, "Universit") | str_detect(institution, "Kinderspital Z"),
+			"University hosp.",
+			"Other"
+		)
+	)
+
+# # summarise data by institution, subgroup, and year
+# df_institution_summary_year <- df_federal_sepsis %>%
+# 	group_by(institution, subgroup, year, Class) %>%
+# 	summarise(
+# 		total_cases = sum(cases),
+# 		.groups = 'drop'
+# 	) %>%
+# 	group_by(institution, subgroup, Class) %>%
+# 	summarise(
+# 		total_cases_overall = sum(total_cases),
+# 		sd_cases = sd(total_cases),
+# 		relative_sd = sd(total_cases) / mean(total_cases),
+# 		.groups = 'drop'
+# 	)
+
+# summary including year
+df_institution_summary_year_detail <- df_federal_sepsis %>%
+	group_by(institution, subgroup, year, Class) %>%
+	summarise(
+		total_cases = sum(cases),
+		.groups = 'drop'
+	)
+
+# calculate overall total cases per institution for ordering
+institution_order <- df_institution_summary_year_detail %>%
+	group_by(institution) %>%
+	summarise(
+		total_cases_overall = sum(total_cases),
+		.groups = 'drop'
+	) %>%
+	arrange(-total_cases_overall)
+
+# merge overall totals into the year-detail dataframe
+df_institution_summary_year_detail <- df_institution_summary_year_detail %>%
+	left_join(institution_order, by = "institution")
+
+
+# Multi plot subsets -----
+
+# Find max total_cases_overall and max x position for annotation
+count_institutions <- df_institution_summary_year_detail$institution |> unique() |> length()
+max_total_cases <- max(df_institution_summary_year_detail$total_cases_overall, na.rm = TRUE)
+max_x_position <- df_institution_summary_year_detail |> select(institution) |> unique() |> nrow()
+p_all_annotation <- paste0("Total number of institutions = ", count_institutions)
+
+# plotting the total cases stacked per year per institution, ordered by overall totals
+p_all <- df_institution_summary_year_detail |>
+	filter(! institution == "CH") |>
+	# filter(total_cases_overall > cases_threshold) |>
+	ggplot(aes(x = reorder(institution, -total_cases_overall), y = total_cases, fill = total_cases)) +
+	geom_bar(stat = "identity", position = "stack") +
+	scale_fill_viridis_c(option = "C") +
+	labs(
+		title = "Total cases of sepsis per institution stacked by year (2010-2022)",
+		x = "Institution", y = "Total Cases", fill = "Total cases\nper year\nper inst."
+	) +
+	theme_minimal() +
+	theme(axis.text.x = element_blank()) +
+		geom_text(data = df_institution_summary_year_detail %>% filter(! Class == "Other"),
+							aes(x = reorder(institution, -total_cases_overall), y = total_cases_overall, label = "*"), 
+							vjust = -0.5, 
+							color = "black") + 
+	annotate("text", x = max_x_position, y = max_total_cases, label = p_all_annotation, 
+					 hjust = 1, vjust = 1)
+
+p_all
+
+# ggsave("../output/p_cases_sepsis_per_institution_year.pdf", plot = p_institution_year, width = 12, height = 6)
+
+# Find max total_cases_overall and max x position for annotation
+count_institutions <- df_institution_summary_year_detail$institution |> unique() |> length()
+max_total_cases <- max(df_institution_summary_year_detail$total_cases_overall, na.rm = TRUE)
+max_x_position <- df_institution_summary_year_detail |> filter(total_cases_overall > cases_threshold) |> select(institution) |> unique() |> nrow()
+p_sub_annotation <- paste0("Total number of institutions = ", count_institutions,
+													 "\nFilter total cases > ", cases_threshold,
+													 "\nShowing labels for 1 in 5 institutions.")
+
+
+# plotting the total cases stacked per year per institution, ordered by overall totals
+p_sub <- df_institution_summary_year_detail |>
+	filter(! institution == "CH") |>
+	filter(total_cases_overall > cases_threshold) |>
+	ggplot(aes(x = reorder(institution, -total_cases_overall), y = total_cases, fill = total_cases)) +
+	geom_bar(stat = "identity", position = "stack") +
+	scale_fill_viridis_c(option = "C") +
+	labs(
+		# title = "Total Cases of Sepsis per Institution Stacked by Year (2010-2022)",
+		x = "Institution", y = "Total Cases", fill = "Total cases\nper year\nper inst."
+	) +
+	theme_minimal() +
+	theme( axis.text.x = element_text(angle = 45, hjust = 1)) +
+	geom_text(data = df_institution_summary_year_detail %>% filter(! Class == "Other"),
+						aes(x = reorder(institution, -total_cases_overall), y = total_cases_overall, label = "*"), 
+						vjust = -0.5, 
+						color = "black")  +
+	scale_x_discrete(labels = function(labels) {
+		# Show every 5th label, others as empty string
+		labels[seq_along(labels) %% 5 != 1] <- ""
+		labels
+	}) + 
+	annotate("text", x = max_x_position, y = max_total_cases, label = p_sub_annotation, 
+		hjust = 1, vjust = 1)
+
+p_sub
+
+# plotting the total cases stacked per year per institution, ordered by overall totals
+count_institutions <- df_institution_summary_year_detail$institution |> unique() |> length()
+max_total_cases <- 
+	df_institution_summary_year_detail |> filter(! Class == "Other") |>
+	select(total_cases_overall) |> max(na.rm = TRUE)
+max_x_position <- df_institution_summary_year_detail |> filter(! Class == "Other") |> select(institution) |> unique() |> nrow()
+p_class_annotation <- paste0("Total number of institutions = ", count_institutions,
+													 "\nFilter = ", "University hosp.")
+
+
+df_institution_summary_year_detail <- df_institution_summary_year_detail %>%
+	mutate(year_label = year(year))  # Create 'year_label' with only the year extracted
+
+
+p_class <- df_institution_summary_year_detail |>
+	filter(! institution == "CH") |>
+	filter(! Class == "Other") |>
+	ggplot(aes(x = reorder(institution, -total_cases_overall), y = total_cases, fill = total_cases)) +
+	geom_bar(stat = "identity", position = "stack") +
+	scale_fill_viridis_c(option = "C") +
+	labs(
+		# title = "Total Cases of Sepsis per Institution Stacked by Year (2010-2022)",
+		x = "Institution", y = "Total Cases", fill = "Total cases\nper year\nper inst."
+	) +
+	theme_minimal() +
+	theme( axis.text.x = element_text(angle = 45, hjust = 1)) +
+	geom_text(data = df_institution_summary_year_detail %>% filter(! Class == "Other"),
+						aes(x = reorder(institution, -total_cases_overall), y = total_cases_overall, label = "*"), 
+						vjust = -0.5, 
+						color = "black") + 
+	annotate("text", x = max_x_position, y = max_total_cases, label = p_class_annotation, 
+					 hjust = 1, vjust = 1) +
+	geom_text(
+		aes(label = year_label), 
+		position = position_stack(vjust = 0.5),  # Center labels in each stack
+		size = 3, 
+		color = "white"
+	) 
+
+p_class
+
+library(patchwork)
+
+patch_year_case_inst_variability <- (p_all) / (p_sub + p_class) 
+ggsave("../output/p_patch_year_case_inst_variability.pdf", plot = patch_year_case_inst_variability)
+
+
+# Further dimensions ----
+
+library(ggplot2)
+library(dplyr)
+library(lubridate)
+library(stringr)
+
+# Create a new column 'year_label' with only the year extracted
+df_institution_summary_year_detail <- df_institution_summary_year_detail %>%
+	mutate(year_label = year(year))  # Create 'year_label' with only the year extracted
+
+# Define variables for annotation
+count_institutions <- df_institution_summary_year_detail %>%
+	filter(institution != "CH") %>%
+	filter(Class != "Other") %>%
+	summarise(n = n_distinct(institution)) %>%
+	pull(n)
+
+max_total_cases <- max(df_institution_summary_year_detail$total_cases_overall, na.rm = TRUE)
+max_x_position <- length(unique(df_institution_summary_year_detail$institution))
+p_class_annotation <- paste0("Total number of institutions = ", count_institutions)
+
+
+
+# Expand the dataframe to replicate rows based on 'total_cases'
+df_expanded <- df_institution_summary_year_detail %>%
+	filter(Class != "Other") %>%
+	filter(institution != "CH") %>%
+	# filter(total_cases_overall > cases_threshold*5) |>
+	uncount(total_cases)  # Expands rows by 'total_cases' count
+
+# Plot using replicated points
+p_replication <- df_expanded %>%
+	ggplot(aes(x = reorder(institution, -total_cases_overall), y = year)) +
+	geom_violin(aes(fill = total_cases_overall), alpha = 0.5) + 
+	geom_point(alpha = 0.2, size = 0.2, position = position_jitter(width = 0.3, height = 90)) +
+	scale_fill_viridis_c(option = "C") +
+	theme_minimal() +
+	labs(
+		title = "Density of individual cases\nfilter = ", "University hosp.",
+		x = "Institution",
+		y = "Year",
+		fill = "Total cases\nper year\nper inst."
+	) +
+	theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+p_replication
+ggsave("../output/p_cases_sepsis_per_institution_violin.pdf", plot = p_replication)
+
+# Second we look at variability in indicator -----
+# summarise data to include variability at the federal level
+df_federal_sepsis_summary <- df_federal_sepsis %>%
+	group_by(indicator, year) %>%
+	summarise(
+		total_cases = sum(cases),
+		sd_cases = sd(cases),
+		relative_sd = sd_cases / mean(cases),  # relative variability
+		.groups = 'drop'
+	) %>%
+	filter(total_cases > 0)
+
+# plot at the federal level
+p_fed <- df_federal_sepsis_summary %>%
+  ggplot(aes(x = year, y = total_cases, group = indicator
+  					 # color = indicator
+  					 )) +
+	geom_line() +
+	geom_point(aes(size = relative_sd, color = relative_sd)) +
+	scale_color_viridis_c(option = "C") +
+	# guides(color = "none") +
+	
+  labs(
+    title = "Total cases of sepsis at\nfederal level by sepsis indicator group",
+    size = "Relative SD",
+    y = "Total cases",
+    color = "Relative SD",
+    fill = "Subgroup"
+  ) +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle = 45, hjust = 1, vjust = 1)) 
+
+p_fed
+
+
+
+patch_year_case_inst_variability <- (p_all) / (p_sub + p_class)
+patch_year_case_repli_var <- (p_replication) + (p_fed) 
+
+patch_main <- patch_year_case_inst_variability / patch_year_case_repli_var
+
+# ggsave("../output/p_patch_year_case_inst_variability_main.pdf", plot = patch_main)
+ggsave("../output/p_patch_year_case_inst_variability_main.png", plot = patch_main, width = 10, height = 14)
+
+
+# Total summary ----
+names(df_federal_sepsis)
+head(df_federal_sepsis)
+
+df_federal_sepsis |> 	filter(! institution == "CH")
+
+
+library(dplyr)
+library(lubridate)
+
+df_federal_sepsis$year
+
+# Summarise data with additional statistics for each subgroup
+subgroup_summary <- df_federal_sepsis %>%
+	filter(!institution == "CH") %>%
+	group_by(subgroup) %>%
+	summarise(
+		total_cases = sum(cases, na.rm = TRUE),
+		avg_cases = mean(cases, na.rm = TRUE),
+		sd_cases = sd(cases, na.rm = TRUE),
+		min_cases = min(cases, na.rm = TRUE),
+		max_cases = max(cases, na.rm = TRUE),
+		.groups = 'drop'  # Avoids additional grouping beyond this point
+	)
+
+# Summarise data with additional statistics for each subgroup by year
+subgroup_year_summary <- df_federal_sepsis %>%
+	filter(!institution == "CH") %>%
+	ungroup() %>%
+	group_by(subgroup, year) %>%
+	summarise(
+		total_cases = sum(cases, na.rm = TRUE),
+		avg_cases = mean(cases, na.rm = TRUE),
+		sd_cases = sd(cases, na.rm = TRUE),
+		min_cases = min(cases, na.rm = TRUE),
+		max_cases = max(cases, na.rm = TRUE),
+		.groups = 'drop'  # Ensures the output is not grouped
+	)
+
+grand_total <- subgroup_year_summary %>%
+	summarise(grand_total_cases = sum(total_cases))
+
+annotation_example <- subgroup_year_summary |> filter(year == 2022)
+
+# Extract and prepare the values
+anno_grand_total <- 
+	paste0("\nTotal cases for 2010-2022: ", grand_total)
+
+anno_year <- paste0("\n\nFor example year: ", annotation_example$year)
+anno_total_cases <- paste0(", total cases: ", annotation_example$total_cases)
+anno_avg_cases <- paste0(",\n per institution avg. cases: ", round(annotation_example$avg_cases))
+anno_sd_cases <- paste0(", (sd: ", round(annotation_example$sd_cases))
+anno_min_max <- paste0(", min-max: ", annotation_example$min_cases, "-", annotation_example$max_cases, ")")
+
+
+
+# Combine all pieces into one annotation string
+annotation_text <- paste0(
+	anno_grand_total,
+	anno_year, 
+	anno_total_cases,
+	anno_avg_cases, 
+	anno_sd_cases,
+	anno_min_max
+)
+
+# Display the annotation text
+print(annotation_text)
+
+# Output the summaries to check
+print(subgroup_summary)
+print(subgroup_year_summary)
+print(grand_total)
+
+# Create the plot using subgroup_year_summary data
+p_yearly <- subgroup_year_summary |>
+	ggplot(aes(x = year, y = total_cases)) +
+	geom_bar(stat = "identity", fill = "steelblue", color = "black") +
+	labs(title = "Federal-level yearly cases of sepsis (J.2)\nsum total.",
+			 x = "Year", y = "Total cases") +
+	theme_minimal()
+
+# Print the plot
+p_yearly
+
+# Create the plot using subgroup_year_summary data
+p_yearly_inst <- ggplot(subgroup_year_summary, aes( group = subgroup)) +
+	
+	geom_point(data = df_federal_sepsis, aes(x = year, y = cases), color = "steelblue", alpha = 0.1,
+						 position = position_jitter(width = 0.3, height = 0)) +
+	# scale_fill_viridis_c(option = "C")
+
+	geom_line(aes(x = year, y = avg_cases), color = "black", linetype = "solid", size = 1) +
+	geom_line(aes(x = year, y = min_cases), color = "black", linetype = "dashed", size = 1) +
+	geom_line(aes(x = year, y = max_cases), color = "black", linetype = "dashed", size = 1) +
+	# Add error bars for standard deviation
+	geom_errorbar(aes(x = year, ymin = avg_cases - sd_cases, ymax = avg_cases + sd_cases), width = 0.2, color = "black") +
+	
+	geom_text(aes(x= year, y=  (avg_cases + sd_cases)*1.5, label = round(avg_cases))) +
+	# Additional plot aesthetics and labels
+	labs(
+		title = "Federal-level yearly cases of sepsis (J.2)\nper institution.",
+		x = "Year",
+		y = "Number of cases",
+		color = "Case Type"
+	) +
+	theme_minimal() +
+	theme(axis.text.x = element_text(angle = 45, hjust = 1))
+
+# Print the plot
+p_yearly_inst
+
+
+patch_tally <- p_yearly + p_yearly_inst + labs(caption = annotation_text)
+
+patch_tally
+
+ggsave("../output/p_patch_tally_main.png", plot = patch_tally, width = 10, height = 4.5)
 

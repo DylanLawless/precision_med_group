@@ -1,0 +1,72 @@
+
+\section{Materials and methods}\label{detailed-research-plan}
+
+The GenomeSwift pipeline is designed to enhance genomic analysis through
+automation and integration of various analytical tools. Our detailed
+research plan outlines the methodology and statistical approaches we
+will employ to ensure the effectiveness and efficiency of GenomeSwift in
+processing and analysing genomic data.
+
+\textbf{(i) Integration of existing tools:} The pipeline will integrate
+several tools that we have developed, including:
+\href{https://github.com/DylanLawless/ProteoMCLustR}{ProteoMCLustR} for
+protein pathway clustering \citep{ref7}, \citep{ref8}; SkatRbrain for statistical
+analysis of genetic data \citep{ref9}, \citep{ref10}, \citep{ref11};
+\href{https://github.com/DylanLawless/archipelago}{Archipelago} for a
+unified representation for genomic statistical analysis;
+\href{https://github.com/DylanLawless/ACMGuru}{ACMGuru} for clinical
+genetic interpretation \citep{ref12}; AutoConstructR for protein structure
+plotting, facilitating a comprehensive interpretation of genetic
+variations \citep{ref16}; and other modular tools.
+
+\textbf{(ii) Data processing and analysis workflow: Data input}:
+GenomeSwift will accept raw genomic data, applying preprocessing steps
+to ensure data quality and compatibility. \textbf{Variant detection}:
+Utilising the best practices from tools like GATK, the pipeline will
+perform variant calling, ensuring high-confidence identification of
+genetic variations \citep{ref4}. \textbf{Statistical analysis}:Employing
+SkatRbrain, the pipeline will conduct robust statistical analyses to
+associate genomic variations with disease phenotypes, including rare
+variant analysis \citep{ref9}, \citep{ref10}, \citep{ref11}. \textbf{Clinical
+interpretation}: ACMGuru will be used to interpret the clinical
+significance of detected variants, aligning with the American College of
+Medical Genetics guidelines \citep{ref12}.
+
+\textbf{(iii) Simulation and validation:} The pipeline's
+efficacy will be validated using simulated datasets encompassing various
+disease scenarios (rare variant, common variant, polygenic risk) to
+ensure its robustness across different genetic contexts \citep{ref3},
+\citep{ref17}, \citep{ref18}. Validation will also include real-world data from
+Swiss hospitals to confirm the pipeline's practical
+applicability and accuracy.
+
+\textbf{(iv) Statistical methodologies}: GenomeSwift will incorporate
+advanced statistical methods to analyse the association between genetic
+variants and diseases, ensuring the analyses are powered adequately to
+detect significant associations even in the context of rare diseases.
+The pipeline will employ a range of statistical tests suitable for
+different data types and study designs, ensuring the flexibility and
+comprehensiveness of the analysis. Specifically, optimised sequence
+kernel association tests (SKAT-O) will form the basis of statistical
+validation tests \citep{ref10}. Successful outcomes will therefore
+demonstrate the ability to substitute compatible drop-in methods; burden
+tests such as CMC \citep{ref19} and WSS \citep{ref20}, variance component tests
+such as C-alpha \citep{ref21} and SKAT \citep{ref9}, combined burden and variance
+component tests such as SKAT-O \citep{ref10}, other combination tests such as
+ACAT-RVAT \citep{ref22}, regression and generalised mixed models such as
+REGENIE \citep{ref23} and SAGE-GENE+ \citep{ref24}, and others.
+
+\textbf{(v) Automation and user interface}: The pipeline will feature
+containerisation to support development and use. Automation will be a
+key focus, with the pipeline designed to require minimal user
+intervention, streamlining the analysis process from start to finish.
+User output will include graphical interfaces and technical reporting
+documents.
+
+\textbf{(vi) Output and reporting}: GenomeSwift will generate
+comprehensive reports, detailing the analysis results, including variant
+identification, statistical associations, and clinical interpretations.
+The pipeline will ensure that outputs are presented in an easily
+interpretable format, facilitating clinical decision-making and further
+research. The key technical data will also be generated including
+formats for reporting with SPHN RDF schema concepts.

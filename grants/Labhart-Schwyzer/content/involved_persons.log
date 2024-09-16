@@ -1,0 +1,476 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  16 AUG 2024 11:21
+ restricted system commands enabled.
+**involved_persons.tex
+(./involved_persons.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.217 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.2 \section
+          {Collaborations and network}\label{involved-persons}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.2 \section{C
+            ollaborations and network}\label{involved-persons}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 2--3
+[]Collaborations
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.4 T
+   he GenomeSwift project is supported by a multidisciplinary team of
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 project\textquotesingle
+                          s success. \textbf{Prof. Luregn Schlapbach} will
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-bold.luc)
+Overfull \hbox (20.0pt too wide) in paragraph at lines 4--26
+[]The
+ []
+
+
+Overfull \hbox (25.05pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Prof.
+ []
+
+
+Overfull \hbox (35.46pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Luregn
+ []
+
+
+Overfull \hbox (36.56999pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Schlap-
+ []
+
+
+Overfull \hbox (23.15999pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 bach
+ []
+
+
+Overfull \hbox (25.07pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 men-
+ []
+
+
+Overfull \hbox (14.96pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 tor\nullfont :
+ []
+
+
+Overfull \hbox (25.05pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Prof.
+ []
+
+
+Overfull \hbox (38.91pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Jacques
+ []
+
+
+Overfull \hbox (18.57pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Fel-
+ []
+
+
+Overfull \hbox (14.53pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 lay
+ []
+
+
+Overfull \hbox (15.81pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 ad-
+ []
+
+
+Overfull \hbox (19.64001pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 vice
+ []
+
+
+Overfull \hbox (16.75002pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Dr.
+ []
+
+
+Overfull \hbox (18.72002pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Dy-
+ []
+
+
+Overfull \hbox (15.17pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 lan
+ []
+
+
+Overfull \hbox (24.32999pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Law-
+ []
+
+
+Overfull \hbox (17.54pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 less
+ []
+
+
+Overfull \hbox (35.56001pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 project
+ []
+
+
+Overfull \hbox (30.45001pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 leader\nullfont :
+ []
+
+
+Overfull \hbox (16.75002pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Dr.
+ []
+
+
+Overfull \hbox (22.1pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Vito
+ []
+
+
+Overfull \hbox (22.84pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Zan-
+ []
+
+
+Overfull \hbox (25.06001pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 otelli
+ []
+
+
+Overfull \hbox (15.07pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Ali
+ []
+
+
+Overfull \hbox (21.4pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Saa-
+ []
+
+
+Overfull \hbox (16.45pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 dat
+ []
+
+
+Overfull \hbox (13.56001pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Dr
+ []
+
+
+Overfull \hbox (16.61pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Zhi
+ []
+
+
+Overfull \hbox (26.25pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Ming
+ []
+
+
+Overfull \hbox (15.08pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 Xu
+ []
+
+
+Overfull \hbox (23.07pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 PhD
+ []
+
+
+Overfull \hbox (19.23pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 stu-
+ []
+
+
+Overfull \hbox (22.2pt too wide) in paragraph at lines 4--26
+\TU/lmr/bx/n/10 dent
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 A
+    dditional collaborating bioinformatics specialists from UZH, ETHZ,
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.31 \href
+        {http://smoc.ethz.ch/}{SwissMultiOmic Center}) to (2) HPC clusters
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.35 \href
+        {https://www.swisspedhealth.ch/}{swisspedhealth.ch}, and
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.36 \href
+        {https://www.epfl.ch/labs/fellay-lab/}{EPFL}. Software will be
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.38 \href
+        {https://unlimited.ethz.ch/display/LeoMed2/Leonhard+Med+Intro+for+sh...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+! Undefined control sequence.
+l.40 \href
+        {https://scicore.unibas.ch/}{sciCORE Med}.
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 27--41
+[]Additional
+ []
+
+! Undefined control sequence.
+l.42 \hypertarget
+               {national-international-collaborations}{%
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.42 \hypertarget{n
+                 ational-international-collaborations}{%
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.43 \section
+           {National / international
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 42--45
+[]national-
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.46 G
+    enomeSwift is enhanced by an extensive network of collaborations both
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.49 ...nge, crucial for the project\textquotesingle
+                                                   s
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.56 ...rchers to review GenomeSwift\textquotesingle
+                                                   s adaptability across
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+! Undefined control sequence.
+l.66 security worldwide (\url
+                           {https://www.ga4gh.org}). This partnership
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.67 ensures GenomeSwift\textquotesingle
+                                       s integration into global genomic
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.69 ... contributing to the global \textquotesingle
+                                                   internet of
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.70 genomics\textquotesingle
+                           . \textbf{Open-source software community:} As a
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+
+! LaTeX Error: Command \textquotesingle unavailable in encoding .
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.74 platform\textquotesingle
+                            s ongoing availability and improvement.
+Your command was ignored.
+Type  I <command> <return>  to replace it with another command,
+or  <return>  to continue without it.
+
+)
+! Emergency stop.
+<*> involved_persons.tex
+                     
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 13 strings out of 494413
+ 100000,89155 words of node,token memory allocated 32294 words of node memory still in use:
+   57 hlist, 14 disc, 5 local_par, 1 dir, 617 glue, 22 kern, 19 penalty, 3803 gl
+yph, 59 attribute, 35 glue_spec, 59 attribute_list, 1 temp, 2 write nodes
+   avail lists: 1:1,2:2,3:1,4:88,5:4,8:1,9:1,10:87
+ 4305 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,220b,71s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

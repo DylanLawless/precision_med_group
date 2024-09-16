@@ -1,0 +1,439 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  16 AUG 2024 14:38
+ restricted system commands enabled.
+**summary.tex
+(./summary.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.178 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \section
+          {Summary}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \section{S
+            ummary}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[]Summary 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \textbf{Background}
+                     : Advancing genomic technologies in healthcare, especia...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-bold.luc)
+! Undefined control sequence.
+l.3 ...ng precision medicine at \textbf{UZH}, \kispi
+                                                  , and offering swift, prec...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (48.45999pt too wide) in paragraph at lines 3--4
+[]\TU/lmr/bx/n/10 Back-
+ []
+
+
+Overfull \hbox (35.41pt too wide) in paragraph at lines 3--4
+\TU/lmr/bx/n/10 ground\nullfont :
+ []
+
+
+Overfull \hbox (24.88pt too wide) in paragraph at lines 3--4
+\TU/lmr/bx/n/10 UZH\nullfont ,
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.5 \textbf{Objective}
+                    : Our primary goal is to develop and deploy GenomeSwift,...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (38.86pt too wide) in paragraph at lines 5--6
+[]\TU/lmr/bx/n/10 Ob-
+ []
+
+
+Overfull \hbox (17.72pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 jec-
+ []
+
+
+Overfull \hbox (18.68001pt too wide) in paragraph at lines 5--6
+\TU/lmr/bx/n/10 tive\nullfont :
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.7 \textbf{Research Plan}
+                        : GenomeSwift will integrate purpose-built tools lik...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (37.73001pt too wide) in paragraph at lines 7--8
+[]\TU/lmr/bx/n/10 Re-
+ []
+
+
+Overfull \hbox (31.31999pt too wide) in paragraph at lines 7--8
+\TU/lmr/bx/n/10 search
+ []
+
+
+Overfull \hbox (23.03pt too wide) in paragraph at lines 7--8
+\TU/lmr/bx/n/10 Plan\nullfont :
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.9 \textbf{Relevance/Significance}
+                                 : Aligning with \textbf{UZH} and \kispi str...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.9 ...cance}: Aligning with \textbf{UZH} and \kispi
+                                                   strategic objectives, Gen...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (40.92001pt too wide) in paragraph at lines 9--10
+[]\TU/lmr/bx/n/10 Rel-
+ []
+
+
+Overfull \hbox (9.1pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 e-
+ []
+
+
+Overfull \hbox (52.70001pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 vance/Sig-
+ []
+
+
+Overfull \hbox (16.92pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 nif-
+ []
+
+
+Overfull \hbox (7.02pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 i-
+ []
+
+
+Overfull \hbox (27.47pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 cance\nullfont :
+ []
+
+
+Overfull \hbox (24.88pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 UZH
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.11 \textbf{Personnel and Collaborations}
+                                        : Led by Dylan Lawless, an expert in...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (41.38pt too wide) in paragraph at lines 11--12
+[]\TU/lmr/bx/n/10 Per-
+ []
+
+
+Overfull \hbox (20.51pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 son-
+ []
+
+
+Overfull \hbox (14.85pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 nel
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (21.08pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 Col-
+ []
+
+
+Overfull \hbox (19.0pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 lab-
+ []
+
+
+Overfull \hbox (9.58pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 o-
+ []
+
+
+Overfull \hbox (14.16pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 ra-
+ []
+
+
+Overfull \hbox (24.34pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 tions\nullfont :
+ []
+
+
+Overfull \hbox (24.88pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 UZH\nullfont ,
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.13 \textbf{Funding and Timeline}
+                                : With a strictly planned budget and a detai...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (49.28pt too wide) in paragraph at lines 13--14
+[]\TU/lmr/bx/n/10 Fund-
+ []
+
+
+Overfull \hbox (15.33pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 ing
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (29.87001pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 Time-
+ []
+
+
+Overfull \hbox (18.04001pt too wide) in paragraph at lines 13--14
+\TU/lmr/bx/n/10 line\nullfont :
+ []
+
+! Undefined control sequence.
+l.19 \section
+           {Summary}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.19 \section{S
+             ummary}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--20
+[]Summary 
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.21 G
+    enomeSwift proposes a transformative leap in healthcare for rare genetic...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+! Undefined control sequence.
+l.21 ...ic technologies within \textbf{UZH}'s \kispi
+                                                   to enhance diagnostic acc...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 21--22
+[]GenomeSwift
+ []
+
+
+Overfull \hbox (24.88pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 UZH\nullfont 's
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.23 U
+    nder the leadership of Dylan Lawless and collaboration with experts from...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 23--24
+[]Under
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.25 W
+    ith a budget of CHF 98’076 and a completion timeline of 53 weeks, Geno...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 25--26
+[]With
+ []
+
+
+Overfull \hbox (24.88pt too wide) in paragraph at lines 25--26
+\TU/lmr/bx/n/10 UZH\nullfont 's
+ []
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.27 T
+    his initiative not only promises to elevate my career as an emerging lea...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+)
+! Emergency stop.
+<*> summary.tex
+            
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 11 strings out of 494413
+ 100000,89155 words of node,token memory allocated 29127 words of node memory still in use:
+   64 hlist, 21 disc, 12 local_par, 1 dir, 603 glue, 16 kern, 39 penalty, 3350 g
+lyph, 33 attribute, 35 glue_spec, 33 attribute_list, 1 temp nodes
+   avail lists: 2:4,3:1,4:56,5:4,8:1,9:1,10:55
+ 4303 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,591b,71s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

@@ -1,0 +1,81 @@
+% \documentclass{article}
+
+
+% Options for packages loaded elsewhere
+%\PassOptionsToPackage{unicode}{hyperref}
+
+\documentclass[
+]{article}
+%\usepackage{amsmath,amssymb}
+\author{}
+\date{}
+
+\input{../../resources/head_precision_med.tex}
+\input{../../resources/variables/variables.tex}
+\input{../../resources/variables/ivdr_variables.tex}
+
+
+\newcommand{\documentversion}{Labhart-Schwyzer}
+\lhead{GenomeSwift}
+\rhead{}
+% \lfoot{\date{\today}}
+\rfoot{\documentversion}
+\input{content/head_local_custom.tex}
+
+\begin{document}
+
+
+%x Project Title (0.25 page)
+%x Summary (0.25 page)
+%x Introduction and Background (≈ 1 page)
+%x Objectives of the Project (≈ 0.5 pages)
+%Methods and Materials (≈ 0.5 page)
+%Expected Outcomes and Significance (≈ 0.25 pages)
+%Added Value for the Applicant's Career and Home Institution (≈ 0.5 pages)
+%x Collaborations and Network (≈ 0.25 pages)
+%Ethics and Data Protection (0.25 page)
+%x Timeline and Milestones (≈ 0.25 pages)
+%x Financial Plan and Budget (≈ 0.5 pages)
+%x References (0.25 page)
+%
+%
+%5 Scholarship benefits
+%The funding amount is CHF 66,000 and is thus based on the rates of the Swiss National Science Foundation for postdoctoral mobility fellowships. 
+% 
+%6 Use of the funding
+%The funding is intended to cover travel costs, accommodation and research expenses incurred during the research stay.
+
+\tableofcontents  % This line adds the table of contents
+
+\newpage  % Starts a new page after the table of contents
+
+\begin{figure}[H] % Ensures that the figure is placed exactly where it appears in the code
+  \begin{flushright} % Aligns the image to the right
+    \vspace{-1em} % Adjusts the vertical position, lifting the image up
+    \includegraphics[width=0.1\textwidth]{../../resources/images/genome_swift/genome_swift_logo.png}
+    \vspace{-4em} % Reduces the vertical space below the image to allow text to flow beneath it
+  \end{flushright}
+\end{figure}
+
+\section*{GenomeSwift}
+\textbf{Precision medicine in through rapid and automated multi-omic analysis}.
+
+\input{content/summary.tex}
+\section{Introduction and background}
+
+\input{content/multiomics_lighthouse.tex}
+\input{content/genome_swift_background.tex}
+\input{content/pmu_summary.tex}
+\input{content/objective.tex}
+\input{content/research_plan.tex}
+\input{content/significance.tex}
+\input{content/added_value.tex}
+\input{content/involved_persons.tex}
+\input{content/timetable_analysis.tex}
+\input{content/budget.tex}
+
+\section{References}
+ \bibliographystyle{unsrtnat}
+\bibliography{references}
+
+\end{document}

@@ -1,0 +1,62 @@
+GenomeSwift
+Precision medicine in Kispi through rapid and automated genome analysis.
+1 Background
+The integration of genomic technology into healthcare, especially for rare diseases, represents a crucial frontier in medical science [1]. Despite advancements, the fragmented nature of current genome analysis methodologies in Swiss healthcare notably delays diagnoses and treatment. The accumulation of extensive genomic datasets necessitates a shift towards more integrated and automated processes [2].
+Our proposed GenomeSwift bioinformatic suite aims to address these unmet needs. It is designed to automate and amalgamate various genome sequence analysis processes, thus feasibly providing swift, precise, and expansive insights into genetic diseases. This suite adheres to FAIR data principles, ensuring advancement in research and conformity with best data management practices in Kispi.
+The persistent bottleneck in translating genomic data into practical clinical insights underscores the project's necessity [3]. Even with tools like the Genome Analysis Toolkit setting standards for variant analysis, a comprehensive system integrating these tools is essential for a robust analysis process [4]. Our previous developments underpin GenomeSwift (Figure 1) [5], [6], [7]. We have additionally developed several tools that we are excited to integrate into the pipeline, including:
+    2
+• ProteoMCLustR, a protocol for protein pathway clustering [8], [7].
+• SkatRbrain, a statistical analysis pipeline effective in analysing rare variants [9], [10], [11].
+• Archipelago, for unified genomic statistical analysis.
+• ACMGuru, incorporating American College of Medical Genetics guidelines to translate genomic data
+into clinical recommendations [12].
+• DeepInferR, for Bayesian analysis of genetic variant probabilities and their disease impacts.
+By merging these tools into a unified pipeline, GenomeSwift aims to elevate the efficiency and output of genomic data analysis in Kispi, enabling real-time, high-throughput genomic data analysis for disease discovery.
+Hypotheses and objective
+The primary objective of this study is to develop and implement GenomeSwift, an automated, comprehensive software pipeline designed for rapid, precise genomic data analysis, with a particular focus on the diagnosis and treatment of genetic diseases in Kispi.
+2.1 Hypotheses:
+(i) Automation and integration efficiency: Automating the genome analysis process and integrating various existing tools into a single pipeline, GenomeSwift is expected to significantly expedite genomic data processing, thus enhancing the efficiency and speed of diagnosing and planning treatments for diseases. (ii) Enhanced diagnostic accuracy: By incorporating advanced tools for variant detection, statistical analysis, and clinical interpretation, GenomeSwift aims to improve diagnostic accuracy for rare diseases, leading to more precise and personalised treatment approaches. (iii) Impact on disease research: The use of GenomeSwift in rare disease contexts is anticipated to not only improve clinical outcomes but also to enrich genomic research, offering a workflow that provides traceable genetic evidence to better classify variants.
+2.2 Objectives:
+(i) Tool integration Integrate existing tools such as ProteoMCLustR, SkatRbrain, and ACMGuru into a unified and automated pipeline to streamline the process from data input to clinical interpretation. (ii) Validation and refinement: Validate GenomeSwift using both simulated [13] and real-world datasets to confirm its
+1 reliability and accuracy across various clinical scenarios, refining the pipeline based on performance metrics and feedback [14], [15]. (iii) User accessibility: Ensure GenomeSwift is user-friendly for analysts while making evidence-based results accessible to healthcare professionals and researchers, facilitating broader adoption within Kispi and potentially other institutions. (iv) Knowledge dissemination: Disseminate the findings and capabilities of GenomeSwift through publications and collaborations, aiming to enhance the use of genomic data for healthcare improvement and scientific discovery.
+Figure 1. From DNA to diagnosis: Variant effect evidence is assessed based on standardised guidelines. Data is produced in an analysis-friendly formats for statistical or AI/ML reuse. GenomeSwift produces clinical genetics reports and database results using SPHN RDF schema concepts.
+3 Detailed research plan
+The GenomeSwift pipeline is designed to enhance genomic analysis through automation and integration of various analytical tools. Our detailed research plan outlines the methodology and statistical approaches we will employ to ensure the effectiveness and efficiency of GenomeSwift in processing and analysing genomic data.
+(i) Integration of existing tools: The pipeline will integrate several tools that we have developed, including: ProteoMCLustR for protein pathway clustering [7], [8]; SkatRbrain for statistical analysis of genetic data [9], [10], [11]; Archipelago for a unified representation for genomic statistical analysis; ACMGuru for clinical genetic interpretation [12]; AutoConstructR for protein structure plotting, facilitating a comprehensive interpretation of genetic variations [16]; and other modular tools.
+(ii) Data processing and analysis workflow: Data input: GenomeSwift will accept raw genomic data, applying preprocessing steps to ensure data quality and compatibility. Variant detection: Utilising the best practices from tools like GATK, the pipeline will perform variant calling, ensuring high-confidence identification of genetic variations [4]. Statistical analysis:Employing SkatRbrain, the pipeline will conduct robust statistical analyses to associate genomic variations with disease phenotypes, including rare variant analysis [9], [10], [11]. Clinical interpretation: ACMGuru will be used to interpret the clinical significance of detected variants, aligning with the American College of Medical Genetics guidelines [12].
+(iii) Simulation and validation: The pipeline's efficacy will be validated using simulated datasets encompassing various disease scenarios (rare variant, common variant, polygenic risk) to ensure its robustness across different genetic contexts [3], [17], [18]. Validation will also include real-world data from Swiss hospitals to confirm the pipeline's practical applicability and accuracy.
+(iv) Statistical methodologies: GenomeSwift will incorporate advanced statistical methods to analyse the association between genetic variants and diseases, ensuring the analyses are powered adequately to detect significant associations even in the context of rare diseases. The pipeline will employ a range of statistical tests suitable for different data types and study designs, ensuring the flexibility and comprehensiveness of the analysis. Specifically, optimised sequence kernel association tests (SKAT-O) will form the basis of statistical validation tests [10]. Successful outcomes will therefore demonstrate the ability to substitute
+    Precision medicine
+From DNA to data
+GenomeSwift automated genomics
+• DNA variation
+• Interpret effect
+• Molecular analysis
+• Complex biological
+effects
+• Final interpretation
+• Standards and
+guidelines
+             Normal
+     Poisson
+Uniform
+Binomial
+Exponential
+Gamma
+        Log−Normal
+      Chi−Square
+Weibull
+Cauchy
+Beta
+Logistic
+        2
+compatible drop-in methods; burden tests such as CMC [19] and WSS [20], variance component tests such as C-alpha [21] and SKAT [9], combined burden and variance component tests such as SKAT-O [10], other combination tests such as ACAT-RVAT [22], regression and generalised mixed models such as REGENIE [23] and SAGE-GENE+ [24], and others.
+(v) Automation and user interface: The pipeline will feature containerisation to support development and use. Automation will be a key focus, with the pipeline designed to require minimal user intervention, streamlining the analysis process from start to finish. User output will include graphical interfaces and technical reporting documents.
+(vi) Output and reporting: GenomeSwift will generate comprehensive reports, detailing the analysis results, including variant identification, statistical associations, and clinical interpretations. The pipeline will ensure that outputs are presented in an easily interpretable format, facilitating clinical decision-making and further research. The key technical data will also be generated including formats for reporting with SPHN RDF schema concepts.
+4 Statement of the relevance/significance of the project
+GenomeSwift represents a pivotal development at the intersection of advanced genomics and clinical application, poised to influence diagnosis and treatment protocols. Its significance spans several critical aspects for Kispi:
+- Healthcare Impact: GenomeSwift will enhance the diagnostic process for rare diseases by delivering rapid and precise genomic analysis. This capability enables more timely and accurate treatment decisions, crucial for improving patient outcomes. By providing detailed genetic insights, GenomeSwift supports the shift towards personalised medicine, where treatments are specifically tailored to individual genetic profiles.
+- Strategic alignment: GenomeSwift aligns with the strategic objectives of the Children’s Hospital Zurich, notably enhancing the institution's capacity for genetic diagnostics and personalised healthcare. The project also contributes to the efficiency and effectiveness of the broader Swiss healthcare system, underscoring innovation and leadership in medical genomics.
+- Scientific advancement: This project marks a considerable advance by amalgamating multiple analytical tools into a unified pipeline, thereby establishing a new benchmark in genomic analysis. GenomeSwift will streamline genomic data processing, accelerating research into rare diseases and potentially revealing novel therapeutic targets.
+- Collaboration and Education: GenomeSwift will enhance collaboration across researchers, clinicians, and institutions by offering a shared genomic analysis format, fostering an integrated healthcare and research approach. Additionally, it will serve as an educational resource to improve genomic literacy and train future experts, clarifying the application of clinical genetics guidelines in analysis for healthcare professionals.
+- Sustainability and accessibility: As an open-source initiative, GenomeSwift is accessible to a diverse user base, promoting ongoing support. The project's focus on understanding and treating diseases has the potential to make a lasting impact on healthcare and research, leading to enhanced patient outcomes and broader scientific insights.

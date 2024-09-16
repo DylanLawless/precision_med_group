@@ -1,0 +1,471 @@
+This is LuaTeX, Version 1.07.0 (TeX Live 2018)  (format=lualatex 2018.7.27)  16 AUG 2024 10:44
+ restricted system commands enabled.
+**multiomics_lighthouse.tex
+(./multiomics_lighthouse.tex
+LaTeX2e <2018-04-01> patch level 2
+Lua module: luaotfload-main 2017/01/29 2.80001 OpenType layout system.
+Lua module: lualibs 2017-02-01 2.5 ConTeXt Lua standard libraries.
+Lua module: lualibs-extended 2017-02-01 2.5 ConTeXt Lua libraries -- extended co
+llection.(using write cache: /Users/lawless/Library/texlive/2018/texmf-var/luate
+x-cache/generic)(using read cache: /usr/local/texlive/2018/texmf-var/luatex-cach
+e/generic /Users/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic)
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+luaotfload | init : Loading fontloader “fontloader-2017-02-11.lua” from kpse
+-resolved path “/usr/local/texlive/2018/texmf-dist/tex/luatex/luaotfload/fontl
+oader-2017-02-11.lua”.
+Lua-only attribute luaotfload@state = 1
+Lua-only attribute luaotfload@noligature = 2
+Lua-only attribute luaotfload@syllabe = 3
+luaotfload | init : Context OpenType loader version “3.027”
+Inserting `luaotfload.node_processor' at position 1 in `pre_linebreak_filter'.
+Inserting `luaotfload.node_processor' at position 1 in `hpack_filter'.
+Inserting `luaotfload.define_font' at position 1 in `define_font'.
+Lua-only attribute luaotfload_color_attribute = 4
+luaotfload | conf : Root cache directory is /Users/lawless/Library/texlive/2018/
+texmf-var/luatex-cache/generic/names.
+Inserting `luaotfload.aux.set_sscale_dimens' at position 1 in `luaotfload.patch_
+font'.
+Inserting `luaotfload.aux.patch_cambria_domh' at position 2 in `luaotfload.patch
+_font'.
+Inserting `luaotfload.aux.fixup_fontdata' at position 1 in `luaotfload.patch_fon
+t_unsafe'.
+Inserting `luaotfload.aux.set_capheight' at position 3 in `luaotfload.patch_font
+'.
+Inserting `luaotfload.rewrite_fontname' at position 4 in `luaotfload.patch_font'
+.
+luaotfload | main : initialization completed in 0.281 seconds
+Babel <3.18> and hyphenation patterns for 1 language(s) loaded.
+! Undefined control sequence.
+l.1 \subsection
+             {Multi-omics diagnosis and discovery to inborn error of metabol...
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.1 \subsection{M
+               ulti-omics diagnosis and discovery to inborn error of metabol...
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 1--2
+[]Multi-
+ []
+
+! Undefined control sequence.
+l.3 \subsubsection
+                *{Project Overview}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.3 \subsubsection*
+                 {Project Overview}
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 3--5
+[]*Project
+ []
+
+! Undefined control sequence.
+l.6 \subsubsection
+                *{Detailed Findings from Phase 1: Methylmalonic Aciduria Study}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+! LaTeX Error: Missing \begin{document}.
+
+See the LaTeX manual or LaTeX Companion for explanation.
+Type  H <return>  for immediate help.
+ ...                                              
+                                                  
+l.6 \subsubsection*
+                 {Detailed Findings from Phase 1: Methylmalonic Aciduria Study}
+
+You're in trouble here.  Try typing  <return>  to proceed.
+If that doesn't work, type  X <return>  to quit.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 6--7
+[]*Detailed
+ []
+
+luaotfload | db : Font names database loaded from /Users/lawless/Library/texlive
+/2018/texmf-var/luatex-cache/generic/names/luaotfload-names.luc(load luc: /Users
+/lawless/Library/texlive/2018/texmf-var/luatex-cache/generic/fonts/otl/lmroman10
+-bold.luc)
+Overfull \hbox (20.38pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 Dis-
+ []
+
+
+Overfull \hbox (20.67pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 ease
+ []
+
+
+Overfull \hbox (15.86pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 Fo-
+ []
+
+
+Overfull \hbox (16.04pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 cus
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (18.14pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 Ge-
+ []
+
+
+Overfull \hbox (24.43001pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 netic
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (31.74998pt too wide) in paragraph at lines 8--9
+\TU/lmr/bx/n/10 sights:
+ []
+
+
+Overfull \hbox (18.59pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 Ad-
+ []
+
+
+Overfull \hbox (34.18001pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 vanced
+ []
+
+
+Overfull \hbox (31.99pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 Multi-
+ []
+
+
+Overfull \hbox (31.06pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 Omics
+ []
+
+
+Overfull \hbox (30.88pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 Meth-
+ []
+
+
+Overfull \hbox (20.19pt too wide) in paragraph at lines 9--10
+\TU/lmr/bx/n/10 ods:
+ []
+
+
+Overfull \hbox (50.20001pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 Metabolic
+ []
+
+
+Overfull \hbox (27.81999pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 Path-
+ []
+
+
+Overfull \hbox (19.32999pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 way
+ []
+
+
+Overfull \hbox (20.38pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 Dis-
+ []
+
+
+Overfull \hbox (21.35pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 rup-
+ []
+
+
+Overfull \hbox (27.53pt too wide) in paragraph at lines 10--11
+\TU/lmr/bx/n/10 tions:
+ []
+
+
+Overfull \hbox (22.18001pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 Pro-
+ []
+
+
+Overfull \hbox (19.32pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 tein
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (18.31001pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 ter-
+ []
+
+
+Overfull \hbox (14.53pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 ac-
+ []
+
+
+Overfull \hbox (24.34pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 tions
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (28.23001pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 Ther-
+ []
+
+
+Overfull \hbox (9.42pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 a-
+ []
+
+
+Overfull \hbox (22.20001pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 peu-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 tic
+ []
+
+
+Overfull \hbox (14.58pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 In-
+ []
+
+
+Overfull \hbox (31.74998pt too wide) in paragraph at lines 11--12
+\TU/lmr/bx/n/10 sights:
+ []
+
+! Undefined control sequence.
+l.14 \subsubsection
+                 *{Ongoing and Future Research Phases}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 14--15
+[]*Ongoing
+ []
+
+
+Overfull \hbox (29.65pt too wide) in paragraph at lines 16--17
+\TU/lmr/bx/n/10 Phase
+ []
+
+
+Overfull \hbox (5.75pt too wide) in paragraph at lines 16--17
+\TU/lmr/bx/n/10 2
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 16--17
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (29.65pt too wide) in paragraph at lines 16--17
+\TU/lmr/bx/n/10 Phase
+ []
+
+
+Overfull \hbox (8.94pt too wide) in paragraph at lines 16--17
+\TU/lmr/bx/n/10 3:
+ []
+
+! Undefined control sequence.
+l.19 \subsubsection
+                 *{Impact and Significance}
+The control sequence at the end of the top line
+of your error message was never \def'ed. If you have
+misspelled it (e.g., `\hobx'), type `I' and the correct
+spelling (e.g., `I\hbox'). Otherwise just continue,
+and I'll forget about whatever was undefined.
+
+
+Overfull \hbox (20.0pt too wide) in paragraph at lines 19--20
+[]*Impact
+ []
+
+
+Overfull \hbox (15.84001pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 Di-
+ []
+
+
+Overfull \hbox (15.17pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 ag-
+ []
+
+
+Overfull \hbox (20.51pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 nos-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 tic
+ []
+
+
+Overfull \hbox (18.37pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 and
+ []
+
+
+Overfull \hbox (28.23001pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 Ther-
+ []
+
+
+Overfull \hbox (9.42pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 a-
+ []
+
+
+Overfull \hbox (22.20001pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 peu-
+ []
+
+
+Overfull \hbox (12.77pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 tic
+ []
+
+
+Overfull \hbox (18.59pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 Ad-
+ []
+
+
+Overfull \hbox (31.62001pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 vance-
+ []
+
+
+Overfull \hbox (33.12pt too wide) in paragraph at lines 21--22
+\TU/lmr/bx/n/10 ments:
+ []
+
+
+Overfull \hbox (24.28pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 Con-
+ []
+
+
+Overfull \hbox (16.23001pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 tri-
+ []
+
+
+Overfull \hbox (16.61pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 bu-
+ []
+
+
+Overfull \hbox (19.8pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 tion
+ []
+
+
+Overfull \hbox (10.22pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 to
+ []
+
+
+Overfull \hbox (50.20001pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 Metabolic
+ []
+
+
+Overfull \hbox (20.38pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 Dis-
+ []
+
+
+Overfull \hbox (20.67pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 ease
+ []
+
+
+Overfull \hbox (17.73001pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 Re-
+ []
+
+
+Overfull \hbox (34.51pt too wide) in paragraph at lines 22--23
+\TU/lmr/bx/n/10 search:
+ []
+
+)
+! Emergency stop.
+<*> multiomics_lighthouse.tex
+                          
+*** (job aborted, no legal \end found)
+
+
+
+Here is how much of LuaTeX's memory you used:
+ 13 strings out of 494413
+ 100000,89155 words of node,token memory allocated 24502 words of node memory still in use:
+   112 hlist, 43 disc, 12 local_par, 1 dir, 582 glue, 24 kern, 80 penalty, 2575 
+glyph, 61 attribute, 35 glue_spec, 61 attribute_list nodes
+   avail lists: 2:3,4:50,5:10,7:41,8:1,10:49
+ 4305 multiletter control sequences out of 65536+600000
+ 15 fonts using 723239 bytes
+ 13i,1n,8p,433b,121s stack positions out of 5000i,500n,10000p,200000b,100000s
+!  ==> Fatal error occurred, no output PDF file produced!

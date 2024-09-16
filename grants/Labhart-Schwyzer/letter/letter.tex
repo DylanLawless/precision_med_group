@@ -1,0 +1,64 @@
+\documentclass[11pt, a4paper]{letter}
+\usepackage[document]{ragged2e}  % remove line justify
+\usepackage[utf8]{inputenc}
+\usepackage{hyperref}
+\usepackage{xcolor}  % Color text
+\hypersetup{
+    colorlinks=true,
+    urlcolor=[rgb]{0, 0.28, 0.8}
+}
+\usepackage{microtype}
+% \microtypesetup{nopatch=footnote} % Disable problematic patches
+
+\usepackage{geometry}
+\geometry{ a4paper, left=3.5cm, right=3.5cm, bottom=2.5cm, top=3cm}
+\usepackage{setspace}
+\setstretch{1.0}
+
+% Include ifthen for conditional logic
+\usepackage{ifthen}
+\usepackage{xspace}
+
+\signature{Dylan Lawless, PhD.}
+
+\begin{document} 
+\begin{letter}{} 
+
+% Recipient address on the left
+\begin{minipage}[t]{0.48\textwidth}
+\raggedright
+Labhart-Schwyzer Scholarship\\
+\href{mailto:gina.schifferle@usz.ch}{gina.schifferle@usz.ch}
+\end{minipage}
+\hfill
+% Sender address on the right
+\begin{minipage}[t]{0.48\textwidth}
+\raggedleft
+\href{mailto:dylan.lawless@uzh.ch}{dylan.lawless@uzh.ch} \\
+\end{minipage}
+
+\opening{Dear Members of the Labhart-Schwyzer Scholarship Committee,}
+
+I am writing to express my motivation and commitment  to advancing healthcare through innovative genomic technologies. 
+I have designed new methods and demonstrated high accuracy for rapid discovery of metabolic diseases in a pilot study via UZH with Prof. Dr. med. Luregn Schlapbach, PhD. I would like to complete this work by joining PD Dr Sean Froese, Principal Investigator in the Division of Metabolism at the University Children's Hospital Zurich.
+
+My career, which began in the demanding fields of rare disease research, has been fundamentally shaped by the urgent need to hasten the translation of research into life-saving clinical applications. My experience in immunology wet-labs highlighted the urgent need for faster and more effective clinical diagnostics, which drove me to specialise in high-throughput multi-omics and bioinformatics during my PhD and postdoc. This shift was crucial for applying research more effectively in clinical settings.
+
+I have joined UZH so that I can implement these innovations in our university hospitals, a setting where the impact of such advancements can be most tangible and immediate. The opportunity to lead the GenomeSwift project, which is dedicated to refining diagnostic processes for paediatric patients with rare genetic diseases, represents a culmination of my academic and professional pursuits.
+
+Translational medicine can only be built with adherence to stringent regulatory standards. Therefore, I dedicated time to further education in Swiss and EU drug/device regulations and project leadership. However, this critical investment makes my academic age 4 years since the award of PhD, thus limiting my funding sources. 
+
+The support of the Labhart-Schwyzer Scholarship will be instrumental, enabling extensive collaboration and further development of GenomeSwift. This project not only promises to elevate my career as a leader in translational research but also aims to enhance Zürich's standing in the global scientific community by delivering cutting-edge solutions for our urgent needs, initially focusing on metabolic disease.
+
+\closing{Yours sincerely,}
+
+% Check if the page number is odd
+\ifodd\value{page}
+    \newpage
+    \thispagestyle{empty}  % Optional: ensures the blank page has no header or footer
+    \mbox{}                % Ensures the page is truly blank
+    \newpage
+\fi
+\end{letter}
+
+\end{document}

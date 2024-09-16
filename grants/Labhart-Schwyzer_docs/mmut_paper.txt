@@ -1,0 +1,18 @@
+
+### Integrated Multi-omics Reveals Anaplerotic Rewiring in Methylmalonyl-CoA Mutase Deficiency
+
+**Authors:** Patrick Forny, Ximena Bonilla, David Lamparter, et al.
+
+**Published in:** Nature Metabolism, Volume 5, Pages 80–95, 2023
+
+**Key Points:**
+
+- **Disease Focus:** Methylmalonic aciduria (MMA), a complex inborn error of metabolism characterized by heterogeneous genetic and clinical presentations.
+- **Genetic Basis:** Predominantly associated with pathogenic variants in the methylmalonyl-CoA mutase (MMUT) gene. The study provided a molecular diagnosis for 84% of cases (177 out of 210 patients), with the majority displaying pathogenic MMUT variants.
+- **Methods:** Utilized a comprehensive multi-omics approach integrating whole-genome sequencing, whole transcriptome sequencing (RNA-seq), proteotyping via data-independent acquisition mass spectrometry (DIA–MS), and detailed phenotypic profiling.
+- **Metabolic Insights:** Identified disruption in the tricarboxylic acid (TCA) cycle and its anaplerosis primarily involving glutamine. This was substantiated by multi-organ metabolomics in a hemizygous Mmut mouse model and stable-isotope tracing techniques that detailed the metabolic pathways affected.
+- **Protein Interactions:** Highlighted physical interactions between MMUT and key anaplerotic enzymes such as glutamate dehydrogenase and oxoglutarate dehydrogenase, suggesting a complex network influencing metabolic disturbances.
+- **Therapeutic Implications:** Demonstrated that treatment with dimethyl-oxoglutarate restores TCA cycle functionality and could represent a novel therapeutic approach for MMA. Detailed outcomes showed how this treatment modifies metabolic pathways, potentially offering a significant therapeutic benefit.
+- **Significance:** This study's integration of multi-layered omics profiling not only enhanced the molecular diagnostic rate for MMA but also unveiled crucial insights into its metabolic dysregulation, paving the way for targeted therapeutic strategies. The findings also suggest a paradigm shift in understanding and treating MMA, emphasizing the utility of integrated omics in diagnosing and elucidating complex metabolic diseases.
+
+
