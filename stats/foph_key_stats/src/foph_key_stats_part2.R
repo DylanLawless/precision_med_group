@@ -19,18 +19,18 @@ library(stringi)
 
 # Define the paths to your files
 file_paths <- c(
-	"../data/Mjg1NzE=2010.csv",
-	"../data/Mjg1ODE=2011.csv",
-	"../data/Mjg1OTA=2012.csv",
-	"../data/Mjg1OTc=2013.csv",
-	"../data/Mjg2MDY=2014.csv",
-	"../data/Mjg2MzE=2015.csv",
-	"../data/Mjg2Mzk=2016.csv",
-	"../data/Mjg2NTU=2017.csv",
-	"../data/Mjg2NzI=2018.csv",
-	"../data/MTYyMTI0MTA0MA==2019.csv",
-	"../data/MTY0OTA3NjMxOA==2020.csv",
-	"../data/MTY4MDcxMjYzMQ==2021.csv",
+	# "../data/Mjg1NzE=2010.csv",
+	# "../data/Mjg1ODE=2011.csv",
+	# "../data/Mjg1OTA=2012.csv",
+	# "../data/Mjg1OTc=2013.csv",
+	# "../data/Mjg2MDY=2014.csv",
+	# "../data/Mjg2MzE=2015.csv",
+	# "../data/Mjg2Mzk=2016.csv",
+	# "../data/Mjg2NTU=2017.csv",
+	# "../data/Mjg2NzI=2018.csv",
+	# "../data/MTYyMTI0MTA0MA==2019.csv",
+	# "../data/MTY0OTA3NjMxOA==2020.csv",
+	# "../data/MTY4MDcxMjYzMQ==2021.csv",
 	"../data/MTcxMDQxMzIyNw==2022.csv"
 )
 
@@ -146,7 +146,7 @@ df_long <- df_long %>%
 
 # fix accent letters ----
 # Replacement list
-replacements <- c("A¤" = "a", "Ã¤" = "a", "ä" = "a", "Ã©" = "e", "é" = "e",
+replacements <- c("Ã" = "A", "A¤" = "a", "Ã¤" = "a", "ä" = "a", "Ã©" = "e", "é" = "e",
 									"ZA 1/4rich"= "Zurich", "A´"="o", "A¨"="e")
 
 # Applying replacements
@@ -196,6 +196,7 @@ tmp_j2 <- df_kispi_2022 %>%
     filter(subgroup == "J.2")
 
 df_kispi_2022_cases_j2 <- sum(tmp_j2$cases)
+rm(tmp_j2)
 
 # Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
 p <- df_kispi_2022 %>%
@@ -222,6 +223,11 @@ p <- df_kispi_2022 %>%
 print(p)
 
 ggsave("../output/p_cases_per_indicator_kispi_2022.pdf", plot = p, width = 16, height = 6)
+
+
+# N.B. filter ! ----
+df_long <- df_long %>%
+  dplyr::filter(grepl('J.2.1.M|J.2.4.M', indicator))
 
 # kispi all -----
 # Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
@@ -406,7 +412,6 @@ print(p_ks_forecast)
 
 ggsave("../output/p_cases_sepsis_kispi_yearly_forecast.pdf", plot = p_ks_forecast, width =12, height = 5)
 
-
 # universitat ----
 # Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
 df_uni_sepsis <- df_long %>%
@@ -449,12 +454,63 @@ p_us
 ggsave("../output/p_cases_sepsis_uni_yearly.pdf", plot = p_us, width =12, height = 5)
 
 
-# Federal level ----
-# Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
-df_federal_sepsis <- df_long %>%
-	filter(subgroup == "J.2") #%>%
 
-unique(df_uni_sepsis$institution)
+# check do we get the expected result according to qiq22_publikation.pdf ? ----
+# 
+# we expect for 2022:
+# total number of cases,
+# number of hospitalisations,
+# average number of cases per hospital
+# J.2.1.F HD Sepsis
+# 11’782 109 108
+# J.2.4.F ND Sepsis
+# 5’541 103 54
+# 
+# HD (Hauptdiagnose) und ND (Nebendiagnose):
+# HD and ND are German abbreviations for Principal and Secondary diagnoses, respectively.
+
+tmp <-  df_federal_sepsis |>
+  filter(year == "2022-01-01") |>
+  dplyr::filter(grepl('J.2.1.M', indicator)) |>
+  ungroup() %>%
+  # group_by(institution, indicator, year) %>%
+  group_by(indicator, year) %>%
+  summarise(total_cases = sum(`cases`)) %>% 
+  filter(total_cases > 0)|> 
+  ungroup() |>
+  select(total_cases) |>
+  sum()
+
+tmp
+
+tmp <-  df_federal_sepsis |>
+  filter(year == "2022-01-01") |>
+  dplyr::filter(grepl('J.2.4.M', indicator)) |>
+  ungroup() %>%
+  # group_by(institution, indicator, year) %>%
+  group_by(indicator, year) %>%
+  summarise(total_cases = sum(`cases`)) %>% 
+  filter(total_cases > 0)|> 
+  ungroup() |>
+  select(total_cases) |>
+  sum()
+
+tmp 
+
+# ! correct 
+# 
+# Federal level ----
+df_federal_sepsis <- df_long %>%
+  filter(subgroup == "J.2") 
+
+# N.B. filter ! ----
+
+df_federal_sepsis <- df_federal_sepsis %>%
+  dplyr::filter(grepl('J.2.1.M|J.2.4.M', indicator))
+
+# Summarize data by 'indicator_main' and 'subgroup' (assuming 'subgroup' is the detail level)
+
+unique(df_federal_sepsis$institution)
 
 
 # Define a custom labeller function to wrap facet labels
@@ -484,8 +540,7 @@ p_fed <- df_federal_sepsis %>%
 
 p_fed
 
-ggsave("../output/p_cases_sepsis_uni_yearly.pdf", plot = p_us, width =12, height = 5)
-
+ggsave("../output/p_cases_sepsis_uni_yearly_joint.pdf", plot = p_fed, width =12, height = 5)
 
 # Federal with weight metadata ----
 # First get the meta data about institution sizes. Are some large ones skewing the results?
@@ -741,8 +796,6 @@ p_fed <- df_federal_sepsis_summary %>%
 
 p_fed
 
-
-
 patch_year_case_inst_variability <- (p_all) / (p_sub + p_class)
 patch_year_case_repli_var <- (p_replication) + (p_fed) 
 
@@ -780,6 +833,7 @@ subgroup_summary <- df_federal_sepsis %>%
 # Summarise data with additional statistics for each subgroup by year
 subgroup_year_summary <- df_federal_sepsis %>%
 	filter(!institution == "CH") %>%
+  filter(!institution == "Hopital de soins generaux, prise en charge centralisee") %>%
 	ungroup() %>%
 	group_by(subgroup, year) %>%
 	summarise(
@@ -791,10 +845,27 @@ subgroup_year_summary <- df_federal_sepsis %>%
 		.groups = 'drop'  # Ensures the output is not grouped
 	)
 
+
+# !!! TEST !!!!
+# test 
+# subgroup_year_summary <- df_federal_sepsis %>%
+#   filter(institution == "Universitats-Kinderspital Zurich") %>%
+#   ungroup() %>%
+#   group_by(subgroup, year) %>%
+#   summarise(
+#     total_cases = sum(cases, na.rm = TRUE),
+#     avg_cases = mean(cases, na.rm = TRUE),
+#     sd_cases = sd(cases, na.rm = TRUE),
+#     min_cases = min(cases, na.rm = TRUE),
+#     max_cases = max(cases, na.rm = TRUE),
+#     .groups = 'drop'  # Ensures the output is not grouped
+#   )
+
+
 grand_total <- subgroup_year_summary %>%
 	summarise(grand_total_cases = sum(total_cases))
 
-annotation_example <- subgroup_year_summary |> filter(year == 2022)
+annotation_example <- subgroup_year_summary |> filter(year == "2022-01-01")
 
 # Extract and prepare the values
 anno_grand_total <- 
@@ -805,8 +876,7 @@ anno_total_cases <- paste0(", total cases: ", annotation_example$total_cases)
 anno_avg_cases <- paste0(",\n per institution avg. cases: ", round(annotation_example$avg_cases))
 anno_sd_cases <- paste0(", (sd: ", round(annotation_example$sd_cases))
 anno_min_max <- paste0(", min-max: ", annotation_example$min_cases, "-", annotation_example$max_cases, ")")
-
-
+anno_filters <- paste0("\nFilters: J.2.1.F HD, J.2.4.F ND. HD (Hauptdiagnose) und ND (Nebendiagnose),\nprincipal and secondary diagnoses, respectively.")
 
 # Combine all pieces into one annotation string
 annotation_text <- paste0(
@@ -815,7 +885,8 @@ annotation_text <- paste0(
 	anno_total_cases,
 	anno_avg_cases, 
 	anno_sd_cases,
-	anno_min_max
+	anno_min_max, 
+	anno_filters
 )
 
 # Display the annotation text
@@ -830,7 +901,7 @@ print(grand_total)
 p_yearly <- subgroup_year_summary |>
 	ggplot(aes(x = year, y = total_cases)) +
 	geom_bar(stat = "identity", fill = "steelblue", color = "black") +
-	labs(title = "Federal-level yearly cases of sepsis (J.2)\nsum total.",
+	labs(title = "Federal-level yearly cases of sepsis (J.2 + filters)\nsum total.",
 			 x = "Year", y = "Total cases") +
 	theme_minimal()
 
@@ -853,7 +924,7 @@ p_yearly_inst <- ggplot(subgroup_year_summary, aes( group = subgroup)) +
 	geom_text(aes(x= year, y=  (avg_cases + sd_cases)*1.5, label = round(avg_cases))) +
 	# Additional plot aesthetics and labels
 	labs(
-		title = "Federal-level yearly cases of sepsis (J.2)\nper institution.",
+		title = "Federal-level yearly cases of sepsis (J.2  + filters)\nper institution.",
 		x = "Year",
 		y = "Number of cases",
 		color = "Case Type"
@@ -861,11 +932,12 @@ p_yearly_inst <- ggplot(subgroup_year_summary, aes( group = subgroup)) +
 	theme_minimal() +
 	theme(axis.text.x = element_text(angle = 45, hjust = 1))
 
+
 # Print the plot
 p_yearly_inst
 
 
-patch_tally <- p_yearly + p_yearly_inst + labs(caption = annotation_text)
+patch_tally <- p_yearly + p_yearly_inst + labs(caption = annotation_text) 
 
 patch_tally
 

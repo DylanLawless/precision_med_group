@@ -9,10 +9,26 @@ Figure
  illustrates how we can accurate model the requirements of a national registry database:
 
 \begin{itemize}
-\item We can state that the total number of sepsis cases for 2010-2022 was 368'719. A typical year (2022) had 35'205 cases with per-institution averages of 22 (sd: 57, min-max 0-600).
+\item We can state that the total number of sepsis cases for 2010-2022 was 368'719. A typical year (2022) had 35'205 cases with per-institution averages of 22 (sd: 57, min-max 0-600). The total subset of primary and secondary diagnosis during this period was 245'552.
 \item We can give a breakdown of estimated numbers accurate for each institution.
 \item We can identify the key players which have the largest number of adult and child cases (e.g. Insel Gruppe, Universitatsspital Zurich, Kantonsspital Baselland).
+\item We can reproduce the numbers of main diagnosis per year as reported by FOPH BAG and OBSAN, shown in \textbf{table \ref{tab:year_report}}.
 \end{itemize}
+
+\begin{table}[h!]
+\centering
+\caption{Number of cases in 2022. HD (Hauptdiagnose) und ND (Nebendiagnose), HD and ND are German abbreviations for Principal and Secondary diagnoses, respectively.}
+\label{tab:number_of_cases}
+\begin{tabular}{lccc}
+\hline
+\textbf{Diagnosis} & \textbf{Total Number of Cases} & \textbf{Number of Hospitalisations} & \textbf{Average Number of Cases per Hospital} \\
+\hline
+J.2.1.F HD & 11'782 & 109 & 108 \\
+J.2.4.F ND & 5'541 & 103 & 54 \\
+\hline
+\end{tabular}
+    \label{tab:year_report}
+\end{table}
 
 \textbf{The database for a Swiss national sepsis registry until spanning from 2010-2030 will contain 400'000 cases. 
 For each case it will contain at least a minimal set of 40 demographic and clinical data variables.}
